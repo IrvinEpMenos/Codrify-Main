@@ -1,28 +1,29 @@
 // Navbar.tsx
 import React from 'react';
-import './Navbar.css'; // Archivo CSS para estilos
-import logo from '../assets/img/logo.svg'; // Importar imagen
+import { Link } from 'react-router-dom'; // Usar Link de React Router
+import './Navbar.css';
+import logo from '../assets/img/logo.svg';
 
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="Logo" className="logo-image" />
-        </a>
+        </Link>
       </div>
       <ul className="navbar-links">
         <li>
-          <a href="/">Inicio</a>
+          <Link to="/">Inicio</Link>
         </li>
         <li>
-          <a href="/About">Nosotros</a>
+          <Link to="/acerca">Acerca</Link>
         </li>
         <li>
-          <a href="/Services">Servicios</a>
+          <Link to="/servicios">Servicios</Link>
         </li>
         <li>
-          <a href="/Contact">Contacto</a>
+          <Link to="/contacto">Contacto</Link>
         </li>
       </ul>
     </nav>
