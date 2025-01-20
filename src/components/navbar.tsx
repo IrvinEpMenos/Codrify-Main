@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Usar Link de React Router
 import './Navbar.css';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/logoblanco.svg';
 
 const Navbar: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           <Link to="/">Inicio</Link>
         </li>
         <li>
-          <Link to="/acerca">Acerca</Link>
+          <Link to="/acerca">Nosotros</Link>
         </li>
         <li>
           <Link to="/servicios">Servicios</Link>
