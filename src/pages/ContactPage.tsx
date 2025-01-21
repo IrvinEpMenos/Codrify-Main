@@ -8,7 +8,7 @@ const ContactPage: React.FC = () => {
       <h1 className="contact-title">CONTACTO</h1>
       <div className="contact-form-container">
         <h2>Envíanos un mensaje</h2>
-        <p>
+        <p className='pinfo'>
           Por favor llámanos a los teléfonos de nuestras oficinas regionales o
           escríbenos en esteformulario de correo y te responderemos. </p>
         <form className="contact-form">
@@ -19,9 +19,11 @@ const ContactPage: React.FC = () => {
           <button type="submit" className="contact-submit"> Enviar </button> </form>
         <div className="contact-hours">
           <h3>Horario de atención</h3>
-          <p>Lunes a Jueves: 9:00AM - 6:30PM</p>
-          <p>Viernes: 9:00AM - 3:00PM</p>
-          <p>Sábado y Domingo: Cerrado</p>
+          <p className='phorario'>Lunes a Jueves: 9:00AM - 6:30PM</p>
+          <p className='phorario'>Viernes: 9:00AM - 3:00PM</p>
+          <p className='phorario'>Sábado y Domingo: Cerrado</p>
+          <br />
+          <br />
         </div>
         <p className="contact-footer"> No dudes en contactarnos, tenemos una solución para ti. </p>
       </div>

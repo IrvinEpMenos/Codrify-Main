@@ -1,79 +1,135 @@
 /* Contact.css */
 .contact {
-    background-color: #0d0d2b;
-    color: #ffffff;
-    text-align: center;
-    padding: 50px 20px;
-    font-family: 'Arial', sans-serif;
-  }
+  background-color: #050520;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-title {
+  text-align: center;
   
-  .contact-title {
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form-container {
-    background: linear-gradient(180deg, #1a1a3d 0%, #0d0d2b 100%);
-    border-radius: 10px;
-    padding: 40px 20px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  .contact-form-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-form-container p {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .contact-input {
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    background-color: #ffffff;
-    color: #000;
-  }
-  
-  .contact-submit {
-    background-color: #00bcd4;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-submit:hover {
-    background-color: #008c9e;
-  }
-  
-  .contact-hours {
-    margin-top: 30px;
-  }
-  
-  .contact-hours h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #cccccc;
-  }
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--line-height-80, 80px);
+  /* 125% */
+}
+
+.contact-form-container {
+  background-color: #050520;
+  border-radius: 10px;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-input {
+  display: flex;
+  padding: 12px 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.05);
+  color: white; /* Letras blancas */
+  font-size: 16px; /* Asegura un tamaño de fuente adecuado */
+}
+
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Color más tenue para el placeholder */
+  font-size: 14px; /* Ajusta si quieres un tamaño diferente para el placeholder */
+}
+
+.contact-submit {
+  display: flex;
+  padding: 12px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #4AA0B3 14.01%, #017274 51.39%, #4AA0B3 103.5%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-submit:hover {
+  background: linear-gradient(90deg, #017274 14.01%, #4AA0B3 51.39%, #017274 103.5%);
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+
+.contact-hours {
+  margin-top: 30px;
+}
+
+.contact-hours h3 {
+  color: #FFF;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  /* 30px */
+}
+
+.contact-footer {
+  color: #FFF;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  /* 32px */
+}
+
+.pinfo {
+  color: #FFF;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  /* 173.333% */
+}
+
+.phorario {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 24px */
+}
+
+h2 {
+  color: #FFF;
+  text-align: center;
+
+  /* H2 */
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
