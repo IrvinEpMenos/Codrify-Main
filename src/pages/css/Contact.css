@@ -1,0 +1,79 @@
+/* Contact.css */
+.contact {
+    background-color: #0d0d2b;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-container {
+    background: linear-gradient(180deg, #1a1a3d 0%, #0d0d2b 100%);
+    border-radius: 10px;
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  .contact-submit {
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-submit:hover {
+    background-color: #008c9e;
+  }
+  
+  .contact-hours {
+    margin-top: 30px;
+  }
+  
+  .contact-hours h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc;
+  }
