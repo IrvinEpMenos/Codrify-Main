@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import './App.css';
 
 // Importar las páginas
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 };
