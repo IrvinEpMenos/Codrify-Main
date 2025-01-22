@@ -133,3 +133,10 @@ h2 {
   line-height: normal;
   letter-spacing: -0.6px;
 }
+
+.success-message {
+  color: green;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
