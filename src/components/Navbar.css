@@ -4,42 +4,115 @@
     align-items: center;
     background: linear-gradient(0deg, var(--color-blue-7, #050520) 0%, var(--color-blue-7, #050520) 100%), var(--color-white-solid, #FFF);
     fill: url(<path-to-image>) lightgray 50% / cover no-repeat;
-    padding: 0 150px ;
+    padding: 0px 150px ;
     width: 100%;
     height: 70px;
   }
-  .navbar-logo {
+.navbar-logo {
     padding: 8px 19.99px 8px 20.01px;
     width: 225px;
     height: 75px;
     flex-shrink: 0;
   }
-  .logo-image {
+.logo-image {
     width: 150px;
     height: 75px;
     flex-shrink: 0;
   }
 
-  .navbar-links {
+.navbar-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
+    gap: 1.2rem;
     color: #fff;
     font-family:  'Poppins', sans-serif;
     }
-  .oval-container{
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 5px 20px;
+.oval-container {
+  margin-left: 630px;
+  background-color: rgba(255, 255, 255, 0.151);
+  padding: 5px 15px;
   border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .oval-container:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  .language-selector {
+  border: 0.1px solid rgba(255, 255, 255, 0.308);
+}
+.oval-container1{
+    background: linear-gradient(89deg, #4AA0B3 0.89%, #017274 68.11%, #1A2B3D 99.02%);
+    padding: 0.20px 5px;
+    border-radius: 25px;
     height: 25px;
-    cursor: pointer;
-    opacity: 0.8;
+    width: 77px
   }
+.oval-container1:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+  }
+.language-select {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: rgba(5, 5, 32, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.language-select::after {
+  content: '▼';
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.699);
+  position: absolute;
+  bottom: -10px; /* Adjusted to position the arrow below the flag */
+}
+
+.language-select:hover::after,
+.language-select:active::after,
+.language-dropdown:hover .language-select::after {
+  content: '';
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+.language-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(5, 5, 32, 0.041);
+  border-radius: 50px;
+  padding: 5px 0;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-dropdown:hover .language-options {
+  display: flex;
+}
+
+.language-option {
+  height: 40px;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  border-radius: 50%;
+}
+
+.language-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.language-option img {
+  width: 25px;
+  height: auto;
+  margin-right: 0;
+}
+
+.flag-icon {
+  width: 25px;
+  height: auto;
+}
