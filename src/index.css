@@ -13,7 +13,7 @@
 body {
   font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
   line-height: 1.6;
-  background-color: #f4f4f9; /* Fondo claro para toda la página */
+  background: linear-gradient(0deg, var(--color-blue-7, #050520) 0%, var(--color-blue-7, #050520) 100%), var(--color-white-solid, #FFF);
   color: #333; /* Color de texto principal */
 }
 
