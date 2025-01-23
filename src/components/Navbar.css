@@ -1,59 +1,34 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(
-      0deg,
-      var(--color-blue-7, #050520) 0%,
-      var(--color-blue-7, #050520) 100%
-    ),
-    var(--color-white-solid, #FFF);
-  padding: 0 150px;
-  width: 100%;
-  height: 70px;
-  
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, var(--color-blue-7, #050520) 0%, var(--color-blue-7, #050520) 100%), var(--color-white-solid, #FFF);
+    fill: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    padding: 0px 150px ;
+    width: 100%;
+    height: 70px;
+  }
 .navbar-logo {
-  display: flex;
-  align-items: center;
-  padding: 8px 20px;
-  width: 225px;
-  height: 75px;
-  flex-shrink: 0;
-}
-
+    padding: 8px 19.99px 8px 20.01px;
+    width: 225px;
+    height: 75px;
+    flex-shrink: 0;
+  }
 .logo-image {
-  width: 150px;
-  height: auto;
-  flex-shrink: 0;
-}
+    width: 150px;
+    height: 75px;
+    flex-shrink: 0;
+  }
 
 .navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.navbar-links a:hover {
-  color: #4aa0b3;
-}
-
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    color: #fff;
+    font-family:  'Poppins', sans-serif;
+    }
 .oval-container {
-  margin-left: auto; /* Asegura que este elemento esté alineado al final */
+  margin-left: 630px;
   background-color: rgba(255, 255, 255, 0.151);
   padding: 5px 15px;
   border-radius: 25px;
@@ -70,12 +45,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .oval-container1:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+  }
 .language-select {
   height: 30px;
   width: 30px;
@@ -89,11 +65,17 @@
 }
 
 .language-select::after {
-  content: "▼";
+  content: '▼';
   font-size: 10px;
   color: rgba(255, 255, 255, 0.699);
   position: absolute;
-  bottom: -10px;
+  bottom: -10px; /* Adjusted to position the arrow below the flag */
+}
+
+.language-select:hover::after,
+.language-select:active::after,
+.language-dropdown:hover .language-select::after {
+  content: '';
 }
 
 .language-dropdown {
@@ -102,15 +84,14 @@
 
 .language-options {
   position: absolute;
-  top: calc(100% + 5px);
+  top: 100%;
   left: 0;
   background: rgba(5, 5, 32, 0.041);
-  border-radius: 25px;
+  border-radius: 50px;
   padding: 5px 0;
   display: none;
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 20;
 }
 
 .language-dropdown:hover .language-options {
@@ -119,7 +100,7 @@
 
 .language-option {
   height: 40px;
-  width: 40px;
+  width: 30px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -135,6 +116,7 @@
 .language-option img {
   width: 25px;
   height: auto;
+  margin-right: 0;
 }
 
 .flag-icon {

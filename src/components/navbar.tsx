@@ -32,20 +32,24 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className='language-dropdown'>
-              <div className='language-select' onClick={() => setDropdownOpen(!dropdownOpen)}>
-                <img src={language === 'es' ? mexicoFlag : usaFlag} alt={language === 'es' ? "Español" : "Inglés"} className="flag-icon" />
-              </div>
-              {dropdownOpen && (
-                <ul className='language-options'>
-                  <li className='language-option' onClick={() => handleLanguageChange('es')}>
-                    <img src={mexicoFlag} alt="Español" className="flag-iconmx" />
-                  </li>
-                  <li className='language-option' onClick={() => handleLanguageChange('en')}>
-                    <img src={usaFlag} alt="Inglés" className="flag-icon" />
-                  </li>
-                </ul>
+          <div className='language-select' onClick={() => setDropdownOpen(!dropdownOpen)}>
+            <img src={language === 'es' ? mexicoFlag : usaFlag} alt={language === 'es' ? "Español" : "Inglés"} className="flag-icon" />
+          </div>
+          {dropdownOpen && (
+            <ul className='language-options'>
+              {language !== 'es' && (
+                <li className='language-option' onClick={() => handleLanguageChange('es')}>
+                  <img src={mexicoFlag} alt="Español" className="flag-iconmx" />
+                </li>
               )}
-            </div>
+              {language !== 'en' && (
+                <li className='language-option' onClick={() => handleLanguageChange('en')}>
+                  <img src={usaFlag} alt="Inglés" className="flag-icon" />
+                </li>
+              )}
+            </ul>
+          )}
+        </div>
       </nav>
     </header>
   );
