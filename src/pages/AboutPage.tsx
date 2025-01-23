@@ -40,7 +40,7 @@ const AboutSection: React.FC = () => {
           digitales no debían ser exclusivas de las grandes corporaciones, sino
           herramientas accesibles para todos.
         </p>
-        <p>
+        <p className="history-text">
           Lo que comenzó como un proyecto apasionado se transformó en una firma
           líder que decodifica lo complejo y convierte la tecnología en
           oportunidades reales. Hoy, ayudamos a las pymes a crecer, innovar y

@@ -2,7 +2,7 @@
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
-  background-color: #1a1a2e;
+  background-color: #5e5e5f81;
   color: #ffffff;
   font-style: normal;
 }
@@ -14,6 +14,7 @@ body {
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  margin-top: -50px;
 }
 
 .cards-container {
@@ -30,6 +31,7 @@ h1 {
   text-align: center;
   border-radius: 16px;
   background: var(--color-grey-941, rgba(255, 255, 255, 0.01));
+  border: 0.1px solid rgba(255, 255, 255, 0.308);
 }
 
 .card h2 {
@@ -50,6 +52,9 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   background: var(--color-grey-941, rgba(226, 232, 255, 0.01));
+  border: 0.1px solid rgba(255, 255, 255, 0.308);
+  padding-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .history h2 {

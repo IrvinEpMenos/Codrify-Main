@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     margin-left: 140px;
     margin-right: 140px;
+    margin-top: auto;
   }
   
   .footer-container {
@@ -25,7 +26,8 @@
   .footer-logo-img {
     width: 300px; /* Incrementar tamaño del logo */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 45px;
   }
   
   .footer-links,
