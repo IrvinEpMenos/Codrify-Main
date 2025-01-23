@@ -11,7 +11,6 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 
-
 const App: React.FC = () => {
   return (
     <Router>

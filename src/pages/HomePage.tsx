@@ -1,10 +1,7 @@
-// pages/HomePage.tsx
-import React from "react";
-import "./css/Home.css";
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import "./css/back.css"; // Asegúrate de tener estilos globales básicos aquí
-
+import React from 'react';
+import { motion } from 'framer-motion';
+import './css/Home.css';
+import { useState, useEffect } from 'react';
 const AniText = () => {
   const texts = [
     "El futuro es ahora",
@@ -40,26 +37,84 @@ const AniText = () => {
   );
 };
 
+const aniBackgroung = () => {
+  return (
+    <>
+      {/* Esquina superior izquierda */}
+      <div className="corner top-left">
+        {[...Array(5)].map((_, index) => (
+          <motion.div
+            key={index}
+            className="circle-line"
+            style={{
+              borderWidth: 2,
+              borderColor: 'blue',
+              width: 40 + index * 20,
+              height: 40 + index * 20,
+            }}
+            variants={{
+              animate: {
+                scale: [1, 1.2, 1],
+                opacity: [0.8, 1, 0.8],
+                transition: {
+                  repeat: Infinity,
+                  duration: 2,
+                  ease: 'easeInOut',
+                },
+              },
+            }}
+            animate="animate"
+          />
+        ))}
+      </div>
+
+      {/* Esquina inferior derecha */}
+      <div className="corner bottom-right">
+        {[...Array(5)].map((_, index) => (
+          <motion.div
+            key={index}
+            className="circle-line"
+            style={{
+              borderWidth: 2,
+              borderColor: 'red',
+              width: 40 + index * 20,
+              height: 40 + index * 20,
+            }}
+            variants={{
+              animate: {
+                scale: [1, 1.2, 1],
+                opacity: [0.8, 1, 0.8],
+                transition: {
+                  repeat: Infinity,
+                  duration: 2,
+                  ease: 'easeInOut',
+                },
+              },
+            }}
+            animate="animate"
+          />
+        ))}
+      </div>
+    </>
+  );
+};
+
+
 const HomePage: React.FC = () => {
   return (
+    <div className="home-background">
+      {aniBackgroung()}
     <div className="container">
       <div className="home">
         <div className="home-title">
-          <div className="video-container">
-            <video autoPlay loop muted>
-              <source src="path/to/your/video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
           <div className="home-title-text">
             <AniText />
           </div>
         </div>
       </div>
     </div>
+    </div>
   );
 };
-
-
 
 export default HomePage;
