@@ -3,58 +3,64 @@
   color: #fff;
   padding: 10px 0;
   font-family: 'Poppins', sans-serif;
-  margin: 0 auto;
+  margin-left: 140px;
+  margin-right: 140px;
   margin-top: auto;
-  width: 90%; /* Ajuste dinámico del ancho */
 }
 
 .footer-container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 0 5%; /* Más espacio interno para pantallas pequeñas */
-  flex-wrap: wrap;
+  padding: 0 10%;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
 }
 
 .footer-logo {
   flex: 1;
-  text-align: center; /* Centrado en pantallas pequeñas */
-  margin-top: -30px;
+  position: relative;
+  left: -140px;
+  margin-top: -50px;
+  text-align: center; /* Centrar para pantallas más pequeñas */
 }
 
 .footer-logo-img {
-  width: 250px; /* Ajustar tamaño del logo */
+  width: 300px; /* Tamaño original */
   height: auto;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  margin-top: 45px;
 }
 
 .footer-links,
 .footer-contact {
   flex: 1;
-  margin: 20px 0; /* Espaciado entre secciones */
-  text-align: center;
+  margin-top: 20px;
+  text-align: center; /* Ajuste en pantallas más pequeñas */
 }
 
 .footer-links h2,
 .footer-contact h2 {
+  margin-left: 0; /* Asegura alineación con las listas */
+  text-align: center; /* Centra los títulos */
   font-size: 1rem;
   margin-bottom: 10px;
-  position: relative;
-}
-
-.footer-separator {
-  width: 80%;
-  height: 1.5px;
-  background-color: #ffffff;
-  margin: 10px auto;
 }
 
 .footer-links ul,
 .footer-contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-  text-align: center;
+  list-style: none; /* Quitamos los estilos de lista */
+  padding: 1;
+  margin: 0 auto; /* Centramos las listas */
+  text-align: center; /* Centrar el contenido dentro de las listas */
+}
+
+.footer-separator {
+  position: relative;
+  left: -454px;
+  width: 275%;
+  height: 1.5px;
+  background-color: #ffffff;
+  margin: 5px auto;
 }
 
 .footer-links li,
@@ -75,7 +81,7 @@
 .footer-contact li {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centrado de íconos */
+  justify-content: center; /* Centrar íconos y texto */
   font-size: 0.9rem;
 }
 
@@ -86,60 +92,89 @@
 }
 
 .footer-bottom {
-  text-align: center; /* Centrar en pantallas pequeñas */
+  position: relative;
+  left: -480px;
+  margin-top: -30px;
   font-size: 0.9rem;
   color: #b3b3b3;
-  margin-top: 20px;
 }
 
 .footer-bottom-copyright {
-  text-align: center; /* Centrar el texto */
+  text-align: left;
+  margin-top: 30px;
   font-size: 0.8rem;
   color: #b3b3b3;
 }
 
-/* Media queries para diferentes tamaños de pantalla */
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 1024px) {
+  .footer {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  .footer-logo {
+      left: 0;
+  }
+
+  .footer-separator {
+      left: 0;
+      width: 100%;
+  }
+
+  .footer-bottom {
+      left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
-      width: 100%;
-      padding: 20px 10px;
+      margin-left: 20px;
+      margin-right: 20px;
   }
 
   .footer-logo-img {
-      width: 200px; /* Ajustar tamaño del logo para pantallas más pequeñas */
+      width: 250px;
+  }
+
+  .footer-logo {
+      margin-top: 0;
+  }
+
+  .footer-links h2,
+  .footer-contact h2 {
+      margin-left: 0;
+  }
+
+  .footer-links ul {
+      right: 0;
+  }
+
+  .footer-contact ul {
+      left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      margin: 0 10px;
+  }
+
+  .footer-logo-img {
+      width: 200px;
   }
 
   .footer-container {
-      flex-direction: column; /* Columna para pantallas pequeñas */
+      flex-direction: column;
       align-items: center;
-  }
-
-  .footer-links ul,
-  .footer-contact ul {
-      text-align: center;
   }
 
   .footer-separator {
       width: 90%;
   }
-}
-
-@media (max-width: 480px) {
-  .footer-logo-img {
-      width: 150px; /* Ajustar aún más en pantallas muy pequeñas */
-  }
-
-  .footer-links h2,
-  .footer-contact h2 {
-      font-size: 0.9rem;
-  }
-
-  .footer-contact li img {
-      width: 14px;
-      height: 14px;
-  }
 
   .footer-bottom {
-      font-size: 0.7rem;
+      text-align: center;
+      left: 0;
   }
 }
