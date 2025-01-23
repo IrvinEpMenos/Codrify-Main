@@ -135,47 +135,47 @@ h2 {
 }
 
 .success-message {
-  color: #28a745; /* Un verde más profesional */
-  font-size: 1.2rem; /* Un poco más grande */
-  margin-top: 20px; /* Más espacio arriba */
-  text-align: center;
-  padding: 10px 20px; /* Espacio interno */
-  border: 1px solid #28a745; /* Borde del mismo color */
-  border-radius: 5px; /* Bordes redondeados */
-  background-color: #e6f9ec; /* Fondo verde claro */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  position: relative; /* Para el pseudo-elemento */
+  color: #fff; /* Blanco para mejor contraste */
+  background-color: #28a745; /* Verde más oscuro */
+  border: none; /* Sin borde para un aspecto más limpio */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+
+  /* Para el pseudo-elemento */
+  position: relative;
+  z-index: 1;
 }
 
 .success-message::after {
-  content: '✔'; /* Palomita */
-  color: #28a745; /* Mismo color verde */
-  font-size: 1.5rem; /* Tamaño de la palomita */
-  position: absolute; /* Posicionamiento absoluto */
-  right: 10px; /* Espacio a la derecha */
-  top: 50%; /* Centrado verticalmente */
-  transform: translateY(-50%); /* Ajuste para centrar */
+  content: '✔';
+  color: #fff;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .error-message {
-  color: #dc3545; /* Un rojo más profesional */
-  font-size: 1.2rem; /* Un poco más grande */
-  margin-top: 20px; /* Más espacio arriba */
-  text-align: center;
-  padding: 10px 20px; /* Espacio interno */
-  border: 1px solid #dc3545; /* Borde del mismo color */
-  border-radius: 5px; /* Bordes redondeados */
-  background-color: #f8d7da; /* Fondo rojo claro */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  position: relative; /* Para el pseudo-elemento */
+  color: #fff;
+  background-color: #dc3545; /* Rojo más oscuro */
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  /* Para el pseudo-elemento */
+  position: relative;
+  z-index: 1;
 }
 
 .error-message::after {
-  content: '✘'; /* Cruz */
-  color: #dc3545; /* Mismo color rojo */
-  font-size: 1.5rem; /* Tamaño de la cruz */
-  position: absolute; /* Posicionamiento absoluto */
-  right: 10px; /* Espacio a la derecha */
-  top: 50%; /* Centrado verticalmente */
-  transform: translateY(-50%); /* Ajuste para centrar */
+  content: '✘';
+  color: #fff;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }

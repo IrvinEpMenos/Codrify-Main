@@ -21,7 +21,7 @@ const ContactPage: React.FC = () => {
     const { name, company, phone, subject } = formData;
 
     if (!name || !company || !phone || !subject) {
-      setErrorMessage("POR FAVOR RELLENE TODOS LOS CAMPOS");
+      setErrorMessage("Porfavor rellenar todos los campos."); // Mensaje de error
       return;
     }
 
@@ -36,6 +36,9 @@ const ContactPage: React.FC = () => {
         setMessage("Formulario enviado, espere nuestra pronta respuesta.");
         setFormData({ name: '', company: '', phone: '', subject: '' }); // Limpiar los campos del formulario
         setErrorMessage(""); // Limpiar el mensaje de error
+        setTimeout(() => {
+          setMessage(""); // Limpiar el mensaje después de 1 minuto
+        }, 60000); // 60000 ms = 1 minuto
       } else {
         alert("Error al enviar el correo.");
       }
@@ -91,6 +94,7 @@ const ContactPage: React.FC = () => {
             Enviar
           </button>
         </form>
+        <br />
         {errorMessage && <p className="error-message">{errorMessage}</p>} {/* Mensaje de error */}
         {message && <p className="success-message">{message}</p>} {/* Mensaje de confirmación */}
         <div className="contact-hours">
