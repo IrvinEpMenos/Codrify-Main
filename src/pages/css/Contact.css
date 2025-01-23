@@ -135,8 +135,47 @@ h2 {
 }
 
 .success-message {
-  color: green;
-  font-size: 1rem;
-  margin-top: 10px;
+  color: #28a745; /* Un verde más profesional */
+  font-size: 1.2rem; /* Un poco más grande */
+  margin-top: 20px; /* Más espacio arriba */
   text-align: center;
+  padding: 10px 20px; /* Espacio interno */
+  border: 1px solid #28a745; /* Borde del mismo color */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #e6f9ec; /* Fondo verde claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  position: relative; /* Para el pseudo-elemento */
+}
+
+.success-message::after {
+  content: '✔'; /* Palomita */
+  color: #28a745; /* Mismo color verde */
+  font-size: 1.5rem; /* Tamaño de la palomita */
+  position: absolute; /* Posicionamiento absoluto */
+  right: 10px; /* Espacio a la derecha */
+  top: 50%; /* Centrado verticalmente */
+  transform: translateY(-50%); /* Ajuste para centrar */
+}
+
+.error-message {
+  color: #dc3545; /* Un rojo más profesional */
+  font-size: 1.2rem; /* Un poco más grande */
+  margin-top: 20px; /* Más espacio arriba */
+  text-align: center;
+  padding: 10px 20px; /* Espacio interno */
+  border: 1px solid #dc3545; /* Borde del mismo color */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #f8d7da; /* Fondo rojo claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  position: relative; /* Para el pseudo-elemento */
+}
+
+.error-message::after {
+  content: '✘'; /* Cruz */
+  color: #dc3545; /* Mismo color rojo */
+  font-size: 1.5rem; /* Tamaño de la cruz */
+  position: absolute; /* Posicionamiento absoluto */
+  right: 10px; /* Espacio a la derecha */
+  top: 50%; /* Centrado verticalmente */
+  transform: translateY(-50%); /* Ajuste para centrar */
 }

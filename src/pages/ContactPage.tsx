@@ -10,6 +10,7 @@ const ContactPage: React.FC = () => {
   });
 
   const [message, setMessage] = useState(""); // Para mostrar el mensaje
+  const [errorMessage, setErrorMessage] = useState(""); // Para mostrar el mensaje de error
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,6 +18,12 @@ const ContactPage: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const { name, company, phone, subject } = formData;
+
+    if (!name || !company || !phone || !subject) {
+      setErrorMessage("POR FAVOR RELLENE TODOS LOS CAMPOS");
+      return;
+    }
 
     try {
       const response = await fetch("http://localhost:5000/send-email", {
@@ -27,9 +34,8 @@ const ContactPage: React.FC = () => {
 
       if (response.ok) {
         setMessage("Formulario enviado, espere nuestra pronta respuesta.");
-        setTimeout(() => {
-          window.location.reload(); // Recarga la página después de 3 segundos
-        }, 3000);
+        setFormData({ name: '', company: '', phone: '', subject: '' }); // Limpiar los campos del formulario
+        setErrorMessage(""); // Limpiar el mensaje de error
       } else {
         alert("Error al enviar el correo.");
       }
@@ -85,6 +91,7 @@ const ContactPage: React.FC = () => {
             Enviar
           </button>
         </form>
+        {errorMessage && <p className="error-message">{errorMessage}</p>} {/* Mensaje de error */}
         {message && <p className="success-message">{message}</p>} {/* Mensaje de confirmación */}
         <div className="contact-hours">
           <h3>Horario de atención</h3>
