@@ -34,13 +34,20 @@
   border-radius: 25px;
   border: 0.1px solid rgba(255, 255, 255, 0.308);
 }
-.oval-container1{
-    background: linear-gradient(89deg, #448594 0.89%, #017274 90%, #448594 99.02%);
-    padding: 0.20px 5px;
-    border-radius: 25px;
-    height: 25px;
-    width: 77px
-  }
+
+.oval-container1 {
+  background: linear-gradient(89deg, #4aa0b3 0.89%, #017274 68.11%, #1a2b3d 99.02%);
+  padding: 0.2px 5px;
+  border-radius: 25px;
+  height: 25px;
+  width: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
 .oval-container1:hover {
     background-color: rgba(255, 255, 255, 0.1);
     opacity: 1;

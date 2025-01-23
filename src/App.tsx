@@ -6,10 +6,11 @@ import Footer from './components/footer';
 import './App.css';
 
 // Importar las páginas
-//import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
+
 
 const App: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Routes>
-          
+          <Route path="/" element={<HomePage />} />
           <Route path="/acerca" element={<AboutPage />} />
           <Route path="/servicios" element={<ServicesPage />} />
           <Route path="/contacto" element={<ContactPage />} />

@@ -3,6 +3,7 @@ import React from "react";
 import "./css/Home.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import "./css/back.css"; // Asegúrate de tener estilos globales básicos aquí
 
 const AniText = () => {
   const texts = [
@@ -44,16 +45,21 @@ const HomePage: React.FC = () => {
     <div className="container">
       <div className="home">
         <div className="home-title">
-          <div className="home-title-text">
-          <AniText />
-          </div>
           <div className="video-container">
-            
+            <video autoPlay loop muted>
+              <source src="path/to/your/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="home-title-text">
+            <AniText />
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+
 
 export default HomePage;
