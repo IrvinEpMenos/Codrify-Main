@@ -1,0 +1,14 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon / tabler-icons / book" clip-path="url(#clip0_505_1107)">
+<path id="Vector" d="M8.96387 56.6754C13.0519 54.3192 17.6891 53.0787 22.4095 53.0787C27.1299 53.0787 31.7671 54.3192 35.8551 56.6754C39.9431 54.3192 44.5803 53.0787 49.3007 53.0787C54.0211 53.0787 58.6584 54.3192 62.7464 56.6754" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8.96387 17.8975C13.0519 15.5412 17.6891 14.3008 22.4095 14.3008C27.1299 14.3008 31.7671 15.5412 35.8551 17.8975C39.9431 15.5412 44.5803 14.3008 49.3007 14.3008C54.0211 14.3008 58.6584 15.5412 62.7464 17.8975" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M8.96387 17.8975V56.6754" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M35.8555 17.8975V56.6754" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M62.7461 17.8975V56.6754" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_505_1107">
+<rect width="71.71" height="71.59" fill="white"/>
+</clipPath>
+</defs>
+</svg>

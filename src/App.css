@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 main {
     padding-top: 70px; /* Altura del navbar */
     min-height: calc(100vh - 70px); /* Deja espacio también para el footer si es necesario */

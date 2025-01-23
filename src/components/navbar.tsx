@@ -25,9 +25,9 @@ const Navbar: React.FC = () => {
         </div>
         <div className='oval-container'>
           <ul className="navbar-links">
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/acerca">Nosotros</Link></li>
-            <li><Link to="/servicios">Servicios</Link></li>
+            <li className='li-text'><Link to="/">Inicio</Link></li>
+            <li  className='li-text'><Link to="/acerca">Nosotros</Link></li>
+            <li  className='li-text'><Link to="/servicios">Servicios</Link></li>
             <div className='oval-container1'><li><Link to="/contacto">Contacto</Link></li></div>
           </ul>
         </div>
