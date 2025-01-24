@@ -1,17 +1,27 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: rgba(255, 255, 255, 0.308);
+  --background-color: #5e5e5f81;
+  --text-color: #ffffff;
+  --card-bg-color: rgba(255, 255, 255, 0.01);
+  --font-size-base: 16px;
+}
+
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
-  background-color: #5e5e5f81;
-  color: #ffffff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-style: normal;
 }
 
 .about-section {
   text-align: center;
+  padding: 20px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: clamp(1.8em, 2.5vw, 2.5em);
   margin-bottom: 20px;
   margin-top: -50px;
 }
@@ -30,8 +40,14 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 16px;
-  background: var(--color-grey-941, rgba(255, 255, 255, 0.01));
-  border: 0.1px solid rgba(255, 255, 255, 0.308);
+  background: var(--card-bg-color);
+  border: 0.1px solid var(--secondary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card h2 {
@@ -51,8 +67,8 @@ h1 {
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  background: var(--color-grey-941, rgba(226, 232, 255, 0.01));
-  border: 0.1px solid rgba(255, 255, 255, 0.308);
+  background: var(--card-bg-color);
+  border: 0.1px solid var(--secondary-color);
   padding-bottom: 20px;
   margin-bottom: 100px;
 }
@@ -70,60 +86,50 @@ h1 {
   text-align: justify;
 }
 
-.Icon-ch {
-  margin-bottom: 20px;
-  width: 40px;
-  height: auto;
-}
-
+.Icon-ch,
 .Icon-fc {
-  margin-bottom: 20px;
-  margin-top: -10px;
-  width: 40px;
+  width: 15%;
+  max-width: 60px;
   height: auto;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
+/* Responsividad */
+/* Para tabletas */
+@media (max-width: 1024px) {
+  .cards-container {
+    gap: 20px;
   }
+  .card {
+    max-width: 45%;
+  }
+}
 
+/* Para móviles */
+@media (max-width: 768px) {
   .cards-container {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
-
   .card {
     max-width: 90%;
+    padding: 15px;
   }
-
   .history {
-    max-width: 90%;
+    padding: 15px;
   }
-
-  .history h2 {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 480px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-top: -30px;
   }
-
-  .card h2 {
-    font-size: 1.2em;
-  }
-
-  .card p {
-    font-size: 0.9em;
-  }
-
   .history h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-bottom: 15px;
   }
-
   .history p {
     font-size: 0.9em;
+    line-height: 1.4;
+    padding: 10px;
   }
 }
