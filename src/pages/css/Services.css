@@ -1,0 +1,140 @@
+.services-container {
+    background-color: #050520;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar horizontalmente */
+    gap: 1.5rem;
+}
+
+.service-item {
+    background-color: rgba(26, 32, 40, 0.50);
+    /* Fondo con opacidad */
+    border-radius: 30px;
+    /* Bordes redondeados */
+    border: 2px solid #414955;
+    /* Borde */
+    width: 100%;
+    /* Ancho completo */
+    max-width: 900px;
+    /* Ancho máximo */
+    height: auto;
+    /* Alto automático */
+    flex-shrink: 0;
+    /* Evitar que se encoja */
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* Centrar texto */
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    .service-item {
+        padding: 1.5rem;
+        /* Reducir el padding en pantallas más pequeñas */
+        flex-direction: column;
+        /* Cambiar a columna en pantallas más pequeñas */
+    }
+
+    .service-icon {
+        font-size: 1.5rem;
+        /* Reducir el tamaño del icono en pantallas más pequeñas */
+    }
+
+    .service-text {
+        font-size: 1rem;
+        /* Reducir el tamaño del texto en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        padding: 1rem;
+        /* Reducir aún más el padding en pantallas muy pequeñas */
+    }
+
+    .service-icon {
+        font-size: 1.2rem;
+        /* Reducir aún más el tamaño del icono en pantallas muy pequeñas */
+    }
+
+    .service-text {
+        font-size: 0.9rem;
+        /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
+    }
+}
+
+.service-icon {
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+}
+
+.service-text {
+    flex: 1;
+    /* Tomar el espacio restante */
+    font-size: 1.2rem;
+    /* Tamaño de letra más grande */
+}
+
+.service-text h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.service-text p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0;
+    text-align: center;
+}
+
+.cta-section {
+    margin-top: 2rem;
+}
+
+.cta-button {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #5c0091;
+}
+
+.circulo {
+    width: 95px;
+    height: 95px;
+    flex-shrink: 0;
+    stroke-width: 10px;
+    stroke: #2B3FF2;
+}
