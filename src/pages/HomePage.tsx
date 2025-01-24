@@ -49,8 +49,8 @@ const aniBackgroung = () => {
             style={{
               borderWidth: 2,
               borderColor: 'blue',
-              width: 40 + index * 20,
-              height: 40 + index * 20,
+              width: 400 + index * 200,
+              height: 400 + index * 20,
             }}
             variants={{
               animate: {
