@@ -14,7 +14,7 @@ const Test = () => {
         repeat: Infinity,
         duration: 4,
         repeatType: "reverse",
-        
+
       }}
       style={ball}
       >
