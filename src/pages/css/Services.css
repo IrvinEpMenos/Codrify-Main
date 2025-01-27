@@ -35,8 +35,8 @@
     /* Ancho completo */
     max-width: 900px;
     /* Ancho máximo */
-    height: auto;
-    /* Alto automático */
+    height: 150px;
+    /* Alto inicial */
     flex-shrink: 0;
     /* Evitar que se encoja */
     padding: 2rem;
@@ -49,6 +49,37 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     /* Centrar texto */
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.service-item.selected {
+    height: 550px; /* Ajusta esta altura según sea necesario */
+    background-color: rgba(26, 32, 40, 0.70); /* Fondo con opacidad */
+}
+
+.service-details {
+    margin-top: 10px;
+    display: none;
+}
+
+.service-item.selected .service-details {
+    display: block;
+}
+
+.video-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 /* Media queries para diseño responsivo */
@@ -58,6 +89,7 @@
         /* Reducir el padding en pantallas más pequeñas */
         flex-direction: column;
         /* Cambiar a columna en pantallas más pequeñas */
+        height: auto;
     }
 
     .service-icon {
@@ -68,6 +100,10 @@
     .service-text {
         font-size: 1rem;
         /* Reducir el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .service-item.selected {
+        height: auto;
     }
 }
 
