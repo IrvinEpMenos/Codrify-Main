@@ -104,12 +104,13 @@
 .service-text h2 {
     font-size: 1.2rem;
     margin: 0;
+    text-align: center;
 }
 
 .service-text p {
     font-size: 0.9rem;
     margin: 0.5rem 0 0;
-    text-align: center;
+    text-align: left;
 }
 
 .cta-section {
