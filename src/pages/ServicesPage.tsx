@@ -43,6 +43,7 @@ const ServicesPage: React.FC = () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
               <circle cx="37.5" cy="37.5" r="35.5" stroke="url(#gradient)" stroke-width="4" />
               <img src="{hexa}" alt="logo" />
+              
               <defs>
                 <linearGradient id="gradient" x1="0" y1="0" x2="75" y2="75" gradientUnits="userSpaceOnUse">
                   <stop stop-color="#6A00F4" />
