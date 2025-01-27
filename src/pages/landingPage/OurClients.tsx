@@ -1,7 +1,7 @@
 export default function OurClients() {
     return (
         <div>
-        <div className="container">
+        <div className="container-middel">
             <div className="clients">
             <div className="clients-title">
                 <div className="clients-title-text">

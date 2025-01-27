@@ -1,9 +1,11 @@
 "use client";
 
 import { motion, useScroll, useSpring } from "framer-motion";
+import {useRef, useEffect } from "react";
 import Video from "./landingPage/video";
 import OurProjects from "./landingPage/ourProjects";
 import OurClients from "./landingPage/OurClients";
+
 
 const contentComponents: { [key: number]: () => JSX.Element } = {
     1: Video,
@@ -23,7 +25,7 @@ export default function Parallax() {
     return (
         <div id="example">
             {[1, 2, 3, 4].map((id) => {
-                const ContentComponent = contentComponents[id] || (() => <div>Default content</div>);
+                const ContentComponent = contentComponents[id] || (() => <div className="last">Default content</div>);
                 return (
                     <section key={id} className="Content-container">
                         <motion.div
@@ -42,18 +44,29 @@ export default function Parallax() {
                 }
 
                 .Content-container {
-                    height: 100vh;
+                    height:100vh;
                     scroll-snap-align: start;
                     position: relative;
+                }
+                
+                .navbar, footer {
+                scroll-snap-align: start;
                 }
 
                 .Content-container div {
                     color: #4ff0b7;
                     margin: 0;
-                    position: absolute;
-                    display: inline-block;
                 }
 
+                .text-animation-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                }
+
+                
                 .progress {
                     position: fixed;
                     left: 0;
@@ -67,3 +80,7 @@ export default function Parallax() {
         </div>
     );
 }
+
+
+
+
