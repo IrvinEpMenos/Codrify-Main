@@ -1,3 +1,5 @@
+
+/* Navbar.css */
 .navbar {
   font-family: poppins, sans-serif;
   display: flex;
@@ -37,11 +39,12 @@
 }
 
 .oval-container {
-  margin-left: auto;
+  margin-left: 585px;
   background-color: rgba(255, 255, 255, 0.151);
   padding: 5px 15px;
   border-radius: 25px;
   border: 0.1px solid rgba(255, 255, 255, 0.308);
+  display: flex;
 }
 
 .oval-container1 {
@@ -88,7 +91,7 @@
 .language-options {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   background: rgba(5, 5, 32, 0.041);
   border-radius: 50px;
   padding: 5px 0;
@@ -127,40 +130,83 @@
   height: auto;
 }
 
-/* Media queries */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.315);
+  transition: all 0.3s ease;
+  margin-left: 170px;
+}
+
+.bar.active:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.active:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.active:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 @media (max-width: 1024px) {
   .navbar {
-      padding: 0px 50px;
+    padding: 0px 50px;
   }
   .navbar-links {
-      gap: 1rem;
+    gap: 1rem;
   }
   .logo-image {
-      width: 120px;
-      height: 60px;
+    width: 120px;
+    height: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      height: auto;
-      padding: 10px 20px;
+    padding: 10px 20px;
+    position: relative;
+  }
+  .oval-container {
+    display: none;
+  }
+  .oval-container.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--color-blue-7, #050520);
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    z-index: 10;
+  }
+  .hamburger-menu {
+    display: flex;
   }
   .navbar-links {
-      flex-direction: column;
-      display: none;
+    flex-direction: column;
+    display: none;
   }
   .navbar.active .navbar-links {
-      display: flex;
+    display: flex;
+  }
+  .li-text {
+    margin: 10px 0;
   }
 }
 
 @media (max-width: 480px) {
   .navbar-logo {
-      width: 150px;
-  }
-  .oval-container {
-      display: none;
+    width: 150px;
   }
 }

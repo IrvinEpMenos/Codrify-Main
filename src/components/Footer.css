@@ -24,7 +24,7 @@
   width: 100%;
   max-width: 300px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: -70px;
   margin-top: 45px;
 }
 
@@ -97,6 +97,7 @@
   text-align: center;
   font-size: 0.8rem;
   color: #b3b3b3;
+  margin-bottom: auto;
 }
 
 /* Responsividad para pantallas pequeñas */
