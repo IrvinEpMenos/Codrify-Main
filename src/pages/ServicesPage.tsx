@@ -37,7 +37,7 @@ const ServicesPage: React.FC = () => {
           </div>
           <div className="service-text">
             <h2>Diseño UI/UX</h2>
-            
+
             {selectedService !== 0 && (
               <p>
                 Creamos interfaces modernas, únicas y funcionales que mejoran la experiencia de usuario y refuerzan la identidad de tu marca.
@@ -52,7 +52,7 @@ const ServicesPage: React.FC = () => {
                   <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/beCWiM8bjr8"
+                    src="https://www.youtube.com/embed/p38WgakuYDo"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
