@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/img/logoblanco.svg';
+import logo from '../assets/img/logoBlanco.svg';
 import mexicoFlag from '../assets/icon/mexico.svg';
-import usaFlag from '../assets/icon/usa.svg';
+import usaFlag from '../assets/icon/USA.svg';
 
 const Navbar: React.FC = () => {
   const [language, setLanguage] = useState('es');
