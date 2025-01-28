@@ -1,9 +1,8 @@
 "use client";
 
 import { motion, useScroll, useSpring } from "framer-motion";
-import {useRef, useEffect } from "react";
 import Video from "./landingPage/video";
-import OurProjects from "./landingPage/ourProjects";
+import OurProjects from "./landingPage/OurProjects";
 import OurClients from "./landingPage/OurClients";
 
 
