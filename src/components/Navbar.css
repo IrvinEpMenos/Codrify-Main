@@ -157,7 +157,7 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 2024px) {
+@media (max-width: 4024px) {
   .navbar {
     padding: 0px 110px;
   }

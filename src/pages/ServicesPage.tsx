@@ -14,7 +14,7 @@ const ServicesPage: React.FC = () => {
     <div className="services-container">
       <h1 className="services-title">NUESTROS SERVICIOS</h1>
       <p className="services-description">
-        En Codify, ofrecemos una amplia gama de servicios de consultoría de software para ayudarte a alcanzar tus objetivos tecnológicos y empresariales.
+        En Codrify, ofrecemos una amplia gama de servicios de consultoría de software para ayudarte a alcanzar tus objetivos tecnológicos y empresariales.
       </p>
       <div className="services-list">
         <div
@@ -29,8 +29,8 @@ const ServicesPage: React.FC = () => {
               <path d="M26.5 36C26.5 36 30 39 33 39C36 39 37.5 36 37.5 36C37.5 36 39 39 42 39C45 39 48.5 36 48.5 36" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               <defs>
                 <linearGradient id="gradient" x1="0" y1="0" x2="75" y2="75" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#6A00F4" />
-                  <stop offset="1" stop-color="#AEB5F1" />
+                  <stop stop-color="#B0E0E6" />
+                  <stop offset="1" stop-color="#87CEFA" />
                 </linearGradient>
               </defs>
             </svg>
@@ -47,7 +47,6 @@ const ServicesPage: React.FC = () => {
             {selectedService === 0 && (
               <div className="service-details">
                 <p>Más información sobre Diseño UI/UX...</p>
-                <p>Detalles adicionales que se muestran cuando se selecciona este servicio.</p>
                 <div className="video-container">
                   <iframe
                     width="560"
@@ -63,8 +62,10 @@ const ServicesPage: React.FC = () => {
             )}
           </div>
         </div>
-        <div className="service-item">
-
+        <div
+          className={`service-item ${selectedService === 1 ? 'selected' : ''}`}
+          onClick={() => handleCardClick(1)}
+        >
           <div className="service-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
               <circle cx="37.5" cy="37.5" r="35.5" stroke="url(#gradient)" stroke-width="4" />
@@ -83,12 +84,36 @@ const ServicesPage: React.FC = () => {
 
           <div className="service-text">
             <h2>Implementaciones Tecnológicas</h2>
-            <p>
-              Desarrollamos soluciones digitales personalizadas para optimizar tus procesos y modernizar tu negocio.
-            </p>
+            {selectedService !== 1 && (
+              <p>
+                Desarrollamos soluciones digitales personalizadas para optimizar tus procesos y modernizar tu negocio.
+              </p>
+            )}
+
+            {selectedService === 1 && (
+              <div className="service-details">
+                <p>Más información sobre Implementaciones Tecnológicas.</p>
+                <p>Detalles adicionales que se muestran cuando se selecciona este servicio.</p>
+                <div className="video-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/p38WgakuYDo"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            )}
+
           </div>
         </div>
-        <div className="service-item">
+        <div
+          className={`service-item ${selectedService === 2 ? 'selected' : ''}`}
+          onClick={() => handleCardClick(2)}
+        >
           <div className="service-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
               <circle cx="37.5" cy="37.5" r="35.5" stroke="url(#gradient)" stroke-width="4" />
@@ -103,12 +128,36 @@ const ServicesPage: React.FC = () => {
           </div>
           <div className="service-text">
             <h2>Automatización con Inteligencia Artificial</h2>
-            <p>
-              Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en menos tiempo.
-            </p>
+
+            {selectedService !== 2 && (
+              <p>
+                Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en menos tiempo.
+              </p>
+            )}
+
+            {selectedService === 2 && (
+              <div className="service-details">
+                <p>Más información sobre Automatización con Inteligencia Artificial</p>
+                <p>Detalles adicionales que se muestran cuando se selecciona este servicio.</p>
+                <div className="video-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/p38WgakuYDo"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            )}
           </div>
         </div>
-        <div className="service-item">
+        <div
+          className={`service-item ${selectedService === 3 ? 'selected' : ''}`}
+          onClick={() => handleCardClick(3)}
+        >
           <div className="service-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
               <circle cx="37.5" cy="37.5" r="35.5" stroke="url(#gradient)" stroke-width="4" />
@@ -128,9 +177,31 @@ const ServicesPage: React.FC = () => {
           </div>
           <div className="service-text">
             <h2>Plan Estratégico Personalizado</h2>
-            <p>
-              Diseñamos estrategias tecnológicas a medida, alineadas con los objetivos de tu empresa para maximizar su potencial.
-            </p>
+
+            {selectedService !== 3 && (
+              <p>
+                Diseñamos estrategias tecnológicas a medida, alineadas con los objetivos de tu empresa para maximizar su potencial.
+              </p>
+            )}
+
+            {selectedService === 3 && (
+              <div className="service-details">
+                <p>Más información sobre Plan Estratégico Personalizado</p>
+                <p>Detalles adicionales que se muestran cuando se selecciona este servicio.</p>
+                <div className="video-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/p38WgakuYDo"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            )}
+
           </div>
         </div>
       </div>
