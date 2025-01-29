@@ -35,12 +35,15 @@
     /* Ancho completo */
     max-width: 900px;
     /* Ancho máximo */
-    height: 150px;
+    height: 200px;
     /* Alto inicial */
     flex-shrink: 0;
     /* Evitar que se encoja */
     padding: 2rem;
     display: flex;
+
+    flex-direction: column;
+
     align-items: center;
     /* Centrar verticalmente */
     justify-content: center;
@@ -50,14 +53,14 @@
     text-align: center;
     /* Centrar texto */
 
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
     overflow: hidden;
     margin-bottom: 20px;
 }
 
 .service-item.selected {
-    height: 550px; /* Ajusta esta altura según sea necesario */
+    height: 650px; /* Ajusta esta altura según sea necesario */
     background-color: rgba(26, 32, 40, 0.70); /* Fondo con opacidad */
 }
 
@@ -126,7 +129,7 @@
 
 .service-icon {
     margin: 0 auto;
-    width: 75px;
+    width: 80px;
     height: 75px;
 }
 
@@ -146,7 +149,7 @@
 .service-text p {
     font-size: 0.9rem;
     margin: 0.5rem 0 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .cta-section {
