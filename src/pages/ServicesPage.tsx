@@ -61,6 +61,16 @@ const ServicesPage: React.FC = () => {
               </div>
             )}
           </div>
+          {selectedService === 0 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-minus"></i>
+            </div>
+          )}
+          {selectedService !== 0 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-plus"></i>
+            </div>
+          )}
         </div>
         <div
           className={`service-item ${selectedService === 1 ? 'selected' : ''}`}
@@ -109,6 +119,16 @@ const ServicesPage: React.FC = () => {
             )}
 
           </div>
+          {selectedService === 1 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-minus"></i>
+            </div>
+          )}
+          {selectedService !== 1 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-plus"></i>
+            </div>
+          )}
         </div>
         <div
           className={`service-item ${selectedService === 2 ? 'selected' : ''}`}
@@ -153,6 +173,16 @@ const ServicesPage: React.FC = () => {
               </div>
             )}
           </div>
+          {selectedService === 2 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-minus"></i>
+            </div>
+          )}
+          {selectedService !== 2 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-plus"></i>
+            </div>
+          )}
         </div>
         <div
           className={`service-item ${selectedService === 3 ? 'selected' : ''}`}
@@ -203,6 +233,16 @@ const ServicesPage: React.FC = () => {
             )}
 
           </div>
+          {selectedService === 3 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-minus"></i>
+            </div>
+          )}
+          {selectedService !== 3 && (
+            <div className="arrow-icon">
+              <i className="fa-solid fa-plus"></i>
+            </div>
+          )}
         </div>
       </div>
       <div className="cta-section">
