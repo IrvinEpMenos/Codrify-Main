@@ -209,13 +209,16 @@
   }
   .li-text {
     margin: 10px 0;
+    margin-left: -10px;
   }
   .oval-container1 {
     height: 30px;
-    width: 18%;
+    width: 90px;
     padding: 3px 10px;
     font-size: 14px;
     text-align: left;
+    margin-left: -12px;
+
   }
 }
 
@@ -247,15 +250,17 @@
   }
 
   .li-text {
-    margin: 8px 0;
+    margin: 4px 0;
     font-size: 14px;
+    margin-left: -20px;
   }
   .oval-container1 {
     height: 30px;
-    width: 30%;
+    width: 90px;
     padding: 3px 10px;
     font-size: 14px;
     text-align: left;
+    margin-left: -25px;
   }
 }
 
