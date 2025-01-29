@@ -1,120 +1,99 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import './css/Home.css';
-import { useState, useEffect } from 'react';
-const AniText = () => {
-  const texts = [
-    "El futuro es ahora",
-    "Tu éxito nuestra misión",
-    "Es hora de evolucionar",
-    "Crea impacto, deja huella",
-    "Conecta, impacta, lidera",
-    "Diseñamos un futuro. Contigo",
-  ];
+"use client";
+import { motion, useScroll, useSpring } from "framer-motion";
 
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+import Video from "./landingPage/video";
+import OurProjects from "./landingPage/OurProjects";
+import OurServices from "./landingPage/OurServices";
+import OurClients from "./landingPage/OurClients";
+import AboutUs from "./landingPage/AboutUs";
+import Business from "./landingPage/Business";
+import OurClients2 from "./landingPage/OurClients2";
+import WhyUs from "./landingPage/WhyUs";
+import ReadyGo from "./landingPage/ReadyGo";
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [texts.length]);
+const contentComponents: { [key: number]: () => JSX.Element } = {
+    1: Video,
+    2: OurClients,
+    3: AboutUs,
+    4: OurServices,
+    5: Business, 
+    6: OurProjects,
+    7: OurClients2,
+    8: WhyUs,
+    9: ReadyGo,
 
-  return (
-    <div className="text-animation-container">
-      <motion.div
-        key={currentTextIndex}
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 50 }}
-        transition={{ duration: 1 }}
-        className="animated-text"
-      >
-        {texts[currentTextIndex]}
-      </motion.div>
-    </div>
-  );
+
 };
 
-const aniBackgroung = () => {
-  return (
-    <>
-      {/* Esquina superior izquierda */}
-      <div className="corner top-left">
-        {[...Array(5)].map((_, index) => (
-          <motion.div
-            key={index}
-            className="circle-line"
-            style={{
-              borderWidth: 2,
-              borderColor: 'blue',
-              width: 400 + index * 200,
-              height: 400 + index * 20,
-            }}
-            variants={{
-              animate: {
-                scale: [1, 1.2, 1],
-                opacity: [0.8, 1, 0.8],
-                transition: {
-                  repeat: Infinity,
-                  duration: 2,
-                  ease: 'easeInOut',
-                },
-              },
-            }}
-            animate="animate"
-          />
-        ))}
-      </div>
+// Main Parallax component
+export default function Parallax() {
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 50,
+        damping: 30,
+        restDelta: 0.001,
+    });
 
-      {/* Esquina inferior derecha */}
-      <div className="corner bottom-right">
-        {[...Array(5)].map((_, index) => (
-          <motion.div
-            key={index}
-            className="circle-line"
-            style={{
-              borderWidth: 2,
-              borderColor: 'red',
-              width: 40 + index * 20,
-              height: 40 + index * 20,
-            }}
-            variants={{
-              animate: {
-                scale: [1, 1.2, 1],
-                opacity: [0.8, 1, 0.8],
-                transition: {
-                  repeat: Infinity,
-                  duration: 2,
-                  ease: 'easeInOut',
-                },
-              },
-            }}
-            animate="animate"
-          />
-        ))}
-      </div>
-    </>
-  );
-};
+    return (
+        <div id="example">
+            {[1, 2, 3, 4,5 , 6, 7, 8, 9].map((id) => {
+                const ContentComponent = contentComponents[id] || (() => <div className="last">Default content</div>);
+                return (
+                    <section key={id} className="Content-container">
+                        <motion.div
+                            initial={{ visibility: "hidden" }}
+                            animate={{ visibility: "visible" }}
+                        >
+                            <ContentComponent />
+                        </motion.div>
+                    </section>
+                );
+            })}
+            <motion.div className="progress" style={{ scaleX }} />
+            <style>{`
+                html {
+                    scroll-snap-type: y mandatory;
+                }
 
+                .Content-container {
+                    height:100vh;
+                    scroll-snap-align: start;
+                    position: relative;
+                }
+                
+                .navbar, footer {
+                scroll-snap-align: start;
+                }
 
-const HomePage: React.FC = () => {
-  return (
-    <div className="home-background">
-      {aniBackgroung()}
-    <div className="container">
-      <div className="home">
-        <div className="home-title">
-          <div className="home-title-text">
-            <AniText />
-          </div>
+                .Content-container div {
+                    color:fff;
+                    margin: 0;
+                }
+
+                .text-animation-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 2em;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                }
+
+                
+                .progress {
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    height: 5px;
+                    background: #4AA0B3;
+                    bottom: 50px;
+                    transform: scaleX(0);
+                }
+            `}</style>
         </div>
-      </div>
-    </div>
-    </div>
-  );
-};
+    );
+}
 
-export default HomePage;
+
+
+
