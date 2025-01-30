@@ -1,15 +1,28 @@
+import "./css/AboutUSLanding.css";
+import Group from "../../assets/icon/Group.svg";
 export default function AboutUs() {
     return (
-        <div>
-        <div className="container-middel">
-            <div className="clients">
-            <div className="clients-title">
-                <div className="clients-title-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda, atque sed ex tempora quidem vero quas voluptates nemo corporis. Illo labore commodi rem maxime quidem deserunt modi quas animi?
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    );
-    }
+        <section className="about-section">
+      <div className="about-header">
+        <img src={Group} alt="Icono de usuario" className="about-icon" />
+        <h2>Sobre Nosotros</h2>
+      </div>
+      <div className="about-content">
+        <h3>
+          <strong>¿Quiénes Somos?</strong>
+        </h3>
+        <p>
+          En Codrify Consulting, somos una firma de consultoría tecnológica dedicada a transformar el
+          potencial de las pequeñas y medianas empresas (pymes) mediante la implementación de
+          herramientas innovadoras como la inteligencia artificial, la automatización y tecnologías digitales avanzadas.
+        </p>
+      </div>
+      <div className="about-banner" style={{ backgroundImage: `)` }}>
+        <h1>
+          " <span className="highlight">innovamos</span> tu negocio <br />
+          <span className="highlight">transformamos</span> tu futuro "
+        </h1>
+      </div>
+    </section>
+  );
+};

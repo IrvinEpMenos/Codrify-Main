@@ -1,0 +1,81 @@
+.about-section {
+  background-color: #0a0a2500;
+  color: white;
+  padding: 60px 20px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.about-content {
+  max-width: 900px;
+  padding: 100px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 1000px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+
+}
+
+.about-subtitle {
+  font-size: 200px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.about-banner {
+  margin-top: 30px;
+  padding: 60px 20px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.about-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.144);
+  border-radius: 15px;
+}
+
+.about-banner-text {
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #4aa0b3;
+}
