@@ -69,17 +69,7 @@ export default function Parallax() {
                     color:fff;
                     margin: 0;
                 }
-
-                .text-animation-container {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                font-size: 2em;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                }
-
-                
+                    
                 .progress {
                     position: fixed;
                     left: 0;

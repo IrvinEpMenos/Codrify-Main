@@ -37,53 +37,29 @@ const AniText = () => {
   );
 };
 
-const WavyLinesSVG: React.FC = () => {
-  const lines = Array.from({ length: 20 }, (_, i) => i);
-
-  return (
-    <div className="gradient-background">
-      <svg
-        width="100%"
-        height="100%"
-        viewBox="0 0 800 600"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "relative",
-        }}
-      >
-        {lines.map((_, i) => (
-          <motion.path
-            key={i}
-            d={`M0,${100 + i * 20} Q400,${i % 2 === 0 ? 50 : 150} 800,${
-              100 + i * 20
-            }`}
-            stroke="white"
-            fill="none"
-            strokeWidth="3"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 1,
-              delay: i * 0.1,
-            }}
-          />
-        ))}
-      </svg>
-    </div>
-  );
-};
-
 
 
 export default function Video() {
     return (
         <div>
-            <WavyLinesSVG />
             <div>
                 {AniText()}
             </div>
+            <style>
+                {`
+                .gradient-background {
+
+                }
+                .text-animation-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 5em;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                }
+                `}
+            </style>
         </div>
     );
 }
