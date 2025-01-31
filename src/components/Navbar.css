@@ -20,8 +20,8 @@
 }
 
 .logo-image {
-  width: 150px;
-  height: 75px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
 }
 
@@ -209,22 +209,25 @@
   }
   .li-text {
     margin: 10px 0;
-    margin-left: -10px;
+    text-align: center;
+    font-size: 19px;
   }
   .oval-container1 {
-    height: 30px;
-    width: 90px;
+    height: 40px;
+    width: 110px;
     padding: 3px 10px;
-    font-size: 14px;
-    text-align: left;
-    margin-left: -12px;
+    font-size: 19px;
+    text-align: center;
+    margin: auto;
 
   }
 }
 
 @media (max-width: 480px) {
   .navbar{
-    margin-top: -10px;
+    padding: 10px 10px;
+    height: 60px;
+    width: 100%;
   }
   .navbar-logo {
   width: 120px;
@@ -241,7 +244,7 @@
   }
 
   .bar {
-    width: 20px;
+    padding-left: 10px;
     height: 2.5px;
   }
 
@@ -251,67 +254,37 @@
 
   .li-text {
     margin: 4px 0;
-    font-size: 14px;
-    margin-left: -20px;
+    font-size: 16px;
+    text-align: center;
   }
   .oval-container1 {
     height: 30px;
-    width: 90px;
+    width: 95px;
     padding: 3px 10px;
-    font-size: 14px;
-    text-align: left;
-    margin-left: -25px;
-  }
+    font-size: 16px;
+    text-align: center;
 }
-
-@media (max-width: 320px) {
+}
+@media (max-width: 360px) {
   .navbar {
-    padding: 8px 10px;
-    height: 60px;
+    width: 100%;
+    padding-right: 0px;
   }
 
   .navbar-logo {
     width: 100px;
   }
 
-  .logo-image {
-    width: 80px;
-    height: auto;
-  }
-
-  .hamburger-menu {
-    gap: 3px;
-  }
-
-  .bar {
-    width: 18px;
-    height: 2px;
-  }
-
-  .navbar.active .navbar-links {
-    top: 60px;
-    font-size: 14px;
-  }
-
-  .li-text {
-    font-size: 12px;
-  }
-
   .oval-container1 {
-    height: 30px;
-    padding: 3px 5px;
+    height: 26px;
+    width: 30%;
+    padding: 2px 6px;
+    font-size: 15px;
+    text-align: center;
   }
 
-  .language-select {
-    height: 25px;
-    width: 25px;
-  }
-
-  .language-options {
-    padding: 5px;
-  }
-
-  .language-option img {
-    width: 20px;
+  .navbar-links {
+    gap: 8px;
+    font-size: 15px;
   }
 }

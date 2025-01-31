@@ -3,11 +3,11 @@ import Group from "../../assets/icon/Group.svg";
 export default function AboutUs() {
     return (
         <section className="about-section">
+            <img src={Group} alt="Icono de usuario" className="about-icon" />
       <div className="about-header">
-        <img src={Group} alt="Icono de usuario" className="about-icon" />
         <h2>Sobre Nosotros</h2>
       </div>
-      <div className="about-content">
+        <div className="about-content">
         <h3>
           <strong>¿Quiénes Somos?</strong>
         </h3>
