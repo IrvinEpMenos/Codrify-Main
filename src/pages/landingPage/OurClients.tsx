@@ -1,18 +1,15 @@
-import './css/OurClients.css';
 export default function OurClients() {
     return (
         <div>
         <div className="container-middel">
             <div className="clients">
-                <ul>
-                    <li>Empresa 1</li>
-                    <li>Empresa 2</li>
-                    <li>Empresa 3</li>
-                    <li>Empresa 4</li>
-                    <li>Empresa 5</li>
-                </ul>
+            <div className="clients-title">
+                <div className="clients-title-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda, atque sed ex tempora quidem vero quas voluptates nemo corporis. Illo labore commodi rem maxime quidem deserunt modi quas animi?
+                </div>
             </div>
             </div>
+        </div>
         </div>
     );
     }
