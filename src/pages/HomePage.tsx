@@ -64,12 +64,7 @@ export default function Parallax() {
                 .navbar, footer {
                 scroll-snap-align: start;
                 }
-
-                .Content-container div {
-                    color:fff;
-                    margin: 0;
-                }
-                    
+ 
                 .progress {
                     position: fixed;
                     left: 0;
