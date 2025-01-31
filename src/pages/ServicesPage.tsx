@@ -63,12 +63,12 @@ const ServicesPage: React.FC = () => {
           </div>
           {selectedService === 0 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-minus"></i>
+              <i className="fa-solid fa-arrow-up-long"></i>
             </div>
           )}
           {selectedService !== 0 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-plus"></i>
+              <i className="fa-solid fa-arrow-down-long"></i>
             </div>
           )}
         </div>
@@ -121,12 +121,12 @@ const ServicesPage: React.FC = () => {
           </div>
           {selectedService === 1 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-minus"></i>
+              <i className="fa-solid fa-arrow-up-long"></i>
             </div>
           )}
           {selectedService !== 1 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-plus"></i>
+              <i className="fa-solid fa-arrow-down-long"></i>
             </div>
           )}
         </div>
@@ -175,12 +175,12 @@ const ServicesPage: React.FC = () => {
           </div>
           {selectedService === 2 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-minus"></i>
+              <i className="fa-solid fa-arrow-up-long"></i>
             </div>
           )}
           {selectedService !== 2 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-plus"></i>
+              <i className="fa-solid fa-arrow-down-long"></i>
             </div>
           )}
         </div>
@@ -235,12 +235,12 @@ const ServicesPage: React.FC = () => {
           </div>
           {selectedService === 3 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-minus"></i>
+              <i className="fa-solid fa-arrow-up-long"></i>
             </div>
           )}
           {selectedService !== 3 && (
             <div className="arrow-icon">
-              <i className="fa-solid fa-plus"></i>
+              <i className="fa-solid fa-arrow-down-long"></i>
             </div>
           )}
         </div>
