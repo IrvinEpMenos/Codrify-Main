@@ -1,3 +1,26 @@
+.curved-line {
+  position: absolute;
+  top: 10px;  /* Ajusta la posición vertical */
+  left: 250px; /* Ajusta la alineación horizontal */
+  width: 100px; /* Ancho del SVG */
+  height: 200px; /* Altura total */
+}
+
+.Puntos-Blancos {
+  position: relative;
+  top: 80px;
+  left: 510px;
+}
+.Puntos-Blancos2{
+  position: relative;
+  top: 540px;
+  right: 500px;
+}
+.Puntos-Blancos3{
+  position: relative;
+  bottom: 30px;
+  right: 400px;
+}
 .about-section {
   background-color: #0a0a2500;
   color: white;
@@ -8,8 +31,8 @@
 .about-header h2 {
   display: flex;
   gap: 12px;
-  margin-bottom: 20px;
-  margin-left: 400px;
+  margin-bottom: 30px;
+  margin-left: 300px;
 }
 
 .about-title {
@@ -18,44 +41,55 @@
 }
 
 .about-icon {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   background: linear-gradient(136.57deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
   display: flex;
   box-sizing: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.438);
 }
 .about-icon {
-  margin-left: 430px;
+  margin-top: -100px;
+  margin-left: 330px;
   margin-bottom:40px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .about-content {
+  margin-top: -15px;
+  margin-left: 300px;
   max-width: 900px;
-  padding: 50px;
+  height: 450px;
+  padding: 30px;
   background: rgba(255, 255, 255, 0);
-  border-radius: 100px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.226);
+}
+.about-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: justify;
+}
+.about-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -20px;
+  text-align: left;
 }
 
 .about-subtitle {
   font-size: 20px;
-  text-align: left;
 }
 
 .about-text {
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 20px;
 }
 
 .about-banner {
-  margin-top: 30px;
-  padding: 60px 20px;
-  background-size: cover;
+  padding: 60px 30px;
   background-position: center;
   border-radius: 15px;
   display: flex;
@@ -71,17 +105,20 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 250px;
   background: rgba(0, 0, 0, 0.144);
   border-radius: 15px;
+  margin-top: 20px;
 }
-
 .about-banner-text {
   position: relative;
   font-size: 36px;
   font-weight: bold;
   color: white;
   z-index: 1;
+}
+.about-banner h1 {
+  margin-top: 20px;
 }
 
 .highlight {
