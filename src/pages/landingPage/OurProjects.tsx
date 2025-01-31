@@ -1,29 +1,41 @@
-export default function OurProjects() {
+import React from 'react';
+import './css/carrusel.css'; // Importa el archivo CSS
+
+const Carousel = () => {
+    const items = [
+        { id: 1, title: 'Project 1', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 2, title: 'Project 2', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 3, title: 'Project 3', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 4, title: 'Project 4', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 5, title: 'Project 5', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    ];
+
     return (
-        <div className="our-projects">
-        <div className="our-projects-title">
-            <h1>Our Projects</h1>
-        </div>
-        <div className="our-projects-content">
-            <div className="our-projects-content-item">
-            <div className="our-projects-content-item-title">
-                <h2>Project 1</h2>
+        <div className="carousel-container">
+            <button className="carousel-button prev" onClick={() => {}}>‹</button>
+            <div className="carousel">
+                {/* Elementos originales */}
+                {items.map(item => (
+                    <div className="carousel-item" key={item.id}>
+                        <div className="card">
+                            <h2>{item.title}</h2>
+                            <p>{item.content}</p>
+                        </div>
+                    </div>
+                ))}
+                {/* Duplicar los elementos para el bucle infinito */}
+                {items.map(item => (
+                    <div className="carousel-item" key={`duplicate-${item.id}`}>
+                        <div className="card">
+                            <h2>{item.title}</h2>
+                            <p>{item.content}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
-            <div className="our-projects-content-item-description">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                pulvinar, nunc nec lacinia gravida, nunc eros ultricies sapien, nec
-                aliquet nunc purus eu ligula. Donec euismod, justo ac tincidunt
-                malesuada, sapien nunc ultricies nunc, vel luctus odio nunc ac
-                </p>
-            </div>
-            </div>
-            <div className="our-projects-content-item">
-            <div className="our-projects-content-item-title">
-                <h2>Project 2</h2>
-            </div>
-            </div>
-            </div>
+            <button className="carousel-button next" onClick={() => {}}>›</button>
         </div>
     );
-}
+};
+
+export default Carousel;
