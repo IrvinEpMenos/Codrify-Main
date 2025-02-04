@@ -126,7 +126,7 @@
 
 @media (max-width: 480px) {
     .service-item {
-        padding: 1rem;
+        padding: 3rem;
         /* Reducir aún más el padding en pantallas muy pequeñas */
     }
 
