@@ -95,7 +95,9 @@
   background: linear-gradient(to bottom right, #4facfe, #00f2fe);
 }
 
-/* ESTILOS DE OUR PROJECTS */
+/* ESTILOS DE OUR PROJECTS ----------------------------------------------------------------------------------------------------------------------------*/
+
+
 /* Contenedor principal */
 .main-container {
   display: flex;
@@ -182,7 +184,7 @@
 
 
 
-/* ESTILOS DE BUSINESS */
+/* ESTILOS DE BUSINESS ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /* Estilos generales */
