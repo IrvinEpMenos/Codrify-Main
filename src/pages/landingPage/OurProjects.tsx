@@ -13,12 +13,12 @@ const Cards = () => {
             <h1 className="title">Nuestros Proyectos</h1>
             <div className="cards-container">
                 {items.map((item) => (
-                    <div className="card" key={item.id}>
-                        <div className="card-header">
+                    <div className="card2" key={item.id}>
+                        <div className="card2-header">
                             <span className="star">⭐</span>
                             <h2>{item.title}</h2>
                         </div>
-                        <img src={item.image} alt={item.title} className="card-image" />
+                        <img src={item.image} alt={item.title} className="card2-image" />
                     </div>
                 ))}
             </div>

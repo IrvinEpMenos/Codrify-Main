@@ -20,7 +20,7 @@
 }
 
 /* Card */
-.card {
+.card2 {
     backdrop-filter: blur(8px);
     border-radius: 15px;
     width: 300px;
@@ -31,12 +31,12 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.card:hover {
+.card2:hover {
     transform: scale(1.05);
 }
 
 /* Cabecera */
-.card-header {
+.card2-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@
 }
 
 /* Imagen */
-.card-image {
+.card2-image {
     width: 100%;
     height: 200px; /* Ajusta el tamaño de la imagen */
     border-radius: 10px;
