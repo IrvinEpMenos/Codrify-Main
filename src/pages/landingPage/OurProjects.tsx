@@ -13,7 +13,7 @@ const Cards = () => {
     return (
         <div className="main-container">
             <h1 className="title">Nuestros Proyectos</h1>
-            <div className="cards-container">
+            <div className="cards2-container">
                 {items.map((item) => (
                     <div className="card2" key={item.id}>
                         <div className="card2-header">
