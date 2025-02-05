@@ -16,7 +16,7 @@ const contentComponents: { [key: number]: () => JSX.Element } = {
     2: OurClients,
     3: AboutUs,
     4: OurServices,
-    5: Business, 
+    5: Business,
     6: OurProjects,
     7: OurClients2,
     8: WhyUs,
