@@ -1,31 +1,29 @@
-
-.services {
+.services-Landing {
     color: white;
     text-align: center;
     padding: 4rem 1rem;
   }
-  
-  .title {
+
+  .services-Landing h2 {
     margin-top:-60px ;
     font-size: 2rem;
     font-weight: bold;
   }
-  
+
   .subtitle {
     color: #999;
     margin-top: -20px;
   }
-  
+
   .container-services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8rem;
-    max-width: 1000px;
+    max-width: 1000px;;
   }
-  
+
   .service-item1 {
     display: flex;
-    align-items: flex-start;
     gap: 0.5rem;
     text-align: left;
   }
@@ -34,7 +32,6 @@
     align-items: flex-start;
     gap: 0.5rem;
     text-align: left;
-    left: 350px;
   }
   .service-item3 {
     display: flex;
@@ -50,25 +47,24 @@
     text-align: left;
     left: 350px;
   }
-  
+
   .icon {
     font-size: 1.2rem;
     flex-shrink: 0;
   }
-  
+
   .service-title {
     font-weight: bold;
     font-size: 1rem;
   }
-  
+
   .service-description {
     color: #bbb;
     font-size: 0.8rem;
   }
-  
+
   @media (max-width: 768px) {
     .services-container {
       grid-template-columns: 1fr;
     }
   }
-  

@@ -5,8 +5,8 @@ import nut from "../../assets/icon/nut.svg";
 import stats from "../../assets/icon/stats.svg";
 export default function Services() {
   return (
-    <section className="services">
-      <h2 className="title">Nuestros Servicios</h2>
+    <section className="services-Landing">
+      <h2>Nuestros Servicios</h2>
       <p className="subtitle">Todo lo que necesitas - en un solo sitio.</p>
       <div className="container-services">
         <div className="service-item1">

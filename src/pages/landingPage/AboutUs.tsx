@@ -1,9 +1,8 @@
-import React from "react";
 import "./css/AboutUSLanding.css";
 import Group from "../../assets/icon/Group.svg";
 import PuntosBlancos from "../../assets/img/PuntosBlancos.png";
 
-const AboutUs: React.FC = () => {
+export default function AboutUs() {
   return (
     <section className="sect-about">
       <img src={PuntosBlancos} alt="Puntos blancos" className="Puntos-Blancos" />
@@ -36,5 +35,3 @@ const AboutUs: React.FC = () => {
     </section>
   );
 };
-
-export default AboutUs;
