@@ -1,4 +1,4 @@
-import "../css/Home.css";
+import "./css/Business.css";
 import motor from "../../assets/img/motornegocio.jpg"
 
 export default function Business() {

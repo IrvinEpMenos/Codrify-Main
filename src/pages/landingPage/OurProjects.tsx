@@ -1,23 +1,26 @@
 /*Cambiar nombre de cards2 */
 
 import React from "react";
-import "../css/Home.css";
+import "./css/proyectos.css";
+import ex1 from "../../assets/img/exito1.png"
+import ex2 from "../../assets/img/exito2.png"
+import ex3 from "../../assets/img/exito3.png"
 
 const Cards = () => {
     const items = [
-        { id: 1, title: "Ejemplo 1", image: "/img1.jpg" },
-        { id: 2, title: "Ejemplo 2", image: "/img2.jpg" },
-        { id: 3, title: "Ejemplo 3", image: "/img3.jpg" }
+        { id: 1, title: "Pipol Music", image: ex1 },
+        { id: 2, title: "Market Pipol", image: ex2 },
+        { id: 3, title: "Steren Pipol", image: ex3 }
     ];
 
     return (
         <div className="main-container">
-            <h1 className="title">Nuestros Proyectos</h1>
-            <div className="cards-container">
+            <h1 className="title">Nuestros más recientes éxitos</h1>
+            <div className="cards2-container">
                 {items.map((item) => (
                     <div className="card2" key={item.id}>
                         <div className="card2-header">
-                            <span className="star">⭐</span>
+                            <i className="star fa-regular fa-star"></i>
                             <h2>{item.title}</h2>
                         </div>
                         <img src={item.image} alt={item.title} className="card2-image" />
