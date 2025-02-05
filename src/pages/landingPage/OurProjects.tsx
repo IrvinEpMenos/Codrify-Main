@@ -1,7 +1,7 @@
 /*Cambiar nombre de cards2 */
 
 import React from "react";
-import "../css/Home.css";
+import "./css/proyectos.css";
 
 const Cards = () => {
     const items = [
