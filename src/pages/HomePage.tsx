@@ -1,6 +1,6 @@
 "use client";
 import { motion, useScroll, useSpring } from "framer-motion";
-
+import "./css/Home.css";
 import Video from "./landingPage/video";
 import OurProjects from "./landingPage/OurProjects";
 import OurServices from "./landingPage/OurServices";
@@ -50,36 +50,6 @@ export default function Parallax() {
                 );
             })}
             <motion.div className="progress" style={{ scaleX }} />
-            <style>{`
-                html {
-                    scroll-snap-type: y mandatory;
-                }
-
-                .Content-container {
-                    height:100vh;
-                    scroll-snap-align: start;
-                    position: relative;
-                }
-                
-                .navbar, footer {
-                scroll-snap-align: start;
-                }
-
-                .Content-container div {
-                    color:fff;
-                    margin: 0;
-                }
-                    
-                .progress {
-                    position: fixed;
-                    left: 0;
-                    right: 0;
-                    height: 5px;
-                    background: #4AA0B3;
-                    bottom: 50px;
-                    transform: scaleX(0);
-                }
-            `}</style>
         </div>
     );
 }

@@ -1,13 +1,35 @@
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
+html {
+  scroll-snap-type: y mandatory;
 }
 
+.Content-container {
+  min-height: 50vh;  /* Asegura que no sea más pequeño que la pantalla */
+  height: auto;       /* Ajusta la altura al contenido */
+  scroll-snap-align: start;
+  position: relative;
+}
+
+
+.navbar, footer {
+scroll-snap-align: start;
+}
+
+.Content-container div {
+  color:fff;
+  margin: 0;
+}
+  
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #4AA0B3;
+  bottom: 50px;
+  transform: scaleX(0);
+}
+
+/* ESTILOS DE HOME ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .home {
   position: relative;
   width: 100%;
@@ -283,7 +305,7 @@
 /* ESTILOS DE OurClients ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .our-clients {
   text-align: center;
-  padding: 40px;
+  padding: 400px;
 }
 
 .container-top h1 {
