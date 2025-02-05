@@ -279,3 +279,59 @@
 .spacer {
   height: 50px;
 }
+
+/* ESTILOS DE OurClients ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.our-clients {
+  text-align: center;
+  padding: 40px;
+}
+
+.container-top h1 {
+  font-size: 2rem;
+}
+
+.container-middel {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.list-clients {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row; /* Cambio a fila para disposición horizontal */
+  gap: 20px; /* Espaciado entre los elementos */
+}
+
+.list-clients li {
+  position: relative;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-clients li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.client-info {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 300px; /* Ajusta según sea necesario */
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  font-size: 0.9rem;
+  text-align: center;
+  z-index: 10;
+  white-space: normal; /* Permite que el texto se ajuste automáticamente */
+  background: #333;
+  
+}
