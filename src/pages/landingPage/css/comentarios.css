@@ -1,0 +1,95 @@
+.main-com {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.clientes-container {
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.logo-containerCom {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: linear-gradient(137deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.clientes-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.clientes-header span {
+    color: #00bcd4;
+}
+
+.clientes-header p {
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.clientes-testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonio {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cargo {
+    font-size: 14px;
+    color: #00bcd4;
+}
+
+.comentario {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.colorCom {
+    background-image: linear-gradient(137deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
+    /* Degradado de rojo a azul */
+    -webkit-background-clip: text;
+    /* Para navegadores basados en WebKit (Chrome, Safari) */
+    background-clip: text;
+    /* Estándar */
+    color: transparent;
+    /* Hace que el color del texto sea transparente para que se vea el degradado */
+}

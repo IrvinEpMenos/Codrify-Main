@@ -1,6 +1,5 @@
 /*Cambiar nombre de cards2 */
 
-import React from "react";
 import "./css/proyectos.css";
 import ex1 from "../../assets/img/exito1.png"
 import ex2 from "../../assets/img/exito2.png"
