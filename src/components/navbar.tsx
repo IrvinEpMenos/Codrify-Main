@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/img/logoBlanco.svg';
@@ -9,6 +9,18 @@ const Navbar: React.FC = () => {
   const [language, setLanguage] = useState('es');
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const newOpacity = Math.max(1 - scrollY / 500, 0.3);
+      setOpacity(newOpacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleLanguageChange = (lang: string) => {
     setLanguage(lang);
@@ -17,7 +29,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className='header-link'>
-      <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
+      <nav className={`navbar ${menuOpen ? 'active' : ''}`} style={{ opacity }}>
         <div className="navbar-logo">
           <Link to="/">
             <img src={logo} alt="Logo" className="logo-image" />
