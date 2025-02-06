@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect} from 'react';
-import './css/video.css';
+import "../css/back.css"; 
+
 const AniText = () => {
   const texts = [
     "El futuro es ahora",
@@ -40,10 +41,25 @@ const AniText = () => {
 
 export default function Video() {
     return (
-        <div className="Video">
+        <div>
             <div>
                 {AniText()}
             </div>
+            <style>
+                {`
+                .gradient-background {
+
+                }
+                .text-animation-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 5em;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                }
+                `}
+            </style>
         </div>
     );
 }

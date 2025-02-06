@@ -11,7 +11,7 @@ import OurClients2 from "./landingPage/OurClients2";
 import WhyUs from "./landingPage/WhyUs";
 import ReadyGo from "./landingPage/ReadyGo";
 
-const contentComponents: { [key: number]: React.FC } = {
+const contentComponents: { [key: number]: () => JSX.Element } = {
     1: Video,
     2: OurClients,
     3: AboutUs,
