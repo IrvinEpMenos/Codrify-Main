@@ -1,5 +1,6 @@
 
 .navbar {
+  position: fixed;
   font-family: poppins, sans-serif;
   display: flex;
   justify-content: space-between;
