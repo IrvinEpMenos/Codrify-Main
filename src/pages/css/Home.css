@@ -3,7 +3,7 @@ html {
 }
 
 .Content-container {
-  min-height: 50vh;  /* Asegura que no sea más pequeño que la pantalla */
+  min-height:90h;  /* Asegura que no sea más pequeño que la pantalla */
   height: auto;       /* Ajusta la altura al contenido */
   scroll-snap-align: start;
   position: relative;
