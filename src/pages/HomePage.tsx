@@ -13,9 +13,9 @@ import ReadyGo from "./landingPage/ReadyGo";
 
 const contentComponents: { [key: number]: () => JSX.Element } = {
     1: Video,
-    2: OurClients,
-    3: AboutUs,
-    4: OurServices,
+    2: AboutUs,
+    3: OurServices,
+    4: OurClients,
     5: Business,
     6: OurProjects,
     7: OurClients2,
