@@ -1,12 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import "./css/video.css"; 
-import svg1 from "../../assets/img/1.svg";
-import svg2 from "../../assets/img/2.svg";
-import svg3 from "../../assets/img/3.svg";
-import svg4 from "../../assets/img/4.svg";
-import svg5 from "../../assets/img/5.svg";
-import svg6 from "../../assets/img/6.svg";
+import video from "../../assets/img/video.mp4";
 
 const AniText = () => {
   const texts = [
@@ -44,28 +39,13 @@ const AniText = () => {
 };
 
 export default function Video() {
-  const images = [svg1, svg2, svg3, svg4, svg5, svg6];
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // Intervalo más largo
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
     <div className="video-container">
-      <motion.img
-        key={currentImageIndex}
-        src={images[currentImageIndex]}
-        alt="Background SVG"
-        className="background-image"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 1.1 }}
-        transition={{ duration: 2, ease: "easeInOut" }}
-      />
+<video autoPlay loop muted playsInline className="w-full h-auto">
+  <source src={video} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
       <AniText />
     </div>
   );
