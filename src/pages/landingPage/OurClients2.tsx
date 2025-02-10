@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/comentarios.css";
 import irvin from "../../assets/img/IRVIN.jpeg"
 import jona from "../../assets/img/JONA.jpeg"

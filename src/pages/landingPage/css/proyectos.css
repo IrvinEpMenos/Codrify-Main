@@ -4,11 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  /* Ocupa al menos el 100% de la altura de la pantalla */
+  min-height: 100vh; /* Ocupa al menos el 100% de la altura de la pantalla */
   padding: 20px;
-  box-sizing: border-box;
-  /* Incluye el padding en el cálculo del tamaño */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
 }
 
 /* Contenedor de las cards */
@@ -18,8 +16,7 @@
   align-items: center;
   gap: 50px;
   padding: 20px;
-  flex-wrap: wrap;
-  /* Para que las cards se ajusten en pantallas pequeñas */
+  flex-wrap: wrap; /* Para que las cards se ajusten en pantallas pequeñas */
 }
 
 /* Card */
@@ -27,13 +24,11 @@
   backdrop-filter: blur(8px);
   border-radius: 15px;
   width: 300px;
-  height: 450px;
-  /* Aumentar la altura */
+  height: 450px; /* Aumentar la altura */
   padding: 20px;
   text-align: center;
   color: white;
-  background-color: rgba(255, 255, 255, 0.1);
-  /* Fondo más transparente */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo más transparente */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
@@ -42,7 +37,7 @@
   transform: scale(1.05);
 }
 
-/* Cabecera */
+/* Cabecera de la card */
 .card2-header {
   display: flex;
   flex-direction: column;
@@ -50,26 +45,24 @@
   margin-bottom: 15px;
 }
 
-/* Icono de estrella */
+/* Icono de estrella en la card */
 .star {
   font-size: 24px;
   margin-bottom: 5px;
 }
 
-/* Imagen */
+/* Imagen dentro de la card */
 .card2-image {
   width: 100%;
-  height: 300px;
-  /* Ajusta el tamaño de la imagen */
+  height: 300px; /* Ajusta el tamaño de la imagen */
   border-radius: 10px;
-  object-fit: cover;
-  /* Para que la imagen se ajuste correctamente */
+  object-fit: cover; /* Para que la imagen se ajuste correctamente */
 }
 
+/* Título de la sección */
 .title {
   text-align: center;
-  margin-bottom: 20px;
-  /* Espaciado debajo del título */
+  margin-bottom: 20px; /* Espaciado debajo del título */
 }
 
 /* Estilos del contenedor del SVG */
@@ -91,4 +84,29 @@
 .logo-container svg {
   width: 100%;
   height: 100%;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .card2 {
+      width: 250px;
+      height: 400px;
+  }
+  .card2-image {
+      height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards2-container {
+      gap: 20px;
+  }
+  .card2 {
+      width: 90%;
+      height: auto;
+      padding: 15px;
+  }
+  .card2-image {
+      height: auto;
+  }
 }
