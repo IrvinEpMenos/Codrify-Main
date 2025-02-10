@@ -129,7 +129,7 @@
   }
 }
 
-@media (max-width: 4024px) {
+@media (min-width: 4024px) {
   .title {
     margin-top: -40px;
     font-size: 3rem;
