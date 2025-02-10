@@ -1,0 +1,15 @@
+.text-animation-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+    .video-container {
+    }
+
+    .background-image {
+    }
+
