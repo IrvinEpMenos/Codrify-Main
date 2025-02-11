@@ -1,6 +1,6 @@
 import "./css/OurClients.css";
 import LogoWall from '../../../reactBits/LogoWall/LogoWall';
-import coca from '../../assets/img/coca.jpeg'
+import coca from '../../assets/img/coca2.png'
 import pepsi from '../../assets/img/pepsi.png'
 import big from '../../assets/img/bigCola.png'
 import royal from '../../assets/img/royal.png'
