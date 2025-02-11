@@ -5,7 +5,7 @@
 }
 
 .title {
-  margin-top: -60px;
+  margin-top:-60px ;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -34,14 +34,13 @@
   padding-right: 10px;
 }
 
-.icon-servnut {
+.icon-servnut{
   font-size: 1.7rem;
   flex-shrink: 0;
   padding-right: 10px;
   margin-bottom: -2px;
 }
-
-.icon-servcerebro {
+.icon-servcerebro{
   font-size: 1.7rem;
   flex-shrink: 0;
   padding-right: 10px;
@@ -53,14 +52,12 @@
   margin-top: 50px;
   margin-left: 100px;
 }
-
 .serv-title2 {
   font-weight: bold;
   font-size: 1rem;
   margin-left: 700px;
   margin-top: -145px;
 }
-
 .serv-title3 {
   font-weight: bold;
   font-size: 1rem;
@@ -111,36 +108,19 @@
   margin-left: 950px;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem;
-  }
-  
-  .serv-title1, .serv-title2, .serv-title3, .serv-title4 {
-    margin-left: 10px;
-    text-align: center;
-  }
-  
-  .serv-description1, .serv-description2, .serv-description3, .serv-description4 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
-
-@media (min-width: 4024px) {
+/*Responsive design*/
+@media (max-width: 1024px) {
   .title {
     margin-top: -40px;
     font-size: 3rem;
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 550px;
   }
   
   .subtitle {
     color: #c2c1c1cb;
     margin-top: -20px;
-    margin-left: 50px;
+    margin-left: 550px;
     font-size: 1.5rem;
   }
   
@@ -203,8 +183,9 @@
   .serv-title4 {
     font-weight: bold;
     font-size: 2rem;
-    margin-left: 1690px;
+    margin-left: 1490px;
     margin-top: -250px;
+    text-align: left;
   }
   
   .serv-description1 {
@@ -242,23 +223,4 @@
     padding-left: 5px;
     margin-left: 1690px;
   }
-  
-  @media (max-width: 768px) {
-    .title {
-      font-size: 1.5rem;
-    }
-    
-    .serv-title1, .serv-title2, .serv-title3, .serv-title4 {
-      margin-left: 10px;
-      text-align: center;
-    }
-    
-    .serv-description1, .serv-description2, .serv-description3, .serv-description4 {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-  }
-  
 }
