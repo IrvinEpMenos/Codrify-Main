@@ -1,42 +1,44 @@
+/* Home.css */
+
+/* Ensures sections take full viewport height for parallax effect */
+.Content-container {
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+}
+
+/* Progress bar animation */
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #4AA0B3, #007893);
+  transform-origin: left;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Smooth scrolling */
 html {
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 
-.Content-container {
-  min-height:90vh;  /* Asegura que no sea más pequeño que la pantalla */
-  height: auto;       /* Ajusta la altura al contenido */
+/* Optional: Snap scrolling for better parallax experience */
+body {
+  overflow-y: scroll;
+
+}
+
+.space{
+  height: 1px;
   scroll-snap-align: start;
-  position: relative;
-}
-
-
-.navbar, footer {
-scroll-snap-align: start;
-}
-  
-.progress {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: #4AA0B3;
-  bottom: 50px;
-  transform: scaleX(0);
-}
-
-/* ESTILOS DE HOME ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.home {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* O ajusta según el diseño necesario */
-  overflow: hidden;
-}
-
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
