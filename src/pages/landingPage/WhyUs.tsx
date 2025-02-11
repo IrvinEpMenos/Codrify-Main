@@ -20,7 +20,7 @@ export default function WhyUs() {
 
             <div className="whyus-cards">
                 {/* Tarjeta 1 */}
-                <div className="whyus-card">
+                <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
                     <div className="whyus-card-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
                             <path d="M26.5624 15C24.8725 15 23.2483 14.2453 21.9686 12.8836C20.73 11.5547 19.9671 9.77461 19.8358 7.87969C19.6964 5.86172 20.3116 3.99961 21.5667 2.64609C22.8218 1.30078 24.5936 0.5625 26.5624 0.5625C28.5147 0.5625 30.2866 1.30898 31.5417 2.6543C32.8132 4.01602 33.4284 5.86992 33.2807 7.87148C33.1413 9.76641 32.3866 11.5465 31.1479 12.8754C29.8764 14.2453 28.2522 15 26.5624 15ZM26.5624 3.1875C25.3319 3.1875 24.2409 3.63047 23.4944 4.43437C22.7233 5.26289 22.3706 6.38672 22.4608 7.69102C22.5511 8.98711 23.0597 10.2012 23.8964 11.0953C24.6675 11.9238 25.619 12.375 26.5624 12.375C27.514 12.375 28.4573 11.9156 29.2284 11.0953C30.0651 10.2012 30.5737 8.99531 30.6639 7.69102C30.7542 6.42773 30.385 5.27109 29.614 4.45078C28.8675 3.63047 27.7765 3.1875 26.5624 3.1875Z" fill="#4AA0B3" />
@@ -29,17 +29,16 @@ export default function WhyUs() {
                             <path d="M11.6329 26.8124H2.42077C1.77272 26.8124 1.17389 26.517 0.771938 26.0166C0.361781 25.4916 0.214125 24.7698 0.378188 24.0971C0.944203 21.8084 2.35514 19.9217 4.44694 18.6256C6.29264 17.4854 8.63873 16.8538 11.0505 16.8538C13.1176 16.8538 14.8813 17.1983 16.4399 17.912C17.0962 18.2155 17.3915 18.9948 17.088 19.651C16.7844 20.3073 16.0051 20.6026 15.3489 20.2991C14.143 19.7495 12.7403 19.4788 11.0587 19.4788C8.06452 19.4788 4.28288 20.7256 3.08522 24.1956H11.6329C12.3547 24.1956 12.9454 24.7862 12.9454 25.5081C12.9454 26.2299 12.3547 26.8124 11.6329 26.8124Z" fill="#4AA0B3" />
                         </svg>
                     </div>
-
-                    <h3>Consultorías personalizadas</h3>
+                    <h3>Conocimiento en el campo</h3>
                     <p>
-                        Soluciones a medida para tu negocio. Codrifry te ofrece consultorías
-                        personalizadas que se adaptan a tus necesidades únicas.
+                        Expertos en el campo a tu servicio. Codrifry te ofrece soluciones
+                        eficientes y efectivas gracias a nuestro amplio conocimiento.
                     </p>
                     <button className="whyus-btn">Más información</button>
-                </div>
+                </SpotlightCard>
 
                 {/* Tarjeta 2 */}
-                <div className="whyus-card">
+                <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
                     <div className="whyus-card-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
                             <path d="M26.5624 15C24.8725 15 23.2483 14.2453 21.9686 12.8836C20.73 11.5547 19.9671 9.77461 19.8358 7.87969C19.6964 5.86172 20.3116 3.99961 21.5667 2.64609C22.8218 1.30078 24.5936 0.5625 26.5624 0.5625C28.5147 0.5625 30.2866 1.30898 31.5417 2.6543C32.8132 4.01602 33.4284 5.86992 33.2807 7.87148C33.1413 9.76641 32.3866 11.5465 31.1479 12.8754C29.8764 14.2453 28.2522 15 26.5624 15ZM26.5624 3.1875C25.3319 3.1875 24.2409 3.63047 23.4944 4.43437C22.7233 5.26289 22.3706 6.38672 22.4608 7.69102C22.5511 8.98711 23.0597 10.2012 23.8964 11.0953C24.6675 11.9238 25.619 12.375 26.5624 12.375C27.514 12.375 28.4573 11.9156 29.2284 11.0953C30.0651 10.2012 30.5737 8.99531 30.6639 7.69102C30.7542 6.42773 30.385 5.27109 29.614 4.45078C28.8675 3.63047 27.7765 3.1875 26.5624 3.1875Z" fill="#4AA0B3" />
@@ -48,13 +47,13 @@ export default function WhyUs() {
                             <path d="M11.6329 26.8124H2.42077C1.77272 26.8124 1.17389 26.517 0.771938 26.0166C0.361781 25.4916 0.214125 24.7698 0.378188 24.0971C0.944203 21.8084 2.35514 19.9217 4.44694 18.6256C6.29264 17.4854 8.63873 16.8538 11.0505 16.8538C13.1176 16.8538 14.8813 17.1983 16.4399 17.912C17.0962 18.2155 17.3915 18.9948 17.088 19.651C16.7844 20.3073 16.0051 20.6026 15.3489 20.2991C14.143 19.7495 12.7403 19.4788 11.0587 19.4788C8.06452 19.4788 4.28288 20.7256 3.08522 24.1956H11.6329C12.3547 24.1956 12.9454 24.7862 12.9454 25.5081C12.9454 26.2299 12.3547 26.8124 11.6329 26.8124Z" fill="#4AA0B3" />
                         </svg>
                     </div>
-                    <h3>Soluciones a medida</h3>
+                    <h3>Conocimiento en el campo</h3>
                     <p>
-                        Soluciones innovadoras y personalizadas para tus desafíos. Codrifry
-                        te ofrece herramientas y estrategias únicas para tu negocio.
+                        Expertos en el campo a tu servicio. Codrifry te ofrece soluciones
+                        eficientes y efectivas gracias a nuestro amplio conocimiento.
                     </p>
                     <button className="whyus-btn">Más información</button>
-                </div>
+                </SpotlightCard>
 
                 {/* Tarjeta 3 */}
                 <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
