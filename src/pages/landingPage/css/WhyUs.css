@@ -1,0 +1,68 @@
+.whyus-container {
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.whyus-header {
+    margin-bottom: 30px;
+}
+
+.whyus-header h2 {
+    font-size: 28px;
+    color: #50bde9;
+}
+
+.whyus-header p {
+    color: #aaa;
+}
+
+.whyus-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.whyus-card {
+    background-color: #11132b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.whyus-card-icon {
+    border-radius: 17px;
+    background: #223449;
+    padding: 10px;
+    align-items: center;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.whyus-card h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.whyus-card p {
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.whyus-btn {
+    margin-top: 15px;
+    background-color: #4AA0B3;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.whyus-btn:hover {
+    background-color: #1da1f2;
+}
