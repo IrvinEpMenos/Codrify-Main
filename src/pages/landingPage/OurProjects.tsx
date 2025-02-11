@@ -14,7 +14,9 @@ const Cards = () => {
 
     return (
         <div className="main-container">
-            <h1 className="title">Nuestros más recientes éxitos</h1>
+            <h1 className="title">Nuestros más recientes</h1>
+            <br />
+            <h1 className="title3">éxitos</h1>
             <div className="cards2-container">
                 {items.map((item) => (
                     <div className="card2" key={item.id}>

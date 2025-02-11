@@ -1,19 +1,21 @@
-
 .Puntos-Blancos {
   position: relative;
   top: 110px;
   left: 310px;
 }
-.Puntos-Blancos2{
+
+.Puntos-Blancos2 {
   position: relative;
   top: 540px;
   right: 700px;
 }
-.Puntos-Blancos3{
+
+.Puntos-Blancos3 {
   position: relative;
   bottom: 10px;
   right: 400px;
 }
+
 .sect-about {
   margin-left: 300px;
   background-color: #0a0a2500;
@@ -31,7 +33,7 @@
 
 .about-title {
   font-size: 24px;
-  font-weight: bold;;
+  font-weight: bold;
 }
 
 .about-icon {
@@ -41,11 +43,9 @@
   background: linear-gradient(136.57deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
   display: flex;
   box-sizing: 10px;
-}
-.about-icon {
   margin-top: -140px;
   margin-left: 30px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -58,12 +58,14 @@
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.226);
 }
+
 .about-content p {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 20px;
   text-align: justify;
 }
+
 .about-content h3 {
   font-size: 24px;
   font-weight: bold;
@@ -102,6 +104,7 @@
   border-radius: 15px;
   margin-top: 20px;
 }
+
 .about-banner-text {
   position: relative;
   font-size: 36px;
@@ -109,6 +112,7 @@
   color: white;
   z-index: 1;
 }
+
 .about-banner h1 {
   margin-top: 20px;
 }
@@ -117,3 +121,58 @@
   font-weight: bold;
   color: #4aa0b3;
 }
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .sect-about {
+    margin-left: 150px;
+    padding: 40px 15px;
+  }
+
+  .about-content {
+    max-width: 700px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .sect-about {
+    margin-left: 50px;
+    padding: 30px 10px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .about-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-banner-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sect-about {
+    margin-left: 10px;
+    padding: 20px 5px;
+  }
+
+  .about-title, .about-content h3 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .about-banner-text {
+    font-size: 24px;
+  }
+}
+ 
