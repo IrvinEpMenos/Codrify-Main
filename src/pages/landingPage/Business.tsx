@@ -1,5 +1,7 @@
 import "./css/Business.css";
 import motor from "../../assets/img/motornegocio.jpg"
+import PixelTransition from "../../../reactBits/PixelTransition/PixelTransition"
+import { Link } from "react-router-dom";
 
 export default function Business() {
     return (
@@ -21,12 +23,41 @@ export default function Business() {
 
             {/* Espaciado adicional */}
             <div className="spacer"></div>
+            
+            <PixelTransition
+                firstContent={
+                    <Link to="/contacto">
+                    <img
+                        src={motor}
+                        alt="default pixel transition content, a cat!"
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                    </Link>
+                }
+                secondContent={
+                    <div
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            display: "grid",
+                            placeItems: "center",
+                            backgroundColor: "#111"
+                        }}
+                    >
+                        <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Has click para comenzar con nosotros!</p>
+                    </div>
+                }
+                gridSize={12}
+                pixelColor='#050520'
+                animationStepDuration={0.4}
+                className="custom-pixel-card"
+            />
 
             {/* Imagen Principal */}
-            <div className="main-image">
+            {/* <div className="main-image">
                 <img src={motor} alt="" />
                 <h3 className="centered-text">CODRIFY</h3>
-            </div>
+            </div> */}
 
             {/* Espaciado adicional */}
             <div className="spacer"></div>
