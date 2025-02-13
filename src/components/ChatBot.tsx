@@ -22,7 +22,7 @@ const ChatBot: React.FC = () => {
         model: "deepseek-chat",
         messages: [...newMessages, { role: "system", content: "Eres un asistente de CODRIFY." }],
       }, {
-        headers: { Authorization: `sk-7763195d8dce4c4f985320c2d7699bd9` }
+        headers: { Authorization: `sk-7763195d8dce4c4f985320c2d7699bd9` } 
       });
 
       const botReply = response.data.choices[0].message.content;
