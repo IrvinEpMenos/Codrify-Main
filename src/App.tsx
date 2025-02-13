@@ -1,6 +1,6 @@
-// App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ChatBot from "./components/ChatBot";
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import './App.css';
@@ -24,6 +24,7 @@ const App: React.FC = () => {
         </Routes>
       </main>
       <Footer />
+      <ChatBot /> {/* El ChatBot se renderiza aquí para que esté siempre visible */}
     </Router>
   );
 };
