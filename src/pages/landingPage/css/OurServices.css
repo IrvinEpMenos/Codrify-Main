@@ -3,13 +3,9 @@
   text-align: center;
   padding: 4rem 1rem;
 }
-.serv-cards{
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+
 .title {
-  margin-top: -50px;
+  margin-top: -60px;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -19,102 +15,213 @@
   margin-top: -20px;
 }
 
-.card-UIUX, .card-stats, .card-nut, .card-cerebro {
-  justify-content: center;
-  position: absolute;
+.serv-items {
+  gap: 0.5rem;
+  text-align: justify;
+  padding-top: 20px;
 }
 
-.card-UIUX h3 {
-  color: white;
-  font-size: 1.5rem;
+.icon-servuiux {
+  font-size: 1.7rem;
+  flex-shrink: 0;
+  padding-right: 10px;
+  margin-bottom: -3px;
+}
+
+.icon-servstats {
+  font-size: 1.65rem;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.icon-servnut{
+  font-size: 1.7rem;
+  flex-shrink: 0;
+  padding-right: 10px;
+  margin-bottom: -2px;
+}
+.icon-servcerebro{
+  font-size: 1.7rem;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.serv-title1 {
   font-weight: bold;
-  text-align: center;
+  font-size: 1rem;
+  margin-top: 50px;
+  margin-left: 100px;
 }
-
-.card-UIUX img {
-  width: 25%;
-  height: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-.card-UIUX p {
-  color: white;
-  text-align: center;
-  font-size: large;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.card-stats h3 {
-  color: white;
-  font-size: 1.5rem;
+.serv-title2 {
   font-weight: bold;
-  text-align: center;
+  font-size: 1rem;
+  margin-left: 700px;
+  margin-top: -145px;
 }
-
-.card-stats img {
-  width: 20%;
-  height: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-.card-stats p {
-  color: white;
-  text-align: center;
-  font-size: large;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.card-nut h3 {
-  color: white;
-  font-size: 1.5rem;
+.serv-title3 {
   font-weight: bold;
-  text-align: center;
+  font-size: 1rem;
+  margin-left: 280px;
+  margin-top: 50px;
 }
 
-.card-nut img {
-  width: 20%;
-  height: 30%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 55px;
-  padding-bottom: 60px;
-}
-.card-nut p {
-  color: white;
-  text-align: center;
-  font-size: large;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-bottom: 20px;
-}
-.card-cerebro h3 {
-  color: white;
-  font-size: 1.5rem;
+.serv-title4 {
   font-weight: bold;
-  text-align: center;
+  font-size: 1rem;
+  margin-left: 950px;
+  margin-top: -115px;
 }
 
-.card-cerebro img {
-  width: 20%;
-  height: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.serv-description1 {
+  color: #bbb;
+  font-size: 1rem;
+  width: 450px;
+  margin-top: -10px;
+  padding-left: 5px;
+  margin-left: 100px;
 }
-.card-cerebro p {
-  color: white;
-  text-align: center;
-  font-size: large;
-  margin-left: 5px;
-  margin-right: 5px;
+
+.serv-description2 {
+  color: #bbb;
+  font-size: 1rem;
+  width: 450px;
+  margin-top: -10px;
+  padding-left: 5px;
+  margin-left: 700px;
+}
+
+.serv-description3 {
+  color: #bbb;
+  font-size: 1rem;
+  width: 450px;
+  margin-top: -10px;
+  padding-left: 5px;
+  margin-left: 280px;
+}
+
+.serv-description4 {
+  color: #bbb;
+  font-size: 1rem;
+  width: 450px;
+  margin-top: -10px;
+  padding-left: 5px;
+  margin-left: 950px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .title {
+    margin-top: -40px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 550px;
+  }
+  
+  .subtitle {
+    color: #c2c1c1cb;
+    margin-top: -20px;
+    margin-left: 550px;
+    font-size: 1.5rem;
+  }
+  
+  .serv-items {
+    gap: 0.5rem;
+    text-align: justify;
+    padding-top: 20px;
+  }
+  
+  .icon-servuiux {
+    flex-shrink: 0;
+    height: auto;
+    width: 55px;
+    padding-right: 10px;
+    margin-bottom: -4px;
+  }
+  
+  .icon-servstats {
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+    padding-right: 10px;
+  }
+  
+  .icon-servnut {
+    width: 55px;
+    height: auto;
+    flex-shrink: 0;
+    padding-right: 10px;
+    margin-bottom: -2px;
+  }
+  
+  .icon-servcerebro {
+    width: 55px;
+    flex-shrink: 0;
+    padding-right: 10px;
+  }
+  
+  .serv-title1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 250px;
+    margin-left: 120px;
+  }
+  
+  .serv-title2  {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1300px;
+    margin-top: -245px;
+  }
+  
+  .serv-title3 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 500px;
+    margin-top: 100px;
+  }
+  
+  .serv-title4 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1490px;
+    margin-top: -250px;
+    text-align: left;
+  }
+  
+  .serv-description1 {
+    color: #bbb;
+    font-size: 2rem;
+    width: 850px;
+    margin-top: -10px;
+    padding-left: 5px;
+    margin-left: 120px;
+  }
+  
+  .serv-description2 {
+    color: #bbb;
+    font-size: 2rem;
+    width: 850px;
+    margin-top: -10px;
+    padding-left: 5px;
+    margin-left: 1300px;
+  }
+  
+  .serv-description3 {
+    color: #bbb;
+    font-size: 2rem;
+    width: 850px;
+    margin-top: -10px;
+    padding-left: 5px;
+    margin-left: 500px;
+  }
+  
+  .serv-description4 {
+    color: #bbb;
+    font-size: 2rem;
+    width: 850px;
+    margin-top: -10px;
+    padding-left: 5px;
+    margin-left: 1690px;
+  }
 }
