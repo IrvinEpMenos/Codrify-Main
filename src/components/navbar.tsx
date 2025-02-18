@@ -4,6 +4,7 @@ import './Navbar.css';
 import logo from '../assets/img/logoBlanco.svg';
 import mexicoFlag from '../assets/icon/mexico.svg';
 import usaFlag from '../assets/icon/USA.svg';
+import ShinyText from '../../reactBits/ShinyText/ShinyText';
 
 const Navbar: React.FC = () => {
   const [language, setLanguage] = useState('es');
@@ -41,12 +42,12 @@ const Navbar: React.FC = () => {
           <span className={`bar ${menuOpen ? 'active' : ''}`}></span>
         </div>
         <div className={`oval-container ${menuOpen ? 'active' : ''}`}>
-          <ul className="navbar-links">
+            <ul className="navbar-links">
             <li className='li-text'><Link to="/">Inicio</Link></li>
             <li className='li-text'><Link to="/acerca">Nosotros</Link></li>
             <li className='li-text'><Link to="/servicios">Servicios</Link></li>
-            <div className='oval-container1'><li><Link to="/contacto">Contacto</Link></li></div>
-          </ul>
+            <div className='oval-container1'><li><Link to="/contacto"></Link><ShinyText text="Contacto" disabled={false} speed={2} className='custom-class' /></li></div>
+            </ul>
         </div>
         <div className='language-dropdown'>
           <div className='language-select' onClick={() => setDropdownOpen(!dropdownOpen)}>
