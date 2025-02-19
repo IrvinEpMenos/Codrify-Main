@@ -33,7 +33,7 @@ export default function WhyUs() {
                     <p>
                         Soluciones a medida para tu negocio. Codrifry te ofrece consultorías personalizadas que se adaptan a tus necesidades únicas.
                     </p>
-                    <button className="whyus-btn">Más información</button>
+                    {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
 
                 {/* Tarjeta 2 */}
@@ -48,7 +48,7 @@ export default function WhyUs() {
                     <p>
                         Soluciones innovadoras y personalizadas para tus desafíos. Codrifry te ofrece herramientas y estrategias únicas para tu negocio.
                     </p>
-                    <button className="whyus-btn">Más información</button>
+                    {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
 
                 {/* Tarjeta 3 */}
@@ -68,7 +68,7 @@ export default function WhyUs() {
                         Expertos en el campo a tu servicio. Codrifry te ofrece soluciones
                         eficientes y efectivas gracias a nuestro amplio conocimiento.
                     </p>
-                    <button className="whyus-btn">Más información</button>
+                    {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
 
 

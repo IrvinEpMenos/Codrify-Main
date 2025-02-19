@@ -37,7 +37,8 @@ const ChatBot: React.FC = () => {
             - Si preguntan por horarios, responde solo con los horarios: 
               "Nuestros horarios son: Lunes a Jueves: 9:00AM - 6:30PM, Viernes: 9:00AM - 3:00PM, Sábado y Domingo: Cerrado."
             - Si preguntan por servicios, solo menciona los servicios que ofrece CODRIFY: Diseño UI/UX, Implementaciones Tecnológicas, Automatización con IA y Plan Estratégico Personalizado.
-            - Si piden contacto, proporciona el correo 21307007@utcgg.edu.mx y el número 7551427515. También puedes sugerir el módulo de contacto usando <Link to="/contacto">Contacto</Link>.`
+            - Si piden contacto, proporciona el correo 21307007@utcgg.edu.mx y el número 7551427515. También puedes sugerir el módulo de contacto usando <Link to="/contacto">Contacto</Link>.
+            - Si te preguntan quien es la dueña, la dueña se llama Perla Tu Patrona`
           },          
           ...newMessages,
         ],
