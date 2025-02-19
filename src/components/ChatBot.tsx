@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import OpenAI from "openai";
 import { FiMessageCircle } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import "./ChatBot.css";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 
@@ -31,14 +30,21 @@ const ChatBot: React.FC = () => {
       const completion = await openai.chat.completions.create({
         model: "gpt-4o-mini",
         messages: [
-          { 
-            role: "system", 
+          {
+            role: "system",
             content: `Eres Pipol, el encargado de CODRIFY. Responde de manera clara y específica a lo que pregunta el usuario, sin agregar información innecesaria.
+            - Si te preguntan que es codrify, responde: "CODRIFY es una consultora tecnológica que ofrece servicios de Diseño UI/UX, Implementaciones Tecnológicas, Automatización con IA y Plan Estratégico Personalizado."
+            - Si te preguntan cuanto tiempo lleva codrify, responde: CODRIFY fue fundada en [año de fundación]. Desde entonces, nos hemos dedicado a ofrecer soluciones tecnológicas de alta calidad.
+            - Si te preguntan que tipo de clientes atienden, responde: Atendemos a empresas de todos los tamaños, desde startups hasta grandes corporaciones, que buscan optimizar sus procesos mediante soluciones tecnológicas.
             - Si preguntan por horarios, responde solo con los horarios: 
               "Nuestros horarios son: Lunes a Jueves: 9:00AM - 6:30PM, Viernes: 9:00AM - 3:00PM, Sábado y Domingo: Cerrado."
             - Si preguntan por servicios, solo menciona los servicios que ofrece CODRIFY: Diseño UI/UX, Implementaciones Tecnológicas, Automatización con IA y Plan Estratégico Personalizado.
-            - Si piden contacto, proporciona el correo 21307007@utcgg.edu.mx y el número 7551427515. También puedes sugerir el módulo de contacto usando <Link to="/contacto">Contacto</Link>.`
-          },          
+            - Si piden contacto, proporciona el correo 21307007@utcgg.edu.mx y el número 7551427515. También puedes sugerir el módulo de contacto ubicado en el menú de arriba de la pagina.
+            - Si preguntan si ofrecemos soporte tecnico despues de la implementación responde: "Sí, ofrecemos soporte técnico continuo para garantizar el correcto funcionamiento de las soluciones implementadas y resolver cualquier incidencia que pueda surgir."
+            - Si te preguntan quien es la dueña, la dueña se llama Perla Tu Patrona
+            - Si te preguntan ubicación, responde diciendo que se encuentra en Puebla o también dando el siguiente link de google maps: https://maps.app.goo.gl/iEAyYqiH7xgYSKFC8
+            `
+          },
           ...newMessages,
         ],
       });
@@ -59,16 +65,22 @@ const ChatBot: React.FC = () => {
         <div className="chatbot-box">
           <div className="chatbot-header">Chat con Pipol</div>
           <div className="chatbot-messages">
-            {messages.map((msg, index) => (
-              <div key={index} className={`chatbot-message ${msg.role}`}>
-                {typeof msg.content === "string" ? msg.content : JSON.stringify(msg.content)}
+            {messages.length === 0 ? (
+              <div className="chatbot-placeholder">
+                Este es el bot que resolverá todas tus dudas acerca de CODRIFY.
               </div>
-            ))}
+            ) : (
+              messages.map((msg, index) => (
+                <div key={index} className={`chatbot-message ${msg.role}`}>
+                  {typeof msg.content === "string" ? msg.content : JSON.stringify(msg.content)}
+                </div>
+              ))
+            )}
           </div>
           <div className="chatbot-input">
-            <input 
-              type="text" 
-              value={input} 
+            <input
+              type="text"
+              value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Escribe tu pregunta..."
             />

@@ -12,6 +12,7 @@ const ServicesPage: React.FC = () => {
   const handleCardClick = (index: number) => {
     setSelectedService(selectedService === index ? null : index);
   };
+
   return (
     <div className="services-container">
       <h1 className="services-title">{t("NUESTROS SERVICIOS")}</h1>

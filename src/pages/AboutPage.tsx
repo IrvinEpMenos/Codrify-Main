@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useTranslation } from "react-i18next";
 import "./css/About.css";
@@ -20,12 +20,16 @@ const Card: React.FC<{ title: string; imgSrc: string; text: string; imgAlt: stri
     </div>
     <p>{text}</p>
   </div>
-);
+)
+;
 
 const AboutSection: React.FC = () => {
   const { t } = useTranslation(); // ✅ Hook para traducciones
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
-  const isTablet = useMediaQuery({ query: "(min-width: 768px) and (max-width: 1024px)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 768px) and (max-width: 1024px)" })
+  useEffect(() => {
+      window.scrollTo(0, 2); // Esto hace que la página se cargue desde el inicio
+    }, []);
 
   return (
     <section className="about-section">
