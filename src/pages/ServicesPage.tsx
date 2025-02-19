@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './css/Services.css';
 import { Link } from 'react-router-dom';
 import cebro from '../assets/img/cerebro.png';
 
 
 const ServicesPage: React.FC = () => {
+  useEffect(() => {
+      window.scrollTo(0, 2); // Esto hace que la página se cargue desde el inicio
+    }, [])
   const [selectedService, setSelectedService] = useState<number | null>(null);
 
   const handleCardClick = (index: number) => {
     setSelectedService(selectedService === index ? null : index);
   };
+
   return (
     <div className="services-container">
       <h1 className="services-title">NUESTROS SERVICIOS</h1>
