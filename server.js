@@ -7,7 +7,7 @@ import dotenv from "dotenv"; // Cargar variables de entorno
 dotenv.config(); // Cargar .env si está en local
 
 const app = express();
-const port = process.env.PORT || 5000; // Puerto dinámico para Render
+const port = process.env.PORT || 10000; // Puerto dinámico para Render
 
 // Middlewares
 app.use(cors());
