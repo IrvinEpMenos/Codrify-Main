@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import OpenAI from "openai";
 import { FiMessageCircle } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import "./ChatBot.css";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 
