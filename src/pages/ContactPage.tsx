@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./css/Contact.css";
+import { useTranslation } from "react-i18next";
 
 const ContactPage: React.FC = () => {
+  const { t } = useTranslation(); // Para traducir el contenido
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -21,7 +23,7 @@ const ContactPage: React.FC = () => {
     const { name, company, phone, subject } = formData;
 
     if (!name || !company || !phone || !subject) {
-      setErrorMessage("Porfavor rellenar todos los campos."); // Mensaje de error
+      setErrorMessage(t("Por favor, rellene todos los campos.")); // Mensaje de error
       return;
     }
 
@@ -33,35 +35,34 @@ const ContactPage: React.FC = () => {
       });
 
       if (response.ok) {
-        setMessage("Formulario enviado, espere nuestra pronta respuesta.");
+        setMessage(t("Formulario enviado, espere nuestra pronta respuesta."));
         setFormData({ name: '', company: '', phone: '', subject: '' }); // Limpiar los campos del formulario
         setErrorMessage(""); // Limpiar el mensaje de error
         setTimeout(() => {
           setMessage(""); // Limpiar el mensaje después de 1 minuto
         }, 60000); // 60000 ms = 1 minuto
       } else {
-        alert("Error al enviar el correo.");
+        alert(t("Error al enviar el correo."));
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Hubo un problema al enviar el correo.");
+      alert(t("Hubo un problema al enviar el correo."));
     }
   };
 
   return (
     <div className="contact">
-      <h1 className="contact-title">CONTACTO</h1>
+      <h1 className="contact-title">{t("CONTACTO")}</h1>
       <div className="contact-form-container">
-        <h2>Envíanos un mensaje</h2>
+        <h2>{t("Envíanos un mensaje")}</h2>
         <p className="pinfo">
-          Por favor llámanos a los teléfonos de nuestras oficinas regionales o
-          escríbenos en este formulario de correo y te responderemos.
+          {t("Por favor llámanos a los teléfonos de nuestras oficinas regionales o escríbenos en este formulario de correo y te responderemos.")}
         </p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
-            placeholder="Nombre"
+            placeholder={t("Nombre")}
             className="contact-input"
             value={formData.name}
             onChange={handleChange}
@@ -69,7 +70,7 @@ const ContactPage: React.FC = () => {
           <input
             type="text"
             name="company"
-            placeholder="Empresa"
+            placeholder={t("Empresa")}
             className="contact-input"
             value={formData.company}
             onChange={handleChange}
@@ -77,7 +78,7 @@ const ContactPage: React.FC = () => {
           <input
             type="tel"
             name="phone"
-            placeholder="Teléfono"
+            placeholder={t("Teléfono")}
             className="contact-input"
             value={formData.phone}
             onChange={handleChange}
@@ -85,28 +86,28 @@ const ContactPage: React.FC = () => {
           <input
             type="text"
             name="subject"
-            placeholder="Asunto"
+            placeholder={t("Asunto")}
             className="contact-input"
             value={formData.subject}
             onChange={handleChange}
           />
           <button type="submit" className="contact-submit">
-            Enviar
+            {t("Enviar")}
           </button>
         </form>
         <br />
         {errorMessage && <p className="error-message">{errorMessage}</p>} {/* Mensaje de error */}
         {message && <p className="success-message">{message}</p>} {/* Mensaje de confirmación */}
         <div className="contact-hours">
-          <h3>Horario de atención</h3>
-          <p className="phorario">Lunes a Jueves: 9:00AM - 6:30PM</p>
-          <p className="phorario">Viernes: 9:00AM - 3:00PM</p>
-          <p className="phorario">Sábado y Domingo: Cerrado</p>
+            <h3>{t("Horario de atención")}</h3>
+            <p className="phorario">{t("Lunes a Jueves: 9:00AM - 6:30PM")}</p>
+            <p className="phorario">{t("Viernes: 9:00AM - 3:00PM")}</p>
+            <p className="phorario">{t("Sábado y Domingo: Cerrado")}</p>
           <br />
           <br />
         </div>
         <p className="contact-footer">
-          No dudes en contactarnos, tenemos una solución para ti.
+          {t("No dudes en contactarnos, tenemos una solución para ti.")}
         </p>
       </div>
     </div>

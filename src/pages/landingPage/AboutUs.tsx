@@ -29,7 +29,7 @@ export default function AboutUs() {
         <div className="about-banner">
         <GradientText colors={["#4AA0B3", "#017274", "#0A516D", "#1B75A1", "#A3D5FF"]}animationSpeed={3}showBorder={false}className="custom-class">
           <h1>
-            " <span>innovamos</span> tu negocio <br />
+            " <span>innovamos</span> tu negocio<br />
             <span>transformamos</span> tu futuro "
           </h1>
           </GradientText>
