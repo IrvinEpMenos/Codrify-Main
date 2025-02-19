@@ -43,6 +43,7 @@ const ChatBot: React.FC = () => {
             - Si preguntan si ofrecemos soporte tecnico despues de la implementación responde: "Sí, ofrecemos soporte técnico continuo para garantizar el correcto funcionamiento de las soluciones implementadas y resolver cualquier incidencia que pueda surgir."
             - Si te preguntan quien es la dueña, la dueña se llama Perla Tu Patrona
             - Si te preguntan ubicación, responde diciendo que se encuentra en Puebla o también dando el siguiente link de google maps: https://maps.app.goo.gl/iEAyYqiH7xgYSKFC8
+            -Si te preguntan en ingles, contesta en ingles
             `
           },
           ...newMessages,
@@ -84,7 +85,7 @@ const ChatBot: React.FC = () => {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Escribe tu pregunta..."
             />
-            <button onClick={sendMessage}>Enviar</button>
+            <button onClick={sendMessage}><i className="fa-solid fa-arrow-right-long"></i></button>
           </div>
         </div>
       )}
