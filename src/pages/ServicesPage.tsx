@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './css/Services.css';
 import { Link } from 'react-router-dom';
 import cebro from '../assets/img/cerebro.png';
 
 
 const ServicesPage: React.FC = () => {
-  useEffect(() => {
-      window.scrollTo(0, 2); // Esto hace que la página se cargue desde el inicio
-    }, [])
+  const { t } = useTranslation();
   const [selectedService, setSelectedService] = useState<number | null>(null);
 
   const handleCardClick = (index: number) => {
@@ -16,9 +15,9 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="services-container">
-      <h1 className="services-title">NUESTROS SERVICIOS</h1>
+      <h1 className="services-title">{t("NUESTROS SERVICIOS")}</h1>
       <p className="services-description">
-        En Codrify, ofrecemos una amplia gama de servicios de consultoría de software para ayudarte a alcanzar tus objetivos tecnológicos y empresariales.
+        {t("En Codrify, ofrecemos una amplia gama de servicios de consultoría de software para ayudarte a alcanzar tus objetivos tecnológicos y empresariales.")}
       </p>
       <div className="services-list">
         <div
@@ -40,17 +39,17 @@ const ServicesPage: React.FC = () => {
             </svg>
           </div>
           <div className="service-text">
-            <h2>Diseño UI/UX</h2>
+            <h2>{t("Diseño UI/UX")}</h2>
 
             {selectedService !== 0 && (
-              <p>
-                Creamos interfaces modernas, únicas y funcionales que mejoran la experiencia de usuario y refuerzan la identidad de tu marca.
-              </p>
+                <p>
+                {t("Creamos interfaces modernas, únicas y funcionales que mejoran la experiencia de usuario y refuerzan la identidad de tu marca.")}
+                </p>
             )}
 
             {selectedService === 0 && (
               <div className="service-details">
-                <p>Más información sobre Diseño UI/UX...</p>
+                <p>{t("Más información sobre Diseño UI/UX...")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
@@ -97,17 +96,17 @@ const ServicesPage: React.FC = () => {
           </div>
 
           <div className="service-text">
-            <h2>Implementaciones Tecnológicas</h2>
+            <h2>{t("Implementaciones Tecnológicas")}</h2>
             {selectedService !== 1 && (
-              <p>
-                Desarrollamos soluciones digitales personalizadas para optimizar tus procesos y modernizar tu negocio.
-              </p>
+                <p>
+                {t("Desarrollamos soluciones digitales personalizadas para optimizar tus procesos y modernizar tu negocio.")}
+                </p>
             )}
 
             {selectedService === 1 && (
               <div className="service-details">
-                <p>Más información sobre Implementaciones Tecnológicas.</p>
-                <p>Detalles adicionales que se muestran cuando se selecciona este servicio.</p>
+                <p>{t("Más información sobre Implementaciones Tecnológicas.")}</p>
+                <p>{t("Detalles adicionales que se muestran cuando se selecciona este servicio.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
@@ -151,18 +150,18 @@ const ServicesPage: React.FC = () => {
             </svg>
           </div>
           <div className="service-text">
-            <h2>Automatización con Inteligencia Artificial</h2>
+            <h2>{t("Automatización con Inteligencia Artificial")}</h2>
 
             {selectedService !== 2 && (
-              <p>
-                Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en menos tiempo.
-              </p>
+                <p>
+                {t("Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en menos tiempo.")}
+                </p>
             )}
 
             {selectedService === 2 && (
               <div className="service-details">
-                <p>Más información sobre Automatización con Inteligencia Artificial</p>
-                <p>Detalles adicionales que se muestran cuando se selecciona este servicio.</p>
+                <p>{t("Más información sobre Automatización con Inteligencia Artificial.")}</p>
+                <p>{t("Detalles adicionales que se muestran cuando se selecciona este servicio.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
@@ -210,18 +209,18 @@ const ServicesPage: React.FC = () => {
             </svg>
           </div>
           <div className="service-text">
-            <h2>Plan Estratégico Personalizado</h2>
+            <h2>{t("Plan Estratégico Personalizado")}</h2>
 
             {selectedService !== 3 && (
-              <p>
-                Diseñamos estrategias tecnológicas a medida, alineadas con los objetivos de tu empresa para maximizar su potencial.
-              </p>
+                <p>
+                {t("Diseñamos estrategias tecnológicas a medida, alineadas con los objetivos de tu empresa para maximizar su potencial.")}
+                </p>
             )}
 
             {selectedService === 3 && (
               <div className="service-details">
-                <p>Más información sobre Plan Estratégico Personalizado</p>
-                <p>Detalles adicionales que se muestran cuando se selecciona este servicio.</p>
+                <p>{t("Más información sobre Plan Estratégico Personalizado.")}</p>
+                <p>{t("Detalles adicionales que se muestran cuando se selecciona este servicio.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
@@ -251,12 +250,12 @@ const ServicesPage: React.FC = () => {
       </div>
       <div className="cta-section">
         <p>
-          ¿No estás seguro de qué servicio necesitas? Nuestro equipo de expertos está listo para ayudarte a encontrar la solución perfecta para tu negocio.
+          {t("¿No estás seguro de qué servicio necesitas? Nuestro equipo de expertos está listo para ayudarte a encontrar la solución perfecta para tu negocio.")}
         </p>
         <button className="cta-button">
-          <Link to="/contacto" style={{ color: 'inherit', textDecoration: 'none' }}>
-            Solicita una consulta gratuita
-          </Link>
+            <Link to="/contacto" style={{ color: 'inherit', textDecoration: 'none' }}>
+            {t("Solicita una consulta gratuita")}
+            </Link>
         </button>
       </div>
     </div>

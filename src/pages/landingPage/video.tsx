@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import "./css/video.css"; 
+import "./css/video.css";
 import video from "../../assets/img/video.mp4";
 
 const AniText = () => {
