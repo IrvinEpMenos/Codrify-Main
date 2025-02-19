@@ -5,7 +5,6 @@ import "./Navbar.css";
 import logo from "../assets/img/logoBlanco.svg";
 import mexicoFlag from "../assets/icon/mexico.svg";
 import usaFlag from "../assets/icon/USA.svg";
-import ShinyText from "../../reactBits/ShinyText/ShinyText";
 import "../il8n";
 
 const Navbar: React.FC = () => {
