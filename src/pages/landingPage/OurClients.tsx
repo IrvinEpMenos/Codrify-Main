@@ -1,4 +1,5 @@
 import "./css/OurClients.css";
+import { useTranslation } from "react-i18next";
 import LogoWall from '../../../reactBits/LogoWall/LogoWall';
 import coca from '../../assets/img/coca2.png'
 import pepsi from '../../assets/img/pepsi.png'
@@ -18,10 +19,11 @@ const logoImgs = [
   ];
 
 const OurClients = () => {
+    const { t } = useTranslation();
     return (
         <div className="our-clients">
             <div className="container-top">
-                <h1>Nuestros Clientes</h1>
+                <h1>{t("Nuestros Clientes")}</h1>
             </div>
 
             {/* Carrusel de imágenes con animación */}

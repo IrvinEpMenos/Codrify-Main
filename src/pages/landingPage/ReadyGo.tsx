@@ -1,8 +1,10 @@
 import "./css/RedyGo.css";
+import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import Magnet from "../../../reactBits/Magnet/Magnet";
 
 export default function ReadyGo() {
+    const { t } = useTranslation();
     return (
         <div className="container-ReadyGo">
                         <div className="logo-readyGo">
@@ -13,12 +15,12 @@ export default function ReadyGo() {
                 </div>
             </div>
             <div className="readyGo">
-            <h1>Estas Listo para el Éxito!</h1>
-            <p>La mejor decisión para tu empresa solo dando click.</p>
-            
+            <h1>{t("¿Estás listo para el éxito?")}</h1>
+            <p>{t("La mejor decisión para tu empresa solo dando clic.")}</p>
+
         </div>
         <Magnet padding={300} disabled={false} magnetStrength={1} className="" >
-        <button><Link to="/contacto">Contactanos</Link></button>
+        <button><Link to="/contacto">{t("Contáctanos")}</Link></button>
             </Magnet>
         </div>
     );
