@@ -106,7 +106,6 @@ const ServicesPage: React.FC = () => {
             {selectedService === 1 && (
               <div className="service-details">
                 <p>{t("Más información sobre Implementaciones Tecnológicas.")}</p>
-                <p>{t("Detalles adicionales que se muestran cuando se selecciona este servicio.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
@@ -161,7 +160,6 @@ const ServicesPage: React.FC = () => {
             {selectedService === 2 && (
               <div className="service-details">
                 <p>{t("Más información sobre Automatización con Inteligencia Artificial.")}</p>
-                <p>{t("Detalles adicionales que se muestran cuando se selecciona este servicio.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
@@ -220,7 +218,6 @@ const ServicesPage: React.FC = () => {
             {selectedService === 3 && (
               <div className="service-details">
                 <p>{t("Más información sobre Plan Estratégico Personalizado.")}</p>
-                <p>{t("Detalles adicionales que se muestran cuando se selecciona este servicio.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"

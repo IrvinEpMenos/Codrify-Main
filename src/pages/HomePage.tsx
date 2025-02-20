@@ -21,8 +21,8 @@ const contentComponents: { [key: number]: () => JSX.Element } = {
     0: DefaultContent, // Placeholder for Navbar
     1: Video,
     2: AboutUs,
-    3: OurServices,
-    4: OurClients,
+    3: OurClients,
+    4: OurServices,
     5: Business,
     6: OurProjects,
     7: OurClients2,
