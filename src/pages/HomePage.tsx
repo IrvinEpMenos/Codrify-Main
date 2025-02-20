@@ -10,6 +10,8 @@ import Business from "./landingPage/Business";
 import OurClients2 from "./landingPage/OurClients2";
 import WhyUs from "./landingPage/WhyUs";
 import ReadyGo from "./landingPage/ReadyGo";
+import '../il8n.ts';
+
 
 // Default Content Component (for Navbar & Footer Space)
 function DefaultContent() {

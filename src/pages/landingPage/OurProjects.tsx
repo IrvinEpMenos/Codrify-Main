@@ -4,8 +4,10 @@ import "./css/proyectos.css";
 import ex1 from "../../assets/img/exito1.png"
 import ex2 from "../../assets/img/exito2.png"
 import ex3 from "../../assets/img/exito3.png"
+import { useTranslation } from "react-i18next";
 
 const Cards = () => {
+    const { t } = useTranslation();
     const items = [
         { id: 1, title: "Pipol Music", image: ex1 },
         { id: 2, title: "Market Pipol", image: ex2 },
@@ -14,9 +16,9 @@ const Cards = () => {
 
     return (
         <div className="main-container">
-            <h1 className="title">Nuestros más recientes</h1>
+            <h1 className="title">{t("Nuestros más recientes")}</h1>
             <br />
-            <h1 className="title3">éxitos</h1>
+            <h1 className="title3">{t("éxitos")}</h1>
             <div className="cards2-container">
                 {items.map((item) => (
                     <div className="card2" key={item.id}>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import "./Footer.css";
 import logo from "../assets/img/logoDeTecho.svg";
@@ -9,6 +10,7 @@ import instagram from "../assets/icon/instagram.svg";
 
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -16,16 +18,16 @@ const Footer: React.FC = () => {
             <h1><img src={logo} alt="logo" className="footer-logo-img" /></h1>
         </div>
         <div className="footer-links">
-          <h2>Enlaces</h2>
+            <h2>{t("Enlaces")}</h2>
           <div className="footer-separator"></div>
           <ul>
-            <li><Link to="/">Aviso Legal</Link></li>
-            <li><Link to="/">Política de Calidad</Link></li>
-            <li><Link to="/">Política de Privacidad</Link></li>
+           <li><Link to="/">{t("Aviso Legal")}</Link></li>
+            <li><Link to="/">{t("Política de Calidad")}</Link></li>
+            <li><Link to="/">{t("Política de Privacidad")}</Link></li>
           </ul>
         </div>
         <div className="footer-contact">
-          <h2>Contacto</h2>
+            <h2>{t("Contacto")}</h2>
           <div className="footer-separator"></div>
           <ul>
             <li><img src={tel} alt="telefono" />+52 755 111 80 92</li>

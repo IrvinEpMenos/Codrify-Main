@@ -1,7 +1,9 @@
 import "./css/WhyUs.css";
+import { useTranslation } from "react-i18next";
 import SpotlightCard from '../../../reactBits/SpotlightCard/SpotlightCard';
 
 export default function WhyUs() {
+    const { t } = useTranslation();
     return (
         <div className="whyus-container">
 
@@ -14,8 +16,8 @@ export default function WhyUs() {
             </div>
 
             <div className="whyus-header">
-                <h2>¿Por qué elegirnos?</h2>
-                <p>Únete al cambio</p>
+                <h2>{t("¿Por qué elegirnos?")}</h2>
+                <p>{t("Únete al cambio")}</p>
             </div>
 
             <div className="whyus-cards">
@@ -29,9 +31,9 @@ export default function WhyUs() {
                             <path d="M11.6329 26.8124H2.42077C1.77272 26.8124 1.17389 26.517 0.771938 26.0166C0.361781 25.4916 0.214125 24.7698 0.378188 24.0971C0.944203 21.8084 2.35514 19.9217 4.44694 18.6256C6.29264 17.4854 8.63873 16.8538 11.0505 16.8538C13.1176 16.8538 14.8813 17.1983 16.4399 17.912C17.0962 18.2155 17.3915 18.9948 17.088 19.651C16.7844 20.3073 16.0051 20.6026 15.3489 20.2991C14.143 19.7495 12.7403 19.4788 11.0587 19.4788C8.06452 19.4788 4.28288 20.7256 3.08522 24.1956H11.6329C12.3547 24.1956 12.9454 24.7862 12.9454 25.5081C12.9454 26.2299 12.3547 26.8124 11.6329 26.8124Z" fill="#4AA0B3" />
                         </svg>
                     </div>
-                    <h3>Consultorias personalizadas</h3>
+                    <h3>{t("Consultorias personalizadas")}</h3>
                     <p>
-                        Soluciones a medida para tu negocio. Codrifry te ofrece consultorías personalizadas que se adaptan a tus necesidades únicas.
+                        {t("Soluciones a medida para tu negocio. Codrifry te ofrece consultorías personalizadas que se adaptan a tus necesidades únicas.")}
                     </p>
                     {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
@@ -44,9 +46,9 @@ export default function WhyUs() {
                             <path d="M7.875 35.4375C8.59987 35.4375 9.1875 34.8499 9.1875 34.125C9.1875 33.4001 8.59987 32.8125 7.875 32.8125C7.15013 32.8125 6.5625 33.4001 6.5625 34.125C6.5625 34.8499 7.15013 35.4375 7.875 35.4375Z" fill="#61D3EC" />
                         </svg>
                     </div>
-                    <h3>Soluciones a medida</h3>
+                    <h3>{t("Soluciones a medida")}</h3>
                     <p>
-                        Soluciones innovadoras y personalizadas para tus desafíos. Codrifry te ofrece herramientas y estrategias únicas para tu negocio.
+                        {t("Soluciones innovadoras y personalizadas para tus desafíos. Codrifry te ofrece herramientas y estrategias únicas para tu negocio.")}
                     </p>
                     {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
@@ -63,10 +65,9 @@ export default function WhyUs() {
                             <path d="M21.0003 19.1543C19.3582 19.0548 18.9235 18.7892 18.6067 18.5957C18.4013 18.4702 18.2455 18.375 17.8421 18.375C17.2679 18.375 16.8814 18.8155 16.7347 19.0723C16.4066 19.6465 16.6117 20.4023 17.1038 20.7539C18.5394 21.7793 19.9749 22.3125 21.0003 22.3125C22.0257 22.3125 23.4613 21.7793 24.8968 20.7539C25.389 20.4023 25.5941 19.6465 25.266 19.0723C25.1192 18.8155 24.7328 18.375 24.1585 18.375C23.7552 18.375 23.5994 18.4702 23.3939 18.5957C23.0772 18.7892 22.6425 19.0548 21.0003 19.1543Z" fill="#6EE5FF" />
                         </svg>
                     </div>
-                    <h3>Conocimiento en el campo</h3>
+                    <h3>{t("Conocimiento en el campo")}</h3>
                     <p>
-                        Expertos en el campo a tu servicio. Codrifry te ofrece soluciones
-                        eficientes y efectivas gracias a nuestro amplio conocimiento.
+                        {t("Expertos en el campo a tu servicio. Codrifry te ofrece soluciones eficientes y efectivas gracias a nuestro amplio conocimiento.")}
                     </p>
                     {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>

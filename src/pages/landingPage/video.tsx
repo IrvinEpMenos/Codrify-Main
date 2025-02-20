@@ -1,16 +1,18 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import "./css/video.css";
 import video from "../../assets/img/video.mp4";
 
 const AniText = () => {
+  const { t } = useTranslation();
   const texts = [
-    "El futuro es ahora",
-    "Tu éxito nuestra misión",
-    "Es hora de evolucionar",
-    "Crea impacto, deja huella",
-    "Conecta, impacta, lidera",
-    "Diseñamos un futuro. Contigo",
+    t("El futuro es ahora"),
+    t("Tu éxito nuestra misión"),
+    t("Es hora de evolucionar"),
+    t("Crea impacto, deja huella"),
+    t("Conecta, impacta, lidera"),
+    t("Diseñamos un futuro. Contigo"),
   ];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);

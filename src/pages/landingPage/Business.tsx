@@ -1,9 +1,11 @@
 import "./css/Business.css";
+import { useTranslation } from "react-i18next";
 import motor from "../../assets/img/motornegocio.jpg"
 import PixelTransition from "../../../reactBits/PixelTransition/PixelTransition"
 import { Link } from "react-router-dom";
 
 export default function Business() {
+    const { t } = useTranslation();
     return (
         <div className="business-container">
             {/* Logo y Título */}
@@ -17,8 +19,8 @@ export default function Business() {
                 </div>
                 <br /><br /><br />
                 <h1>Codrify:</h1>
-                <h2 className="h2a">El motor de tu negocio</h2>
-                <p className="ppp">Tu socio en la transformación digital.</p>
+                <h2 className="h2a">{t("El motor de tu negocio")}</h2>
+                <p className="ppp">{t("Tu socio en la transformación digital.")}</p>
             </div>
 
             {/* Espaciado adicional */}
@@ -44,7 +46,7 @@ export default function Business() {
                             backgroundColor: "#111"
                         }}
                     >
-                        <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Has click para comenzar con nosotros!</p>
+                        <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>{t("¡Haz click para comenzar con nosotros!")}</p>
                     </div>
                 }
                 gridSize={12}

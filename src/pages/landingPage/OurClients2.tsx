@@ -1,9 +1,11 @@
 import "./css/comentarios.css";
+import { useTranslation } from "react-i18next";
 import irvin from "../../assets/img/IRVIN.jpeg"
 import jona from "../../assets/img/JONA.jpeg"
 import irvin2 from "../../assets/img/IRVIN2.jpeg"
 
 const OurClients2 = () => {
+  const { t } = useTranslation();
   return (
     <div className="clientes-container">
 
@@ -17,9 +19,9 @@ const OurClients2 = () => {
       <br /><br />
 
       <div className="clientes-header">
-        <h1>La voz de nuestros clientes es</h1>
-        <h1 className="colorCom">nuestra mejor publicidad.</h1>
-        <h3>Opiniones de algunos de ellos</h3>
+        <h1>{t("La voz de nuestros clientes es")}</h1>
+        <h1 className="colorCom">{t("nuestra mejor publicidad.")}</h1>
+        <h3>{t("Opiniones de algunos de ellos")}</h3>
       </div>
 
       <div className="slider">

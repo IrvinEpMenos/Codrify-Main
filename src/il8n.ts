@@ -10,6 +10,21 @@ i18n.use(initReactI18next).init({
         services: "Servicios",
         contact: "Contacto",
 
+        // Agregamos las traducciones del Footer
+        "Enlaces": "Enlaces",
+        "Aviso Legal": "Aviso Legal",
+        "Política de Calidad": "Política de Calidad",
+        "Política de Privacidad": "Política de Privacidad",
+        "Contacto": "Contacto",
+
+        // Agregamos las traducciones del Video de la LandingPage
+        "El futuro es ahora": "El futuro es ahora",
+        "Tu éxito nuestra misión": "Tu éxito nuestra misión",
+        "Es hora de evolucionar": "Es hora de evolucionar",
+        "Crea impacto, deja huella": "Crea impacto, deja huella",
+        "Conecta, impacta, lidera": "Conecta, impacta, lidera",
+        "Diseñamos un futuro. Contigo": "Diseñamos un futuro. Contigo",
+
         // Agregamos las traducciones de AboutSection
         about_title: "Sobre Nosotros",
         vision_title: "Visión",
@@ -57,6 +72,48 @@ i18n.use(initReactI18next).init({
         "Viernes: 9:00AM - 3:00PM": "Viernes: 9:00AM - 3:00PM",
         "Sábado y Domingo: Cerrado": "Sábado y Domingo: Cerrado",
         "No dudes en contactarnos, tenemos una solución para ti.": "No dudes en contactarnos, tenemos una solución para ti.",
+
+        // Agregamos las traducciones de Sobre Nosotros de la LandingPage
+        "Sobre Nosotros": "Sobre Nosotros",
+        "¿Quiénes Somos?": "¿Quiénes Somos?",
+        "En Codrify Consulting, somos una firma de consultoría tecnológica dedicada a transformar el potencial de las pequeñas y medianas empresas (pymes) mediante la implementación de herramientas innovadoras como la inteligencia artificial, la automatización y tecnologías digitales avanzadas.": "En Codrify Consulting, somos una firma de consultoría tecnológica dedicada a transformar el potencial de las pequeñas y medianas empresas (pymes) mediante la implementación de herramientas innovadoras como la inteligencia artificial, la automatización y tecnologías digitales avanzadas.",
+        "innovamos": "innovamos",
+        "tu negocio": "tu negocio",
+        "transformamos": "transformamos",
+        "tu futuro": "tu futuro",
+
+        // Agregamos las traducciones de Nuestros Servicios y Nuestros Clientes de la LandingPage
+        "Nuestros Servicios": "Nuestros Servicios",
+        "Todo lo que necesitas - en un solo sitio.": "Todo lo que necesitas - en un solo sitio.",
+        "Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en tiempo real.": "Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en tiempo real.",
+        "Nuestros Clientes": "Nuestros Clientes",
+
+        // Agregamos las traducciones de Business de la LandingPage
+        "El motor de tu negocio": "El motor de tu negocio",
+        "Tu socio en la transformación digital.": "Tu socio en la transformación digital.",
+        "¡Haz click para comenzar con nosotros!": "¡Haz click para comenzar con nosotros!",
+
+        // Agregamos las traducciones de OurProjects y OurClients2 de la LandingPage
+        "Nuestros más recientes": "Nuestros más recientes",
+        "éxitos": "éxitos",
+        "La voz de nuestros clientes es": "La voz de nuestros clientes es",
+        "nuestra mejor publicidad.": "nuestra mejor publicidad.",
+        "Opiniones de algunos de ellos": "Opiniones de algunos de ellos",
+
+        // Agregamos las traducciones de WhyUs de la LandingPage
+        "¿Por qué elegirnos?": "¿Por qué elegirnos?",
+        "Únete al cambio": "Únete al cambio",
+        "Consultorias personalizadas": "Consultorias personalizadas",
+        "Soluciones a medida para tu negocio. Codrifry te ofrece consultorías personalizadas que se adaptan a tus necesidades únicas." : "Soluciones a medida para tu negocio. Codrifry te ofrece consultorías personalizadas que se adaptan a tus necesidades únicas.",
+        "Soluciones a medida": "Soluciones a medida",
+        "Soluciones innovadoras y personalizadas para tus desafíos. Codrifry te ofrece herramientas y estrategias únicas para tu negocio." : "Soluciones innovadoras y personalizadas para tus desafíos. Codrifry te ofrece herramientas y estrategias únicas para tu negocio.",
+        "Conocimiento en el campo": "Conocimiento en el campo",
+        "Expertos en el campo a tu servicio. Codrifry te ofrece soluciones eficientes y efectivas gracias a nuestro amplio conocimiento." : "Expertos en el campo a tu servicio. Codrifry te ofrece soluciones eficientes y efectivas gracias a nuestro amplio conocimiento.",
+
+     // Agregamos las traducciones de ReadyGo de la LandingPage
+     "¿Estás listo para el éxito?": "¿Estás listo para el éxito?",
+     "La mejor decisión para tu empresa solo dando clic.": "La mejor decisión para tu empresa solo dando clic.",
+     "Contáctanos": "Contáctanos",
       },
     },
     en: {
@@ -65,6 +122,21 @@ i18n.use(initReactI18next).init({
         about: "About",
         services: "Services",
         contact: "Contact",
+
+        // Agregamos las traducciones del Footer
+        "Enlaces": "Links",
+        "Aviso Legal": "Legal Notice",
+        "Política de Calidad": "Quality Policy",
+        "Política de Privacidad": "Privacy Policy",
+        "Contacto": "Contact",
+
+        // Agregamos las traducciones del Video de la LandingPage
+        "El futuro es ahora": "The future is now",
+        "Tu éxito nuestra misión": "Your success our mission",
+        "Es hora de evolucionar": "It's time to evolve",
+        "Crea impacto, deja huella": "Create impact, leave a mark",
+        "Conecta, impacta, lidera": "Connect, impact, lead",
+        "Diseñamos un futuro. Contigo": "We design a future. With you",
 
         // Traducciones en inglés de AboutSection
         about_title: "About Us",
@@ -113,7 +185,49 @@ i18n.use(initReactI18next).init({
         "Viernes: 9:00AM - 3:00PM": "Friday: 9:00AM - 3:00PM",
         "Sábado y Domingo: Cerrado": "Saturday and Sunday: Closed",
         "No dudes en contactarnos, tenemos una solución para ti.": "Do not hesitate to contact us, we have a solution for you.",
-        
+
+        // Traducciones en inglés de Sobre Nosotros de la LandingPage
+        "Sobre Nosotros": "About Us",
+        "¿Quiénes Somos?": "Who Are We?",
+        "En Codrify Consulting, somos una firma de consultoría tecnológica dedicada a transformar el potencial de las pequeñas y medianas empresas (pymes) mediante la implementación de herramientas innovadoras como la inteligencia artificial, la automatización y tecnologías digitales avanzadas.": "At Codrify Consulting, we are a technology consulting firm dedicated to transforming the potential of small and medium-sized enterprises (SMEs) through the implementation of innovative tools such as artificial intelligence, automation, and advanced digital technologies.",
+        "innovamos": "innovate",
+        "tu negocio": "your business",
+        "transformamos": "transform",
+        "tu futuro": "your future",
+
+        // Traducciones en inglés de Nuestros Servicios de la LandingPage
+        "Nuestros Servicios": "Our Services",
+        "Todo lo que necesitas - en un solo sitio.": "Everything you need - in one place.",
+        "Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en tiempo real.": "We integrate AI to optimize processes, reduce costs, and make smarter decisions in real time.",
+        "Nuestros Clientes": "Our Clients",
+
+        // Traducciones en inglés de Business de la LandingPage
+        "El motor de tu negocio": "The engine of your business",
+        "Tu socio en la transformación digital.": "Your partner in digital transformation.",
+        "¡Haz click para comenzar con nosotros!": "Click to start with us!",
+
+        // Traducciones en inglés de OurProjects y OurClients2 de la LandingPage
+        "Nuestros más recientes": "Our most recent",
+        "éxitos": "successes",
+        "La voz de nuestros clientes es": "The voice of our clients is",
+        "nuestra mejor publicidad.": "our best advertising.",
+        "Opiniones de algunos de ellos": "Opinions of some of them",
+
+        // Traducciones en inglés de WhyUs de la LandingPage
+        "¿Por qué elegirnos?": "Why choose us?",
+        "Únete al cambio": "Join the change",
+        "Consultorias personalizadas": "Customized consulting",
+        "Soluciones a medida para tu negocio. Codrifry te ofrece consultorías personalizadas que se adaptan a tus necesidades únicas." : "Customized solutions for your business. Codrifry offers you personalized consultations that adapt to your unique needs.",
+        "Soluciones a medida": "Custom solutions",
+        "Soluciones innovadoras y personalizadas para tus desafíos. Codrifry te ofrece herramientas y estrategias únicas para tu negocio." : "Innovative and personalized solutions for your challenges. Codrifry offers you unique tools and strategies for your business.",
+        "Conocimiento en el campo": "Knowledge in the field",
+        "Expertos en el campo a tu servicio. Codrifry te ofrece soluciones eficientes y efectivas gracias a nuestro amplio conocimiento." : "Experts in the field at your service. Codrifry offers you efficient and effective solutions thanks to our extensive knowledge.",
+
+        // Traducciones en inglés de ReadyGo de la LandingPage
+        "¿Estás listo para el éxito?": "Are you ready for success?",
+        "La mejor decisión para tu empresa solo dando clic.": "The best decision for your company just by clicking.",
+        "Contáctanos": "Contact Us",
+
       },
     },
   },
