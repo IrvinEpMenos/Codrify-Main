@@ -32,7 +32,9 @@ const ContactPage: React.FC = () => {
       return;
     }
 
-      const apiUrl = `https://codrify-mails-3v5n.onrender.com:3000/api/send-email`;
+    const apiIPs = ["52.41.36.82", "54.191.253.12", "44.226.122.3"];
+    const randomIP = apiIPs[Math.floor(Math.random() * apiIPs.length)];
+    const apiUrl = `http://${randomIP}/api/send-email`;
 
     try {
       const response = await fetch(apiUrl, {
@@ -109,6 +111,7 @@ const ContactPage: React.FC = () => {
           <h3>{t("Horario de atención")}</h3>
           <p className="phorario">{t("Lunes a Jueves: 9:00AM - 6:30PM")}</p>
           <p className="phorario">{t("Viernes: 9:00AM - 3:00PM")}</p>
+          <p className="phorario">{t("Sábado y Domingo: Cerrado")}</p>
           <br />
           <br />
         </div>
