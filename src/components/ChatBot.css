@@ -94,7 +94,7 @@
   border-radius: 8px;
   background: #0a0a2a;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   appearance: none; /* Standard property for compatibility */
   -webkit-appearance: none; /* Evita estilos nativos en iOS */
   caret-color: white; /* Hace que el cursor sea visible */
@@ -141,3 +141,8 @@
     font-size: 16px;
   }
 }
+
+.keyboard-open .chatbot-box {
+  bottom: 150px !important; /* Ajusta según la altura del teclado */
+}
+
