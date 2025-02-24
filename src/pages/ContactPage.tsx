@@ -4,6 +4,7 @@ import "./css/Contact.css";
 
 const ContactPage: React.FC = () => {
   const { t } = useTranslation();
+  
   useEffect(() => {
     window.scrollTo(0, 2); // Esto hace que la página se cargue desde el inicio
   }, []);
@@ -31,8 +32,10 @@ const ContactPage: React.FC = () => {
       return;
     }
 
+      const apiUrl = `https://codrify-mails-3v5n.onrender.com:3000/api/send-email`;
+
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -44,7 +47,7 @@ const ContactPage: React.FC = () => {
         setErrorMessage(""); // Limpiar el mensaje de error
         setTimeout(() => {
           setMessage(""); // Limpiar el mensaje después de 1 minuto
-        }, 60000); // 60000 ms = 1 minuto
+        }, 60000);
       } else {
         alert(t("Error al enviar el correo."));
       }
@@ -106,7 +109,6 @@ const ContactPage: React.FC = () => {
           <h3>{t("Horario de atención")}</h3>
           <p className="phorario">{t("Lunes a Jueves: 9:00AM - 6:30PM")}</p>
           <p className="phorario">{t("Viernes: 9:00AM - 3:00PM")}</p>
-          <p className="phorario">{t("Sábado y Domingo: Cerrado")}</p>
           <br />
           <br />
         </div>
