@@ -38,8 +38,7 @@ const OurClients2 = () => {
             <h3>Irvin Sanchez Ayala</h3>
             <p className="cargo">UX Designer @Brello</p>
             <p className="comentario">
-              "Codrify convirtió mi idea en un negocio exitoso. Su enfoque
-              personalizado fue clave para nuestro éxito"
+              {t("Codrify convirtió mi idea en un negocio exitoso. Su enfoque personalizado fue clave para nuestro éxito")}
             </p>
           </div>
           {/* Slide 2 */}
@@ -52,8 +51,7 @@ const OurClients2 = () => {
             <h3>Jonathan Morales</h3>
             <p className="cargo">Creative Director @Yo</p>
             <p className="comentario">
-              "Gracias a Codrify, nuestras ventas aumentaron un 30% en seis meses.
-              Son verdaderos expertos"
+              {t("Gracias a Codrify, nuestras ventas aumentaron un 30% en seis meses. Son verdaderos expertos")}
             </p>
           </div>
           {/* Slide 3 */}
@@ -66,8 +64,7 @@ const OurClients2 = () => {
             <h3>Damaris Fierro</h3>
             <p className="cargo">UI Designer @Boo</p>
             <p className="comentario">
-              "Codrify ha sido nuestro socio estratégico, ayudándonos a desarrollar
-              soluciones innovadoras y escalables"
+              {t("Codrify ha sido nuestro socio estratégico, ayudándonos a desarrollar soluciones innovadoras y escalables")}
             </p>
           </div>
         </div>
