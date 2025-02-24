@@ -32,7 +32,7 @@ const ContactPage: React.FC = () => {
       return;
     }
 
-      const apiUrl = `https://codrify-mails-3v5n.onrender.com:3000/api/send-email`;
+    const apiUrl = `https://codrify-mails-3v5n.onrender.com/api/send-email`;
 
     try {
       const response = await fetch(apiUrl, {
@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
       <div className="contact-form-container">
         <h2>{t("Envíanos un mensaje")}</h2>
         <p className="pinfo">
-          {t("Por favor llámanos a los teléfonos de nuestras oficinas regionales o escríbenos en este formulario de correo y te responderemos.")}
+          {t("Llena el siguiente formulario para ponerte en contacto con nosotros.")}
         </p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
