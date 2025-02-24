@@ -14,6 +14,7 @@
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .chatbot-toggle:hover {
@@ -21,14 +22,16 @@
 }
 
 .chatbot-box {
-  width: 320px;
+  width: 90%;
+  max-width: 350px;
+  min-width: 250px;
   background: #0a0a2a;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   overflow: hidden;
   position: fixed;
   bottom: 80px;
-  right: 20px;
+  right: 5%;
   display: flex;
   flex-direction: column;
   color: white;
@@ -45,12 +48,13 @@
 }
 
 .chatbot-messages {
-  max-height: 350px;
+  max-height: 60vh;
   overflow-y: auto;
   padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .chatbot-message {
@@ -58,7 +62,7 @@
   border-radius: 8px;
   max-width: 80%;
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .chatbot-message.user {
@@ -90,6 +94,10 @@
   border-radius: 8px;
   background: #0a0a2a;
   color: white;
+  font-size: 14px;
+  appearance: none; /* Standard property for compatibility */
+  -webkit-appearance: none; /* Evita estilos nativos en iOS */
+  caret-color: white; /* Hace que el cursor sea visible */
 }
 
 .chatbot-input button {
@@ -105,4 +113,31 @@
 
 .chatbot-input button:hover {
   background: #0056b3;
+}
+
+/* Media queries específicas para iPhone */
+@media screen and (max-width: 480px) {
+  .chatbot-box {
+    width: 95%;
+    bottom: 70px;
+    right: 2.5%;
+  }
+
+  .chatbot-messages {
+    max-height: 55vh;
+  }
+}
+
+/* Ajuste cuando el teclado está abierto en iPhone */
+@supports (-webkit-touch-callout: none) {
+  .chatbot-box {
+    bottom: 120px;
+  }
+}
+
+/* Prevención de zoom en iOS al hacer tap en input */
+@media screen and (max-width: 768px) {
+  input {
+    font-size: 16px;
+  }
 }
