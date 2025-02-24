@@ -32,9 +32,7 @@ const ContactPage: React.FC = () => {
       return;
     }
 
-    const apiIPs = ["52.41.36.82", "54.191.253.12", "44.226.122.3"];
-    const randomIP = apiIPs[Math.floor(Math.random() * apiIPs.length)];
-    const apiUrl = `http://${randomIP}/api/send-email`;
+    const apiUrl = `https://codrify-mails-3v5n.onrender.com/api/send-email`;
 
     try {
       const response = await fetch(apiUrl, {
