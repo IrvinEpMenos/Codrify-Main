@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import OpenAI from "openai";
 import { FiMessageCircle } from "react-icons/fi";
 import "./ChatBot.css";
@@ -13,6 +13,7 @@ const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatCompletionMessageParam[]>([]);
   const [input, setInput] = useState("");
+  const [keyboardOpen, setKeyboardOpen] = useState(false);
 
   const toggleChat = () => setIsOpen(!isOpen);
 
@@ -57,8 +58,18 @@ const ChatBot: React.FC = () => {
     }
   };
 
+  // 🔹 Detectar si el teclado está abierto en iOS
+  useEffect(() => {
+    const handleResize = () => {
+      setKeyboardOpen(window.innerHeight < 500); // Ajusta el valor si es necesario
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="chatbot-container">
+    <div className={`chatbot-container ${keyboardOpen ? "keyboard-open" : ""}`}>
       <button className="chatbot-toggle" onClick={toggleChat}>
         <FiMessageCircle size={30} />
       </button>
@@ -90,7 +101,9 @@ const ChatBot: React.FC = () => {
         </div>
       )}
     </div>
+    
   );
 };
 
 export default ChatBot;
+
