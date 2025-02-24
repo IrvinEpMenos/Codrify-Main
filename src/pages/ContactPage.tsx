@@ -106,7 +106,6 @@ const ContactPage: React.FC = () => {
           <h3>{t("Horario de atención")}</h3>
           <p className="phorario">{t("Lunes a Jueves: 9:00AM - 6:30PM")}</p>
           <p className="phorario">{t("Viernes: 9:00AM - 3:00PM")}</p>
-          <p className="phorario">{t("Sábado y Domingo: Cerrado")}</p>
           <br />
           <br />
         </div>
