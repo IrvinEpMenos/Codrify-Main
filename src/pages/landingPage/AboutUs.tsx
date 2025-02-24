@@ -15,10 +15,6 @@ export default function AboutUs() {
 
       <img src={Group} alt="Icono de usuario" className="about-icon" />
 
-      <div className="about-header">
-        <h2>{t("Sobre Nosotros")}</h2>
-      </div>
-
       <div className="about-content">
         <h3>
             <strong>{t("¿Quiénes Somos?")}</strong>

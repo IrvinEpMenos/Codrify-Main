@@ -26,7 +26,7 @@ i18n.use(initReactI18next).init({
         "Diseñamos un futuro. Contigo": "Diseñamos un futuro. Contigo",
 
         // Agregamos las traducciones de AboutSection
-        about_title: "Sobre Nosotros",
+        about_title: "SOBRE NOSOTROS",
         vision_title: "Visión",
         vision_text: "Ser la consultora tecnológica líder para pymes, integrando soluciones innovadoras con enfoque humano. Aspiramos a transformar digitalmente empresas, simplificando procesos, fomentando innovación y generando impacto positivo en clientes y negocios.",
         mission_title: "Misión",
@@ -139,7 +139,7 @@ i18n.use(initReactI18next).init({
         "Diseñamos un futuro. Contigo": "We design a future. With you",
 
         // Traducciones en inglés de AboutSection
-        about_title: "About Us",
+        about_title: "ABOUT US",
         vision_title: "Vision",
         vision_text: "To be the leading technology consulting firm for SMEs, integrating innovative solutions with a human approach. We aspire to digitally transform businesses, simplifying processes, fostering innovation, and generating a positive impact on clients and companies.",
         mission_title: "Mission",
