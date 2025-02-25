@@ -6,15 +6,30 @@
 }
 
 .chatbot-toggle {
-  background-color: #0e0e52;
-  color: white;
-  border: none;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  padding: 12px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  background: none;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
+  outline: none; /* Elimina el borde azul de enfoque en algunos navegadores */
+}
+
+.chatbot-icon {
+  width: 110%; /* Compensa espacios vacíos en la imagen */
+  height: 110%;
+  object-fit: cover;
+  display: block; /* Elimina espacio fantasma debajo de imágenes */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado perfecto */
 }
 
 .chatbot-toggle:hover {
@@ -114,6 +129,8 @@
 .chatbot-input button:hover {
   background: #0056b3;
 }
+
+
 
 /* Media queries específicas para iPhone */
 @media screen and (max-width: 480px) {
