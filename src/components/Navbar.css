@@ -42,7 +42,7 @@
 .oval-container {
   margin-left: 585px;
   background-color: rgba(255, 255, 255, 0.151);
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 25px;
   border: 0.1px solid rgba(255, 255, 255, 0.308);
   display: flex;
@@ -50,10 +50,10 @@
 
 .oval-container1 {
   background: linear-gradient(90deg, #017274 0%, #4aa0b3 50%, #017274 100%);
-  padding: 4px 6px;
+  padding: 4px 12px;
   border-radius: 35px;
   height: 35px;
-  width: auto;
+  width: 100px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -66,6 +66,7 @@
 }
 
 .language-select {
+  margin-left: 4px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -174,7 +175,21 @@
     margin-left: auto;
   }
 }
-
+@media (max-width: 1440px) {
+  .navbar {
+    padding: 0px 50px;
+  }
+  .navbar-links {
+    gap: 0.8rem;
+  }
+  .logo-image {
+    width: 100px;
+    height: 50px;
+  }
+  .oval-container {
+    margin-left: auto;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;

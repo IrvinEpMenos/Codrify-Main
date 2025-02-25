@@ -16,6 +16,7 @@ body {
 }
 
 .about-section {
+  margin-top: 30px;
   text-align: center;
   padding: 20px;
 }
@@ -97,17 +98,42 @@ h1 {
 
 /* Responsividad */
 /* Para tabletas */
+
 @media (max-width: 1024px) {
+  .history {
+    margin-bottom: -50px;
+  }
+  .about-section {
+    margin-top: 80px;
+    margin-bottom: -200px;
+  }
   .cards-container {
     gap: 20px;
   }
   .card {
-    max-width: 45%;
+    max-width: 43%;
+  }
+}
+@media (max-width: 860){
+  .about-section {
+    padding: 20px;
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 820){
+  .about-section {
+    padding: 20px;
+    margin-bottom: 300px;
   }
 }
 
 /* Para móviles */
 @media (max-width: 768px) {
+  .about-section {
+    margin-top: -50px;
+    padding: 20px;
+    margin-bottom: 90px;
+  }
   .cards-container {
     flex-direction: column;
     align-items: center;
@@ -132,5 +158,20 @@ h1 {
     font-size: 0.9em;
     line-height: 1.4;
     padding: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .about-section {
+    margin-top: -50px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    margin-top: -30px;
+    padding: 20px;
   }
 }
