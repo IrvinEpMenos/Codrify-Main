@@ -118,7 +118,7 @@
   margin-right: 5px;
   padding-bottom: 30px;
 }
-@media (max-width: 1024px ) {
+@media (max-width: 1440px ) {
   .serv-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
