@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
       <div className="contact-form-container">
         <h2>{t("Envíanos un mensaje")}</h2>
         <p className="pinfo">
-          {t("Por favor llámanos a los teléfonos de nuestras oficinas regionales o escríbenos en este formulario de correo y te responderemos.")}
+          {t("Llena el siguiente formulario para ponerte en contacto con nosotros.")}
         </p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
@@ -109,7 +109,6 @@ const ContactPage: React.FC = () => {
           <h3>{t("Horario de atención")}</h3>
           <p className="phorario">{t("Lunes a Jueves: 9:00AM - 6:30PM")}</p>
           <p className="phorario">{t("Viernes: 9:00AM - 3:00PM")}</p>
-          <p className="phorario">{t("Sábado y Domingo: Cerrado")}</p>
           <br />
           <br />
         </div>

@@ -16,6 +16,7 @@ const Cards = () => {
 
     return (
         <div className="main-container">
+            <br /><br />
             <h1 className="title">{t("Nuestros más recientes")}</h1>
             <br />
             <h1 className="title3">{t("éxitos")}</h1>

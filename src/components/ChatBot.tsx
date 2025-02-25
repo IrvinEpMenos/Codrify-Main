@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import OpenAI from "openai";
-import { FiMessageCircle } from "react-icons/fi";
 import "./ChatBot.css";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
+import iconChat from "../../src/assets/img/fondochat.png"
 
 const openai = new OpenAI({
   apiKey: "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",
@@ -33,7 +33,7 @@ const ChatBot: React.FC = () => {
         messages: [
           {
             role: "system",
-            content: `Eres Pipol, el encargado de CODRIFY. Responde de manera clara y específica a lo que pregunta el usuario, sin agregar información innecesaria.
+            content: `Eres Pipol, el encargado de CODRIFY. Responde de manera clara y específica a lo que pregunta el usuario, sin agregar información innecesaria,solo puedes respondes informacion que tengan que ver con los temas que conlleva codrify.
             - Si te preguntan que es codrify, responde: "CODRIFY es una consultora tecnológica que ofrece servicios de Diseño UI/UX, Implementaciones Tecnológicas, Automatización con IA y Plan Estratégico Personalizado."
             - Si te preguntan cuanto tiempo lleva codrify, responde: CODRIFY fue fundada en [año de fundación]. Desde entonces, nos hemos dedicado a ofrecer soluciones tecnológicas de alta calidad.
             - Si te preguntan que tipo de clientes atienden, responde: Atendemos a empresas de todos los tamaños, desde startups hasta grandes corporaciones, que buscan optimizar sus procesos mediante soluciones tecnológicas.
@@ -71,15 +71,15 @@ const ChatBot: React.FC = () => {
   return (
     <div className={`chatbot-container ${keyboardOpen ? "keyboard-open" : ""}`}>
       <button className="chatbot-toggle" onClick={toggleChat}>
-        <FiMessageCircle size={30} />
+        <img src={iconChat} alt="Chatbot" className="chatbot-icon" />
       </button>
       {isOpen && (
         <div className="chatbot-box">
-          <div className="chatbot-header">Chat con Pipol</div>
+          <div className="chatbot-header">Chat con Búhify</div>
           <div className="chatbot-messages">
             {messages.length === 0 ? (
               <div className="chatbot-placeholder">
-                Este es el bot que resolverá todas tus dudas acerca de CODRIFY.
+                Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?
               </div>
             ) : (
               messages.map((msg, index) => (
@@ -101,7 +101,7 @@ const ChatBot: React.FC = () => {
         </div>
       )}
     </div>
-    
+
   );
 };
 
