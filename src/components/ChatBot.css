@@ -14,22 +14,17 @@
   border: none;
   background: none;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease-in-out;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-  outline: none; /* Elimina el borde azul de enfoque en algunos navegadores */
+  position: fixed;
+  bottom: 10px; /* Para que se superponga con el chat */
+  right: 20px;
+  z-index: 1001;
+  transition: bottom 0.3s ease-in-out;
 }
 
 .chatbot-icon {
-  width: 110%; /* Compensa espacios vacíos en la imagen */
-  height: 110%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  display: block; /* Elimina espacio fantasma debajo de imágenes */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centrado perfecto */
 }
 
 .chatbot-toggle:hover {
@@ -38,14 +33,13 @@
 
 .chatbot-box {
   width: 90%;
-  max-width: 350px;
-  min-width: 250px;
+  max-width: 360px;
   background: #0a0a2a;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   overflow: hidden;
   position: fixed;
-  bottom: 80px;
+  bottom: 50px;
   right: 5%;
   display: flex;
   flex-direction: column;
@@ -110,9 +104,9 @@
   background: #0a0a2a;
   color: white;
   font-size: 16px;
-  appearance: none; /* Standard property for compatibility */
-  -webkit-appearance: none; /* Evita estilos nativos en iOS */
-  caret-color: white; /* Hace que el cursor sea visible */
+  appearance: none;
+  -webkit-appearance: none;
+  caret-color: white;
 }
 
 .chatbot-input button {
@@ -130,10 +124,8 @@
   background: #0056b3;
 }
 
-
-
-/* Media queries específicas para iPhone */
-@media screen and (max-width: 480px) {
+/* Responsivo para móviles */
+@media screen and (max-width: 768px) {
   .chatbot-box {
     width: 95%;
     bottom: 70px;
@@ -141,25 +133,17 @@
   }
 
   .chatbot-messages {
-    max-height: 55vh;
+    max-height: 50vh;
   }
-}
 
-/* Ajuste cuando el teclado está abierto en iPhone */
-@supports (-webkit-touch-callout: none) {
-  .chatbot-box {
-    bottom: 120px;
-  }
-}
-
-/* Prevención de zoom en iOS al hacer tap en input */
-@media screen and (max-width: 768px) {
+  /* Evitar zoom en input en iOS */
   input {
     font-size: 16px;
   }
 }
 
+/* Ajuste cuando el teclado está abierto en móviles */
 .keyboard-open .chatbot-box {
-  bottom: 150px !important; /* Ajusta según la altura del teclado */
+  bottom: 150px !important;
 }
 
