@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./css/video.css";
-import video from "../../assets/img/video.mp4";
 
 const AniText = () => {
   const { t } = useTranslation();
@@ -42,12 +41,7 @@ const AniText = () => {
 
 export default function Video() {
   return (
-    <div className="video-container">
-<video autoPlay loop muted playsInline className="w-full h-auto">
-  <source src={video} type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
+    <div className="back-container">
       <AniText />
     </div>
   );
