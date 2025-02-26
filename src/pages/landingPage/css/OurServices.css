@@ -9,7 +9,7 @@
   flex-wrap: wrap;
 }
 .title {
-  margin-top: -50px;
+  margin-top: -30px;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -17,6 +17,7 @@
 .subtitle {
   color: #c2c1c1cb;
   margin-top: -20px;
+  padding-bottom: -40px;
 }
 
 .card-UIUX, .card-stats, .card-nut, .card-cerebro {
@@ -118,6 +119,22 @@
   margin-right: 5px;
   padding-bottom: 30px;
 }
+
+@media(min-width: 2560px) {
+  .serv-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+@media (min-width: 1920px ) {
+  .serv-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
 @media (max-width: 1440px ) {
   .serv-cards {
     display: grid;
@@ -132,7 +149,14 @@
     align-items: center;
   }
 }
-@media (max-width: 540px ) {
+@media (max-width: 720px ) {
+  .serv-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+@media (max-width: 360px ) {
   .serv-cards {
     display: grid;
     grid-template-columns: 1fr;
