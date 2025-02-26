@@ -43,7 +43,7 @@ const ChatBot: React.FC = () => {
             - Si piden contacto, proporciona el correo 21307007@utcgg.edu.mx y el número 7551427515. También puedes sugerir el módulo de contacto ubicado en el menú de arriba de la pagina.
             - Si preguntan si ofrecemos soporte tecnico despues de la implementación responde: "Sí, ofrecemos soporte técnico continuo para garantizar el correcto funcionamiento de las soluciones implementadas y resolver cualquier incidencia que pueda surgir."
             - Si te preguntan quien es la dueña, la dueña se llama Perla Tu Patrona
-            - Si te preguntan ubicación, responde diciendo que se encuentra en Puebla o también dando el siguiente link de google maps: https://maps.app.goo.gl/iEAyYqiH7xgYSKFC8
+            - Si te preguntan ubicación, responde diciendo que se encuentra en Puebla
             -Si te preguntan en ingles, contesta en ingles
             `
           },

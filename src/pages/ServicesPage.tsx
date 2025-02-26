@@ -47,18 +47,18 @@ const ServicesPage: React.FC = () => {
 
             {selectedService !== 0 && (
                 <p>
-                {t("Creamos interfaces modernas, únicas y funcionales que mejoran la experiencia de usuario y refuerzan la identidad de tu marca.")}
+                {t("Creamos interfaces intuitivas y atractivas que mejoran la experiencia del usuario, optimizan la navegación y potencian la conversión.")}
                 </p>
             )}
 
             {selectedService === 0 && (
               <div className="service-details">
-                <p>{t("Más información sobre Diseño UI/UX...")}</p>
+                <p>{t("Un buen diseño UI/UX no solo hace que tu sitio web luzca increíble, sino que también garantiza una navegación fluida y una interacción intuitiva para los usuarios. En Codrify Consulting, diseñamos interfaces que combinan estética, funcionalidad y estrategia para mejorar la retención, aumentar las conversiones y fortalecer tu marca en el mundo digital.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/bh_6ViNkDwc"
+                    src="https://www.youtube.com/embed/6FQrWFLHtiY?si=ksgNTJcAduM5F2Ej"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -103,18 +103,18 @@ const ServicesPage: React.FC = () => {
             <h2>{t("Implementaciones Tecnológicas")}</h2>
             {selectedService !== 1 && (
                 <p>
-                {t("Desarrollamos soluciones digitales personalizadas para optimizar tus procesos y modernizar tu negocio.")}
+                {t("Modernizamos tu negocio con soluciones digitales personalizadas que optimizan procesos y mejoran la eficiencia.")}
                 </p>
             )}
 
             {selectedService === 1 && (
               <div className="service-details">
-                <p>{t("Más información sobre Implementaciones Tecnológicas.")}</p>
+                <p>{t("Impulsa la transformación digital de tu empresa con implementaciones tecnológicas a medida. Diseñamos soluciones innovadoras que optimizan procesos, mejoran la productividad y fortalecen la competitividad, asegurando un crecimiento sostenible en la era digital.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/p38WgakuYDo"
+                    src="https://www.youtube.com/embed/rtHScOwQxp0?si=PTbt8l7UTjX-6z6A"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -157,18 +157,18 @@ const ServicesPage: React.FC = () => {
 
             {selectedService !== 2 && (
                 <p>
-                {t("Integramos IA para optimizar procesos, reducir costos y tomar decisiones más inteligentes en menos tiempo.")}
+                {t("Integramos IA y automatización para optimizar procesos, reducir costos y mejorar la toma de decisiones.")}
                 </p>
             )}
 
             {selectedService === 2 && (
               <div className="service-details">
-                <p>{t("Más información sobre Automatización con Inteligencia Artificial.")}</p>
+                <p>{t("Aprovecha el poder de la inteligencia artificial y la automatización para hacer tu negocio más eficiente. Implementamos soluciones que optimizan flujos de trabajo, reducen costos operativos y permiten tomar decisiones estratégicas en menos tiempo, impulsando la rentabilidad y el crecimiento.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/p38WgakuYDo"
+                    src="https://www.youtube.com/embed/8RrxZYy2kzY?si=Serwtgghe_TCmVdD"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -215,13 +215,13 @@ const ServicesPage: React.FC = () => {
 
             {selectedService !== 3 && (
                 <p>
-                {t("Diseñamos estrategias tecnológicas a medida, alineadas con los objetivos de tu empresa para maximizar su potencial.")}
+                {t("Diseñamos estrategias tecnológicas a medida para maximizar el potencial de tu empresa.")}
                 </p>
             )}
 
             {selectedService === 3 && (
               <div className="service-details">
-                <p>{t("Más información sobre Plan Estratégico Personalizado.")}</p>
+                <p>{t("Cada empresa es única, y por eso creamos planes estratégicos personalizados que se alinean con tus objetivos de negocio. Te ayudamos a implementar soluciones tecnológicas innovadoras que optimizan recursos, mejoran la eficiencia y te preparan para un crecimiento sostenible en un mercado digitalizado.")}</p>
                 <div className="video-container">
                   <iframe
                     width="560"

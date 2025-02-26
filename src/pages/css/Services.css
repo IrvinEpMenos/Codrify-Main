@@ -151,8 +151,9 @@
 .service-text {
     flex: 1;
     /* Tomar el espacio restante */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* Tamaño de letra más grande */
+    text-align: center;
 }
 
 .service-text h2 {
@@ -164,7 +165,7 @@
 .service-text p {
     font-size: 0.9rem;
     margin: 0.5rem 0 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .cta-section {
