@@ -23,6 +23,7 @@
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.3",
     "nodemailer": "^6.9.16",
+    "ogl": "^1.0.11",
     "openai": "^4.84.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

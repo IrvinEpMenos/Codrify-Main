@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./css/video.css";
+import Threads  from "../../../reactBits/Threads/Threads";
 
 const AniText = () => {
   const { t } = useTranslation();
@@ -41,8 +42,14 @@ const AniText = () => {
 
 export default function Video() {
   return (
-    <div className="back-container">
-      <AniText />
+      <div className='back-container'>
+  <Threads
+    amplitude={5}
+    distance={1}
+    enableMouseInteraction={false}
+  />
+        <AniText />
     </div>
+
   );
 }
