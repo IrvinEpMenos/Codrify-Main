@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./css/video.css";
-import Threads  from "../../../reactBits/Threads/Threads";
+import Squares  from "../../../reactBits/Threads/Threads";
 
 const AniText = () => {
   const { t } = useTranslation();
@@ -43,11 +43,13 @@ const AniText = () => {
 export default function Video() {
   return (
       <div className='back-container'>
-  <Threads
-    amplitude={5}
-    distance={0.2}
-    enableMouseInteraction={false}
-  />
+<Squares 
+speed={0.1} 
+squareSize={40}
+direction='diagonal' // up, down, left, right, diagonal
+borderColor='#fff'
+hoverFillColor='#222'
+/>
         <AniText />
     </div>
 
