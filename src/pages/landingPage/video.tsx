@@ -45,7 +45,7 @@ export default function Video() {
       <div className='back-container'>
   <Threads
     amplitude={5}
-    distance={1}
+    distance={0.2}
     enableMouseInteraction={false}
   />
         <AniText />
