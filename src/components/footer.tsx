@@ -20,11 +20,11 @@ const Footer: React.FC = () => {
         <div className="footer-links">
             <h2>{t("Enlaces")}</h2>
           <div className="footer-separator"></div>
-          <ul>
-           <li><Link to="/">{t("Aviso Legal")}</Link></li>
-            <li><Link to="/">{t("Política de Calidad")}</Link></li>
-            <li><Link to="/">{t("Política de Privacidad")}</Link></li>
-          </ul>
+            <ul>
+            <li><Link to="https://drive.google.com/file/d/1vv300IjVB-hf1bqJV8aru18c3oPmmnlP/view?usp=sharing" target="_blank" rel="noopener noreferrer">{t("Aviso Legal")}</Link></li>
+            <li><Link to="https://drive.google.com/file/d/12wNCksdWSbCR4MYJkCWdm93HwLkSQAFm/view?usp=sharing" target="_blank" rel="noopener noreferrer">{t("Política de Calidad")}</Link></li>
+            <li><Link to="https://drive.google.com/file/d/1_Min5op-negwjwpCJabeB8XBugeIqlEO/view?usp=sharing" target="_blank" rel="noopener noreferrer">{t("Política de Privacidad")}</Link></li>
+            </ul>
         </div>
         <div className="footer-contact">
             <h2>{t("Contacto")}</h2>
