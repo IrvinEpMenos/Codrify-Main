@@ -4,69 +4,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Ocupa al menos el 100% de la altura de la pantalla */
+  min-height: 100vh;
   padding: 20px;
-  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
-}
-
-/* Contenedor de las cards */
-.cards2-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 20px;
-  flex-wrap: wrap; /* Para que las cards se ajusten en pantallas pequeñas */
-}
-
-/* Card */
-.card2 {
-  backdrop-filter: blur(8px);
-  border-radius: 15px;
-  width: 300px;
-  height: 450px; /* Aumentar la altura */
-  padding: 20px;
-  text-align: center;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo más transparente */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-}
-
-.card2:hover {
-  transform: scale(1.05);
-}
-
-/* Cabecera de la card */
-.card2-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-/* Icono de estrella en la card */
-.star {
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-
-/* Imagen dentro de la card */
-.card2-image {
-  width: 100%;
-  height: 300px; /* Ajusta el tamaño de la imagen */
-  border-radius: 10px;
-  object-fit: cover; /* Para que la imagen se ajuste correctamente */
+  box-sizing: border-box;
 }
 
 /* Título de la sección */
 .title {
   text-align: center;
-  margin-bottom: 20px; /* Espaciado debajo del título */
+  margin-bottom: 20px;
   font-size: 40px;
 }
 
-.title3{
+.title3 {
   background-image: linear-gradient(137deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -74,41 +24,37 @@
   font-size: 40px;
 }
 
-/* Estilos del contenedor del SVG */
-.logo-container {
-  width: 64px;
-  height: 64px;
-  flex-shrink: 0;
-  border-radius: 11px;
-  background: linear-gradient(137deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
-  padding: 10px;
-  box-sizing: border-box;
+
+.tilted-cards-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  gap: 90px;
+  flex-wrap: wrap;
+  padding: 20px 0;
 }
 
-.logo-container svg {
-  width: 100%;
-  height: 100%;
+.tilted-card-demo-text{
+  color : #ffffff;
+  font-size: 20px;
+  background-color: #000000;
+  /* border-radius: 10%; */
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .card2 {
-      width: 250px;
-      height: 400px;
+      width: 240px;
+      height: auto;
+      padding: 15px;
   }
   .card2-image {
-      height: 250px;
+      height: 300px;
   }
 }
 
 @media (max-width: 480px) {
   .cards2-container {
-      gap: 20px;
+      gap: 15px;
   }
   .card2 {
       width: 90%;
@@ -116,6 +62,6 @@
       padding: 15px;
   }
   .card2-image {
-      height: auto;
+      height: 280px;
   }
 }

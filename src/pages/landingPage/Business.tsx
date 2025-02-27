@@ -18,7 +18,7 @@ export default function Business() {
                     </div>
                 </div>
                 <br /><br /><br />
-                <h1>Codrify:</h1>
+                {/* <h1>Codrify:</h1> */}
                 <h2 className="h2a">{t("El motor de tu negocio")}</h2>
                 <p className="ppp">{t("Tu socio en la transformación digital.")}</p>
             </div>

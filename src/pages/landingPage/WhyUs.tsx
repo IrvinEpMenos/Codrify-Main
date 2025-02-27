@@ -33,7 +33,7 @@ export default function WhyUs() {
                     </div>
                     <h3>{t("Consultorias personalizadas")}</h3>
                     <p>
-                        {t("Soluciones a medida para tu negocio. Codrifry te ofrece consultorías personalizadas que se adaptan a tus necesidades únicas.")}
+                        {t("Cada empresa es única, y nuestras soluciones también. En Codrify, diseñamos estrategias a medida para potenciar tu negocio con tecnología, inteligencia artificial y automatización.")}
                     </p>
                     {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
@@ -48,7 +48,7 @@ export default function WhyUs() {
                     </div>
                     <h3>{t("Soluciones a medida")}</h3>
                     <p>
-                        {t("Soluciones innovadoras y personalizadas para tus desafíos. Codrifry te ofrece herramientas y estrategias únicas para tu negocio.")}
+                        {t("Innovamos para resolver tus desafíos. Desarrollamos herramientas y estrategias adaptadas a tus necesidades, garantizando resultados efectivos y escalables.")}
                     </p>
                     {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
@@ -65,9 +65,9 @@ export default function WhyUs() {
                             <path d="M21.0003 19.1543C19.3582 19.0548 18.9235 18.7892 18.6067 18.5957C18.4013 18.4702 18.2455 18.375 17.8421 18.375C17.2679 18.375 16.8814 18.8155 16.7347 19.0723C16.4066 19.6465 16.6117 20.4023 17.1038 20.7539C18.5394 21.7793 19.9749 22.3125 21.0003 22.3125C22.0257 22.3125 23.4613 21.7793 24.8968 20.7539C25.389 20.4023 25.5941 19.6465 25.266 19.0723C25.1192 18.8155 24.7328 18.375 24.1585 18.375C23.7552 18.375 23.5994 18.4702 23.3939 18.5957C23.0772 18.7892 22.6425 19.0548 21.0003 19.1543Z" fill="#6EE5FF" />
                         </svg>
                     </div>
-                    <h3>{t("Conocimiento en el campo")}</h3>
+                    <h3>{t("Experiencia y Conocimiento")}</h3>
                     <p>
-                        {t("Expertos en el campo a tu servicio. Codrifry te ofrece soluciones eficientes y efectivas gracias a nuestro amplio conocimiento.")}
+                        {t("Somos expertos en transformación digital. Nuestra experiencia en el campo nos permite ofrecer soluciones eficientes, inteligentes y alineadas con las tendencias tecnológicas.")}
                     </p>
                     {/* <button className="whyus-btn">Más información</button> */}
                 </SpotlightCard>
