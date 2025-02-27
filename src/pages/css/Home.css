@@ -11,7 +11,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  scroll-snap-align: start;
+
 }
 
 /* Progress bar animation */
@@ -22,7 +22,7 @@
   height: 5px;
   background: linear-gradient(90deg, #4AA0B3, #007893);
   transform-origin: left;
-  width: 100%;
+  width: auto;
   z-index: 1000;
 }
 
