@@ -4,12 +4,9 @@ import { useTranslation } from "react-i18next";
 import "./css/video.css";
 import ShinyText from "../../../reactBits/ShinyText/ShinyText";
 import StarBorder from "../../../reactBits/StarBorder/StarBorder";
-import backMobile from "../../assets/img/back2.png";
-import backTablet from "../../assets/img/back1.png";
-import backDesktop from "../../assets/img/back.png";
 
-const AniText = (): JSX.Element => { // Cambia React.FC por una función que devuelve JSX.Element
-  const { t } = useTranslation(); // Get the translation function
+const AniText = (): JSX.Element => {
+  const { t } = useTranslation();
   const texts: string[] = [
     t("El futuro es ahora"),
     t("Tu éxito nuestra misión"),
@@ -19,28 +16,6 @@ const AniText = (): JSX.Element => { // Cambia React.FC por una función que dev
     t("Diseñamos un futuro. Contigo"),
   ];
   const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
-  const [backgroundImage, setBackgroundImage] = useState<string>(backMobile);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setBackgroundImage(backMobile);
-      } else if (window.innerWidth < 1024) {
-        setBackgroundImage(backTablet);
-      } else {
-        setBackgroundImage(backDesktop);
-      }
-    };
-
-    // Set initial background
-    handleResize();
-
-    // Update background on window resize
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,21 +25,7 @@ const AniText = (): JSX.Element => { // Cambia React.FC por una función que dev
   }, [texts.length]);
 
   return (
-    <div
-      className="text-animation-container-home"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        width: "100%", /* Ocupa el 100% del ancho */
-        height: "100vh", /* Ocupa toda la altura de la pantalla */
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="text-animation-container-home">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentTextIndex}

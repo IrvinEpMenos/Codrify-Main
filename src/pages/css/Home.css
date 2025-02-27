@@ -1,5 +1,11 @@
 /* Home.css */
-
+.section-1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+background-image: url("../../assets/img/back.png");
+}
 /* Ensures sections take full viewport height for parallax effect */
 .Content-container {
   position: relative;

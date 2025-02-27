@@ -20,7 +20,6 @@ function DefaultContent() {
 
 // Mapping sections to components
 const contentComponents: { [key: number]: () => JSX.Element } = {
-    0: DefaultContent,
     1: AniText,
     2: AboutUs,
     3: OurClients,
@@ -45,10 +44,10 @@ export default function Parallax() {
     return (
         <div id="parallax-container">
             {/* Parallax Sections */}
-            {[0 ,1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((id) => {
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((id) => {
                 const ContentComponent = contentComponents[id] || DefaultContent;
                 return (
-                    <section key={id} className="Content-container">
+                    <section key={id} className={`Content-container section-${id}`}>
                         <motion.div
                             initial={{ visibility: "hidden" }}
                             animate={{ visibility: "visible" }}
