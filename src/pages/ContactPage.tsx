@@ -18,6 +18,7 @@ const ContactPage: React.FC = () => {
 
   const [message, setMessage] = useState(""); // Para mostrar el mensaje
   const [errorMessage, setErrorMessage] = useState(""); // Para mostrar el mensaje de error
+  const [isLoading, setIsLoading] = useState<boolean>(false); // Estado para el indicador de carga
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,9 +29,13 @@ const ContactPage: React.FC = () => {
     const { name, company, phone, subject } = formData;
 
     if (!name || !company || !phone || !subject) {
-      setErrorMessage(t("Por favor, rellena todos los campos.")); // Mensaje de error
+      setErrorMessage(t("Por favor, rellena todos los campos."));
       return;
     }
+
+    setIsLoading(true); // Activar el indicador de carga
+    setErrorMessage(""); // Limpiar mensajes de error previos
+    setMessage(""); // Limpiar mensajes de éxito previos
 
     const apiUrl = `https://codrify-mails-3v5n.onrender.com/api/send-email`;
 
@@ -44,16 +49,17 @@ const ContactPage: React.FC = () => {
       if (response.ok) {
         setMessage(t("Formulario enviado, espere nuestra pronta respuesta."));
         setFormData({ name: '', company: '', phone: '', subject: '' }); // Limpiar los campos del formulario
-        setErrorMessage(""); // Limpiar el mensaje de error
         setTimeout(() => {
           setMessage(""); // Limpiar el mensaje después de 1 minuto
         }, 60000);
       } else {
-        alert(t("Error al enviar el correo."));
+        setErrorMessage(t("Error al enviar el correo."));
       }
     } catch (error) {
       console.error("Error:", error);
-      alert(t("Hubo un problema al enviar el correo."));
+      setErrorMessage(t("Hubo un problema al enviar el correo."));
+    } finally {
+      setIsLoading(false); // Desactivar el indicador de carga
     }
   };
 
@@ -98,8 +104,15 @@ const ContactPage: React.FC = () => {
             value={formData.subject}
             onChange={handleChange}
           />
-          <button type="submit" className="contact-submit">
-            {t("Enviar")}
+          <button type="submit" className="contact-submit" disabled={isLoading}>
+            {isLoading ? (
+              <div className="loading-spinner">
+                <div className="spinner"></div> {/* Spinner animado */}
+                <span>{t("Enviando...")}</span>
+              </div>
+            ) : (
+              t("Enviar")
+            )}
           </button>
         </form>
         <br />
