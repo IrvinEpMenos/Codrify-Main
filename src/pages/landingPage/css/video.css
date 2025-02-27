@@ -1,26 +1,52 @@
-/* Estilos generales para el contenedor de fondo */
-.back-container {
-    width: 100%;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+/* Estilos base */
+.text-animation-container-home {
+  position: relative;
+  width: 100%; /* Ocupa el 100% del ancho disponible */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Text-Sub-Title {
+  font-size: 1rem; /* Tamaño base para móviles */
+  text-align: center;
+  color: white; /* Ajusta el color según el fondo */
+  margin: 1rem 0; /* Espacio alrededor del subtítulo */
+  padding: 0 1rem; /* Padding para evitar que el texto toque los bordes */
+}
+
+.animated-text-home {
+  font-size: 2rem; /* Tamaño base para móviles */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+  padding: 0 1rem; /* Padding para evitar que el texto toque los bordes */
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) {
+  .Text-Sub-Title {
+    font-size: 1.25rem; /* Tamaño más grande para tablets */
   }
-  
-  /* Contenedor del texto animado */
-  .text-animation-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+
+  .animated-text-home {
+    font-size: 2.5rem; /* Tamaño más grande para tablets */
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .animated-text {
-      font-size: 1.5rem;
-    }
+}
+
+/* Media Queries para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+  .Text-Sub-Title {
+    font-size: 1.5rem; /* Tamaño más grande para desktops */
   }
-  
+
+  .animated-text-home {
+    font-size: 3rem; /* Tamaño más grande para desktops */
+  }
+}

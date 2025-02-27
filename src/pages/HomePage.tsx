@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useSpring } from "framer-motion";
 import "./css/Home.css";
-import Video from "./landingPage/video";
+import AniText from "./landingPage/video";
 import OurProjects from "./landingPage/OurProjects";
 import OurServices from "./landingPage/OurServices";
 import OurClients from "./landingPage/OurClients";
@@ -20,8 +20,8 @@ function DefaultContent() {
 
 // Mapping sections to components
 const contentComponents: { [key: number]: () => JSX.Element } = {
-    0: DefaultContent, // Placeholder for Navbar
-    1: Video,
+    0: DefaultContent,
+    1: AniText,
     2: AboutUs,
     3: OurClients,
     4: OurServices,

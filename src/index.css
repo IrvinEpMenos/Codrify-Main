@@ -30,13 +30,6 @@ html, body {
   min-height: 100vh;
 }
 
-/* Definir el fondo de la página y márgenes generales */
-body {
-  background-color: #fafafa;
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-}
-
 /* Estilos generales para los links */
 a {
   text-decoration: none;
