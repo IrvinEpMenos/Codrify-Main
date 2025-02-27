@@ -113,6 +113,23 @@ const LogoWall: FC<LogoWallProps> = ({
           ))}
         </div>
       </div>
+
+      <div
+        className={`${marqueeClass} marquee--reverse`}
+        onMouseEnter={() => pauseOnHover && setIsPaused(true)}
+        onMouseLeave={() => pauseOnHover && setIsPaused(false)}
+      >
+        <div className="marquee__group">
+          {items.map((item, idx) => (
+            <img key={`rev-${idx}`} src={item.imgUrl} alt={item.altText} />
+          ))}
+        </div>
+        <div className="marquee__group" aria-hidden="true">
+          {items.map((item, idx) => (
+            <img key={`dup4-${idx}`} src={item.imgUrl} alt={item.altText} />
+          ))}
+        </div>
+      </div>
     </article>
   );
 };
