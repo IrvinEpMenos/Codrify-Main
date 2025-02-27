@@ -2,7 +2,7 @@
 .text-animation-container-home {
   position: relative;
   width: 100%; /* Ocupa el 100% del ancho disponible */
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  height: 100%; /* Ocupa toda la altura de la pantalla */
   display: flex;
   flex-direction: column;
   justify-content: center;

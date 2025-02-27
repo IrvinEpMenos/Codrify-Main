@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import "./css/video.css";
@@ -8,7 +8,7 @@ import backMobile from "../../assets/img/back2.png";
 import backTablet from "../../assets/img/back1.png";
 import backDesktop from "../../assets/img/back.png";
 
-const AniText: React.FC = () => {
+const AniText = (): JSX.Element => { // Cambia React.FC por una función que devuelve JSX.Element
   const { t } = useTranslation(); // Get the translation function
   const texts: string[] = [
     t("El futuro es ahora"),
@@ -81,7 +81,7 @@ const AniText: React.FC = () => {
         Nuestra visión es transformar negocios con tecnología, inteligencia artificial y automatización.
       </p>
       <StarBorder as="button" className="custom-class" color="cyan" speed="1s">
-        <ShinyText text="Just some shiny text!" disabled={false} speed={3} className="shinyButtom" />
+        <ShinyText text="COMENZAR →" disabled={false} speed={3} className="shinyButtom" />
       </StarBorder>
     </div>
   );
