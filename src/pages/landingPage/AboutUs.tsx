@@ -20,7 +20,7 @@ export default function AboutUs() {
             <strong>{t("¿Quiénes Somos?")}</strong>
         </h3>
         <p>
-          {t("En Codrify Consulting, somos una firma de consultoría tecnológica dedicada a transformar el potencial de las pequeñas y medianas empresas (pymes) mediante la implementación de herramientas innovadoras como la inteligencia artificial, la automatización y tecnologías digitales avanzadas.")}
+          {t("En Codrify Consulting, potenciamos a las pequeñas y medianas empresas (pymes) a través de la transformación tecnológica. Somos una firma de consultoría especializada en impulsar la eficiencia, el crecimiento y la competitividad mediante la implementación de inteligencia artificial, automatización y tecnologías digitales avanzadas. Nuestro enfoque estratégico y práctico ayuda a las empresas a optimizar sus procesos, mejorar la toma de decisiones y prepararse para el futuro digital.")}
         </p>
 
         <div className="about-banner">
