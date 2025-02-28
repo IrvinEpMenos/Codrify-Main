@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import OpenAI from "openai";
 import "./ChatBot.css";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
@@ -11,6 +12,7 @@ const openai = new OpenAI({
 });
 
 const ChatBot: React.FC = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatCompletionMessageParam[]>([]);
   const [input, setInput] = useState("");
@@ -97,9 +99,9 @@ const ChatBot: React.FC = () => {
           <div className="chatbot-header">Chat con Búhify</div>
           <div className="chatbot-messages">
             {messages.length === 0 ? (
-              <div className="chatbot-placeholder">
-                Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?
-              </div>
+                <div className="chatbot-placeholder">
+                {t("Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?")}
+                </div>
             ) : (
               messages.map((msg, index) => (
                 <div key={index} className={`chatbot-message ${msg.role}`}>
@@ -108,15 +110,15 @@ const ChatBot: React.FC = () => {
               ))
             )}
           </div>
-          <div className="chatbot-input">
+            <div className="chatbot-input">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Escribe tu pregunta..."
+              placeholder={t("Escribe tú pregunta...")}
             />
             <button onClick={sendMessage}><i className="fa-solid fa-arrow-right-long"></i></button>
-          </div>
+            </div>
         </div>
       )}
     </div>
