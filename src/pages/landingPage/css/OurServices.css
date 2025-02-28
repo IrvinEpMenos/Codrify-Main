@@ -9,7 +9,7 @@
   flex-wrap: wrap;
 }
 .title {
-  margin-top: -30px;
+  /* margin-top: -30px; */
   font-size: 2rem;
   font-weight: bold;
 }
