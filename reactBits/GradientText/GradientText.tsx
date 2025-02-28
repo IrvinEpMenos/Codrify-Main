@@ -1,8 +1,4 @@
-/*
-	jsrepo 1.37.0
-	Installed from https://reactbits.dev/ts/default/
-	17-2-2025
-*/
+
 
 import "./GradientText.css";
 import { ReactNode } from "react";

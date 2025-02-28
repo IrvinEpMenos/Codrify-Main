@@ -23,14 +23,13 @@ export default function AboutUs() {
         <p>
           {t("En Codrify Consulting, potenciamos a las pequeñas y medianas empresas (pymes) a través de la transformación tecnológica. Somos una firma de consultoría especializada en impulsar la eficiencia, el crecimiento y la competitividad mediante la implementación de inteligencia artificial, automatización y tecnologías digitales avanzadas. Nuestro enfoque estratégico y práctico ayuda a las empresas a optimizar sus procesos, mejorar la toma de decisiones y prepararse para el futuro digital.")}
         </p>
-
         <div className="about-banner">
-        <GradientText colors={["#4AA0B3", "#017274", "#0A516D", "#1B75A1", "#A3D5FF"]}animationSpeed={3}showBorder={false}className="custom-class">
           <h1>
-            "<span>{t("innovamos")}</span> {t("tú negocio")}<br />
-            <span>{t("transformamos")}</span> {t("tú futuro")}"
+          <GradientText colors={["#4AA0B3", "#017274", "#0A516D", "#1B75A1", "#A3D5FF"]}animationSpeed={3}showBorder={false}className="custom-class">
+            "<span>{t("Innovamos")}</span> {t("tú negocio")}<br />
+            <span>{t("Transformamos")}</span> {t("tú futuro")}"
+            </GradientText>
           </h1>
-          </GradientText>
         </div>
       </div>
     </section>
