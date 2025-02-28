@@ -1,40 +1,42 @@
 /* Home.css */
 
 .section-1 {
+  position: relative; /* Ensure proper positioning */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background-image: url("../../assets/img/back.png"); /* Imagen por defecto */
-  background-size: cover; /* Cubre toda la sección */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; /* Optional: For parallax effect */
 }
 
-/* Cambiar la imagen para pantallas pequeñas (móviles) */
-@media (max-width: 576px) {
-  .section-1 {
-    background-image: url("../../assets/img/back1.png"); /* Imagen para móviles */
-  }
+/* Mobile-first approach: Default image for small screens */
+.section-1 {
+  background-image: url("../../assets/img/back1.png"); /* Default image for mobile */
 }
 
+/* Medium screens (tablets, etc.) */
 @media (min-width: 577px) {
   .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Imagen para escritorios */
+    background-image: url("../../assets/img/back2.png"); /* Image for tablets and larger */
   }
 }
 
-@media (min-width: 993px) {
+/* Large screens (desktops, etc.) */
+@media (min-width: 1000px) {
   .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Imagen para escritorios */
+    background-image: url("../../assets/img/back2.png"); /* Image for desktops */
+  }
+}
+/* Large screens (desktops, etc.) */
+@media (min-width: 1500px) {
+  .section-1 {
+    background-image: url("../../assets/img/back.png"); /* Image for desktops */
   }
 }
 
-@media (min-width: 1024px) {
-  .section-1 {
-    background-image: url("../../assets/img/back.png"); /* Imagen para escritorios */
-  }
-}
 /* Ensures sections take full viewport height for parallax effect */
 .Content-container {
   position: relative;
@@ -43,7 +45,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Optional: For parallax effect */
   background-size: cover;
   background-position: center;
 }
@@ -57,5 +59,5 @@
   background: linear-gradient(90deg, #4AA0B3, #007893);
   transform-origin: left;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; /* Ensure it stays on top */
 }
