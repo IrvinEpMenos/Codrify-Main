@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 390px) {
   .section-1 {
     background-image: url("../../assets/img/back1.png"); /* Imagen para móviles */
   }
