@@ -47,6 +47,13 @@
 }
 
 /* RESPONSIVE DESIGN */
+
+@media (max-width: 1920px) {
+  .main-container {
+    margin-top: 3%;
+}
+}
+
 @media (max-width: 768px) {
   .card2 {
       width: 240px;
