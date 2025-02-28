@@ -11,7 +11,7 @@ import OurClients2 from "./landingPage/OurClients2";
 import WhyUs from "./landingPage/WhyUs";
 import ReadyGo from "./landingPage/ReadyGo";
 import '../il8n.ts';
-
+import img from "../assets/img/back.png"; // Importa la imagen de fondo
 
 // Default Content Component (for Navbar & Footer Space)
 function DefaultContent() {
@@ -43,6 +43,14 @@ export default function Parallax() {
 
     return (
         <div id="parallax-container">
+            {/* Añade la imagen de fondo aquí */}
+            <div
+                className="home-back"
+                style={{
+                    backgroundImage: `url(${img})`, // Usa la imagen importada
+                }}
+            ></div>
+
             {/* Parallax Sections */}
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((id) => {
                 const ContentComponent = contentComponents[id] || DefaultContent;

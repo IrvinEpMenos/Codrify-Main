@@ -4,7 +4,6 @@ import "./css/Contact.css";
 
 const ContactPage: React.FC = () => {
   const { t } = useTranslation();
-  
   useEffect(() => {
     window.scrollTo(0, 2); // Esto hace que la página se cargue desde el inicio
   }, []);
