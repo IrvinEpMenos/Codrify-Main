@@ -159,7 +159,14 @@
 
 @media (max-width: 1080px) {
   .business-container {
-    margin-top: -10%;
+    margin-top: -5%;
     margin-bottom: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .business-container {
+    margin-top: -5%;
+    margin-bottom: -30%;
   }
 }
