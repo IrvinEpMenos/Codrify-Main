@@ -15,7 +15,7 @@ export default function ReadyGo() {
                 </div>
             </div>
             <div className="readyGo">
-            <h1 className="readyGo-text">{t("Tu éxito comienza ")}  <span className="title3-ready">{t("aquí")}</span> </h1>
+            <h1 className="readyGo-text">{t("Tu éxito comienza")}   <span className="title3-ready">{t("aquí")}</span> </h1>
             </div>
             <div>
             <p className="readyGo-text">{t("Lleva tu negocio al siguiente nivel con un solo clic")}</p>
