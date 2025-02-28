@@ -1,7 +1,7 @@
 /* Contact.css */
 .contact {
   margin-top: 100px;
-  background-color: #050520;
+  /* background-color: #050520; */
   color: #ffffff;
   text-align: center;
   padding: 50px 20px;
@@ -18,7 +18,7 @@
 }
 
 .contact-form-container {
-  background-color: #050520;
+  /* background-color: #050520; */
   border-radius: 10px;
   padding: 40px 20px;
   max-width: 600px;
