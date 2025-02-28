@@ -256,7 +256,7 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background: var(--color-blue-7, #050520);
+    background: var(--color-blue-7, #060614);
     width: 100%;
     padding: 20px;
     border-radius: 0 0 10px 10px;
@@ -423,11 +423,11 @@
 
   .navbar-logo {
     width: 120px;
-    margin-top: 28px;
+    margin-top: -8px;
   }
 
   .navbar-logo img {
-    width: 140%;
+    width: 120%;
     margin-left: -20px;
   }
 
@@ -460,16 +460,17 @@
 
 @media (max-width: 360px) {
   .navbar {
+    background-color: transparent;
     width: 100%;
     padding-right: 10px;
   }
   .navbar-logo {
     width: 100px;
-    margin-top: 28px;
+    margin-top: -1px;
     margin-left: 5px;
   }
   .navbar-logo img {
-    width: 170%;
+    width: 150%;
   }
 
   .oval-container1 {
