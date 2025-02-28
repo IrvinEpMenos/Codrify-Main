@@ -3,20 +3,18 @@ import { useTranslation } from "react-i18next";
 import LogoWall from '../../../reactBits/LogoWall/LogoWall';
 import sea from '../../assets/img/logo1.png'
 import aim from '../../assets/img/logo2.png'
-import penka from '../../assets/img/logo3.png'
+// import penka from '../../assets/img/logo3.png'
 import gbm from '../../assets/img/logo4.png'
 import zt from '../../assets/img/logo5.png'
 
 // Datos de clientes con imágenes y descripciones
 const logoImgs = [
     { imgUrl: sea, altText: "React Bits Logo" },
-    { imgUrl: aim, altText: "React Bits Logo" },
-    { imgUrl: penka, altText: "React Bits Logo" },
+    { imgUrl: aim, altText: "React Bits Logo" },  
     { imgUrl: gbm, altText: "React Bits Logo" },
     { imgUrl: zt, altText: "React Bits Logo" },
     { imgUrl: sea, altText: "React Bits Logo" },
     { imgUrl: aim, altText: "React Bits Logo" },
-    { imgUrl: penka, altText: "React Bits Logo" },
     { imgUrl: gbm, altText: "React Bits Logo" },
     { imgUrl: zt, altText: "React Bits Logo" }
   ];
