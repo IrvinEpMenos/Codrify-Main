@@ -32,7 +32,7 @@
 
 @media (min-width: 1024px) {
   .section-1 {
-    background-image: url("../../assets/img/back3.png"); /* Imagen para escritorios */
+    background-image: url("../../assets/img/back.png"); /* Imagen para escritorios */
   }
 }
 /* Ensures sections take full viewport height for parallax effect */
