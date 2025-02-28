@@ -1,16 +1,16 @@
 import "./css/proyectos.css";
 import ex1 from "../../assets/img/proyecto1.jpeg";
-import ex2 from "../../assets/img/proyecto2.jpeg";
-import ex3 from "../../assets/img/proyecto3.jpeg";
+import ex2 from "../../assets/img/proyecto2.png";
+import ex3 from "../../assets/img/proyecto3.png";
 import { useTranslation } from "react-i18next";
 import TiltedCard from "../../../reactBits/TiltedCard/TiltedCard";
 
 const Cards = () => {
   const { t } = useTranslation();
   const items = [
-    { id: 1, title: "Pipol Music", image: ex1 },
-    { id: 2, title: "Market Pipol", image: ex2 },
-    { id: 3, title: "Steren Pipol", image: ex3 },
+    { id: 1, title: "Posicionamiento de Marca", image: ex1 },
+    { id: 2, title: "SmartHive", image: ex2 },
+    { id: 3, title: "EatApp", image: ex3 },
   ];
 
   return (

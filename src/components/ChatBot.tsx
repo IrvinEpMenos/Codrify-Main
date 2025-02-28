@@ -51,9 +51,10 @@ const ChatBot: React.FC = () => {
             🖌 Diseño UI/UX  
             🔧 Implementaciones Tecnológicas  
             🤖 Automatización con IA  
-            📈 Plan Estratégico Personalizado"
+            📈 Plan Estratégico Personalizado
+            🌐 Creacion de sitios web"
           
-          - Si piden contacto, proporciona el correo 21307007@utcgg.edu.mx y el número 7551427515. También puedes sugerir el módulo de contacto ubicado en el menú de arriba de la página.
+          - Si piden contacto, proporciona el correo codrifyconsulting@outlook.com y el número 7551118092. También puedes sugerir el módulo de contacto ubicado en el menú de arriba de la página.
           
           - Si preguntan si ofrecen soporte técnico después de la implementación, responde: "¡Por supuesto! En CODRIFY brindamos soporte técnico continuo para garantizar que las soluciones funcionen sin problemas y resolver cualquier incidencia que pueda surgir. ¡Siempre estaremos aquí para ayudarte!"
           
