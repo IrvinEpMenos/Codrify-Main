@@ -10,7 +10,7 @@ const AniText = (): JSX.Element => {
   const { t } = useTranslation();
   const texts: string[] = [
     t("El futuro es ahora"),
-    t("Tu éxito nuestra misión"),
+    t("Tú éxito nuestra misión"),
     t("Es hora de evolucionar"),
     t("Crea impacto, deja huella"),
     t("Conecta, impacta, lidera"),
@@ -48,11 +48,11 @@ const AniText = (): JSX.Element => {
         </motion.div>
       </AnimatePresence>
       <p className="Text-Sub-Title">
-        Nuestra visión es transformar negocios con tecnología, <br />inteligencia artificial y automatización.
+        {t("Nuestra visión es transformar negocios con tecnología,")} <br />{t("inteligencia artificial y automatización.")}
       </p>
       <Link to="/contacto" style={{ color: 'inherit', textDecoration: 'none' }}>
       <StarBorder as="button" className="custom-class" color="cyan" speed="1s" >
-        <ShinyText text="COMENZAR →" disabled={false} speed={3} className="shinyButtom" />
+        <ShinyText text={t("COMENZAR →")} disabled={false} speed={3} className="shinyButtom" />
       </StarBorder>
       </Link>
 

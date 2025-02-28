@@ -1,9 +1,4 @@
-/*
-	jsrepo 1.41.2
-	Installed from https://reactbits.dev/ts/default/
-	27-2-2025
-*/
-
+import { useTranslation } from "react-i18next";
 import { useEffect, useState, useRef } from "react";
 import { motion, PanInfo, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
@@ -11,6 +6,7 @@ import {
   FiUser,
 } from "react-icons/fi";
 import "./Carousel.css";
+import { t } from "i18next";
 
 export interface CarouselItem {
   title: string;
@@ -32,31 +28,31 @@ export interface CarouselProps {
 const DEFAULT_ITEMS: CarouselItem[] = [
   {
     title: "Zip Top",
-    description: "“Trabajar con Codrify ha sido una experiencia excepcional. Su equipo demostró una comprensión profunda de nuestras necesidades y entregó soluciones innovadoras que superaron nuestras expectativas. La comunicación fue fluida durante todo el proyecto, y apreciamos su compromiso con los plazos establecidos. Sin duda, los consideraremos para futuros proyectos.”",
+    description: t("“Trabajar con Codrify ha sido una experiencia excepcional. Su equipo demostró una comprensión profunda de nuestras necesidades y entregó soluciones innovadoras que superaron nuestras expectativas. La comunicación fue fluida durante todo el proyecto, y apreciamos su compromiso con los plazos establecidos. Sin duda, los consideraremos para futuros proyectos.”"),
     id: 1,
     icon: <FiUser className="carousel-icon" />,
   },
   {
     title: "Aimww",
-    description: "“Contratamos a Codrify para desarrollar una aplicación móvil personalizada para nuestro negocio. Desde el inicio, mostraron un alto nivel de profesionalismo y expertise técnico. El resultado final fue una aplicación intuitiva y robusta que ha mejorado significativamente la experiencia de nuestros clientes. Recomendamos encarecidamente sus servicios.”",
+    description: t("“Contratamos a Codrify para desarrollar una aplicación móvil personalizada para nuestro negocio. Desde el inicio, mostraron un alto nivel de profesionalismo y expertise técnico. El resultado final fue una aplicación intuitiva y robusta que ha mejorado significativamente la experiencia de nuestros clientes. Recomendamos encarecidamente sus servicios.”"),
     id: 2,
     icon: <FiUser className="carousel-icon" />,
   },
   {
     title: "Roman Isidor",
-    description: "“El equipo de Codrify se integró perfectamente con nuestro departamento de TI para modernizar nuestra infraestructura de software. Su enfoque colaborativo y soluciones a medida nos han permitido optimizar nuestros procesos internos y aumentar la eficiencia operativa. Estamos muy satisfechos con su trabajo y profesionalismo.”",
+    description: t("“El equipo de Codrify se integró perfectamente con nuestro departamento de TI para modernizar nuestra infraestructura de software. Su enfoque colaborativo y soluciones a medida nos han permitido optimizar nuestros procesos internos y aumentar la eficiencia operativa. Estamos muy satisfechos con su trabajo y profesionalismo.”"),
     id: 3,
     icon: <FiUser className="carousel-icon" />,
   },
   {
     title: "SEA",
-    description: "“Después de evaluar varias opciones, decidimos colaborar con Codrify para el desarrollo de nuestro sitio web corporativo. Su creatividad y atención al detalle resultaron en una plataforma atractiva y funcional que refleja perfectamente nuestra identidad de marca. Agradecemos su dedicación y el soporte continuo que nos brindan.”",
+    description: t("“Después de evaluar varias opciones, decidimos colaborar con Codrify para el desarrollo de nuestro sitio web corporativo. Su creatividad y atención al detalle resultaron en una plataforma atractiva y funcional que refleja perfectamente nuestra identidad de marca. Agradecemos su dedicación y el soporte continuo que nos brindan.”"),
     id: 4,
     icon: <FiUser className="carousel-icon" />,
   },
   {
     title: "Thunderking",
-    description: "Trabajar en Codrify ha sido una experiencia increíble. La empresa realmente se preocupa por el crecimiento profesional de cada miembro del equipo y fomenta la innovación en cada proyecto. La comunicación es abierta, el compañerismo es fuerte y siempre hay espacio para aprender y aportar nuevas ideas. Sin duda, es un lugar donde uno se siente valorado y con oportunidades constantes de desarrollo.",
+    description: t("Trabajar en Codrify ha sido una experiencia increíble. La empresa realmente se preocupa por el crecimiento profesional de cada miembro del equipo y fomenta la innovación en cada proyecto. La comunicación es abierta, el compañerismo es fuerte y siempre hay espacio para aprender y aportar nuevas ideas. Sin duda, es un lugar donde uno se siente valorado y con oportunidades constantes de desarrollo."),
     id: 5,
     icon: <FiUser className="carousel-icon" />,
   },
@@ -76,6 +72,7 @@ export default function Carousel({
   loop = false,
   round = false,
 }: CarouselProps): JSX.Element {
+  const { t } = useTranslation();
   const containerPadding = 16;
   const itemWidth = baseWidth - containerPadding * 2;
   const trackItemOffset = itemWidth + GAP;
