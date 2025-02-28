@@ -33,7 +33,7 @@ const AniText = (): JSX.Element => {
           initial={{ opacity: 0, x: -80, scale: 0.8 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0, x: 80, scale: 1.2 }}
-          transition={{ duration: 1.2, ease: "easeInOut", delay: 0.5 }}          
+          transition={{ duration: 1.2, ease: "easeInOut", delay: 0.5 }}
           className="animated-text-home"
         >
           {texts[currentTextIndex]}
