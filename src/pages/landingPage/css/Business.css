@@ -149,3 +149,10 @@
       font-size: 24px;
   }
 }
+
+@media (max-width: 375px) {
+  .business-container {
+    
+    margin-bottom: -10%;
+  }
+}
