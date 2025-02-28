@@ -16,7 +16,7 @@ const Cards = () => {
   return (
     <div className="main-container">
         <br />
-      <h1 className="title">{t("Nuestros más recientes")}</h1>
+      <h1 className="title3">{t("Nuestros más recientes")}</h1>
       <br />
       <h1 className="title3">{t("éxitos")}</h1>
       <div className="tilted-cards-container">
