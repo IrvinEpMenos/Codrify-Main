@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./css/video.css";
 import ShinyText from "../../../reactBits/ShinyText/ShinyText";
 import StarBorder from "../../../reactBits/StarBorder/StarBorder";
+import { Link } from "react-router-dom";
 
 const AniText = (): JSX.Element => {
   const { t } = useTranslation();
@@ -25,12 +26,12 @@ const AniText = (): JSX.Element => {
   }, [texts.length]);
 
   // Función para manejar el clic del botón
-  const handleScrollClick = () => {
-    window.scrollTo({
-      top: window.innerHeight, // Desplaza hacia abajo una ventana de altura
-      behavior: "smooth", // Desplazamiento suave
-    });
-  };
+  // const handleScrollClick = () => {
+  //   window.scrollTo({
+  //     top: window.innerHeight, 
+  //     behavior: "smooth", 
+  //   });
+  // };
 
   return (
     <div className="text-animation-container-home">
@@ -49,9 +50,13 @@ const AniText = (): JSX.Element => {
       <p className="Text-Sub-Title">
         Nuestra visión es transformar negocios con tecnología, <br />inteligencia artificial y automatización.
       </p>
-      <StarBorder as="button" className="custom-class" color="cyan" speed="1s" onClick={handleScrollClick}>
+      <Link to="/contacto" style={{ color: 'inherit', textDecoration: 'none' }}>
+      <StarBorder as="button" className="custom-class" color="cyan" speed="1s" >
         <ShinyText text="COMENZAR →" disabled={false} speed={3} className="shinyButtom" />
       </StarBorder>
+      </Link>
+
+      
     </div>
   );
 };
