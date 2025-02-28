@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Group from "../../assets/icon/Group.svg";
 import PuntosBlancos from "../../assets/img/PuntosBlancos.png";
 import GradientText from '../../../reactBits/GradientText/GradientText';
-import React from 'react';
+
 
 
 export default function AboutUs() {
