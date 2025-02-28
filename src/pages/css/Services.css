@@ -124,6 +124,10 @@
     .service-item.selected {
         height: auto;
     }
+
+    .arrow-icon{
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -135,6 +139,10 @@
     .service-icon {
         font-size: 1.2rem;
         /* Reducir aún más el tamaño del icono en pantallas muy pequeñas */
+    }
+
+    .arrow-icon{
+        margin-top: 10%;
     }
 
     .service-text {

@@ -138,6 +138,13 @@
 
 }
 
+@media screen and (max-width: 1366px) {
+  .chatbot-box {
+    margin-bottom: 4%;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .chatbot-box {
     width: 95%;

@@ -59,8 +59,8 @@ const DEFAULT_ITEMS: CarouselItem[] = [
     icon: <FiLayout className="carousel-icon" />,
   },
   {
-    title: "Common UI",
-    description: "Common UI components are coming soon!",
+    title: "Thunderking",
+    description: "Trabajar en Codrify ha sido una experiencia increíble. La empresa realmente se preocupa por el crecimiento profesional de cada miembro del equipo y fomenta la innovación en cada proyecto. La comunicación es abierta, el compañerismo es fuerte y siempre hay espacio para aprender y aportar nuevas ideas. Sin duda, es un lugar donde uno se siente valorado y con oportunidades constantes de desarrollo.",
     id: 5,
     icon: <FiCode className="carousel-icon" />,
   },
