@@ -1,34 +1,11 @@
-/* Home.css */
 
 .section-1 {
-  position: relative; /* Ensure proper positioning */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Full viewport height */
-  background-size: auto; /* Cover the entire section */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  background-attachment: fixed; /* Optional: For parallax effect */
+  height: 100vh;
+background-image: url("../../assets/img/back.png");
 }
-
-/* Mobile-first approach: Default image for small screens */
-.section-1 {
-  background-image: url("../../assets/img/back1.png"); /* Default image for mobile */
-}
-
-/* Adjust background image for larger screens */
-@media (min-width: 768px) {
-  .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Image for tablets */
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-1 {
-    background-image: url("../../assets/img/back3.png"); /* Image for desktops */
-  }
-}
-
 /* Ensures sections take full viewport height for parallax effect */
 .Content-container {
   position: relative;
@@ -37,7 +14,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-attachment: fixed; /* Optional: For parallax effect */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
@@ -51,5 +28,5 @@
   background: linear-gradient(90deg, #4AA0B3, #007893);
   transform-origin: left;
   width: 100%;
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000;
 }
