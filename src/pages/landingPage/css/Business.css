@@ -152,14 +152,14 @@
 
 @media (max-width: 390px) {
   .business-container {
-    
+    margin-top: -10%;
     margin-bottom: -10%;
   }
 }
 
 @media (max-width: 1080px) {
   .business-container {
-    
+    margin-top: -10%;
     margin-bottom: -10%;
   }
 }
