@@ -1,8 +1,9 @@
 import "./css/AboutUSLanding.css";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import Group from "../../assets/icon/Group.svg";
 import PuntosBlancos from "../../assets/img/PuntosBlancos.png";
 import GradientText from '../../../reactBits/GradientText/GradientText';
+import React from 'react';
 
 
 export default function AboutUs() {
@@ -26,8 +27,8 @@ export default function AboutUs() {
         <div className="about-banner">
         <GradientText colors={["#4AA0B3", "#017274", "#0A516D", "#1B75A1", "#A3D5FF"]}animationSpeed={3}showBorder={false}className="custom-class">
           <h1>
-            "<span>{t("innovamos")}</span>{t("tu negocio")}<br />
-            <span>{t("transformamos")}</span> {t("tu futuro")}"
+            "<span>{t("innovamos")}</span> {t("tú negocio")}<br />
+            <span>{t("transformamos")}</span> {t("tú futuro")}"
           </h1>
           </GradientText>
         </div>
