@@ -62,7 +62,7 @@ i18n.use(initReactI18next).init({
 
 
         // Agregamos las traducciones de ContactPage
-        "Por favor, rellene todos los campos." : "Por favor, rellene todos los campos.",
+        "Llena el siguiente formulario para ponerte en contacto con nosotros.": "Llena el siguiente formulario para ponerte en contacto con nosotros.",
         "Formulario enviado, espere nuestra pronta respuesta.": "Formulario enviado, espere nuestra pronta respuesta.",
         "Hubo un problema al enviar el correo." : "Hubo un problema al enviar el correo.",
         "Error al enviar el correo.": "Error al enviar el correo.",
@@ -194,7 +194,7 @@ i18n.use(initReactI18next).init({
         "Solicita una consulta gratuita": "Request a free consultation",
 
         // Traducciones en inglés de ContactPage
-        "Por favor, rellene todos los campos." : "Please fill in all fields.",
+        "Llena el siguiente formulario para ponerte en contacto con nosotros." : "Fill out the following form to get in touch with us.",
         "Formulario enviado, espere nuestra pronta respuesta.": "Form sent, expect our prompt response.",
         "Hubo un problema al enviar el correo." : "There was a problem sending the email.",
         "Error al enviar el correo.": "Error sending email.",
