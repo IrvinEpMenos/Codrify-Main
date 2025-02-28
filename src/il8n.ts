@@ -126,10 +126,13 @@ i18n.use(initReactI18next).init({
         "Experiencia y Conocimiento": "Experiencia y Conocimiento",
         "Somos expertos en transformación digital. Nuestra experiencia en el campo nos permite ofrecer soluciones eficientes, inteligentes y alineadas con las tendencias tecnológicas." : "Somos expertos en transformación digital. Nuestra experiencia en el campo nos permite ofrecer soluciones eficientes, inteligentes y alineadas con las tendencias tecnológicas.",
     
-        // Agregamos las traducciones de ReadyGo de la LandingPage
+        // Agregamos las traducciones de ReadyGo y ChatBoT de la LandingPage
         "Tu éxito comienza ": "Tu éxito comienza ",
         "Lleva tu negocio al siguiente nivel con un solo clic": "Lleva tu negocio al siguiente nivel con un solo clic",
-         "Contáctanos": "Contáctanos",
+        "Contáctanos": "Contáctanos",
+        "Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?" : "Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?",
+        "Escribe tú pregunta...": "Escribe tú pregunta...",
+        
       },
     },
     en: {
@@ -249,11 +252,13 @@ i18n.use(initReactI18next).init({
         "Innovamos para resolver tus desafíos. Desarrollamos herramientas y estrategias adaptadas a tus necesidades, garantizando resultados efectivos y escalables." : "We innovate to solve your challenges. We develop tools and strategies tailored to your needs, ensuring effective and scalable results.",
         "Experiencia y Conocimiento": "Experience and Knowledge",
         "Somos expertos en transformación digital. Nuestra experiencia en el campo nos permite ofrecer soluciones eficientes, inteligentes y alineadas con las tendencias tecnológicas." : "We are experts in digital transformation. Our experience in the field allows us to offer efficient, intelligent, and trend-aligned solutions.",
-        // Traducciones en inglés de ReadyGo de la LandingPage,
+        
+        // Traducciones en inglés de ReadyGo y Chatbot de la LandingPage,
         "Tu éxito comienza ": "Your success begins",
         "Lleva tu negocio al siguiente nivel con un solo clic": "Take your business to the next level with just one click",
         "Contáctanos": "Contact Us",
-
+        "Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?" : "My name is Búhify, I am Codrify's virtual assistant. How can I help you?",
+        "Escribe tú pregunta...": "Write your question...",
       },
     },
   },
