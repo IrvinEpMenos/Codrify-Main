@@ -43,3 +43,15 @@
   }
   
 }
+
+@media (max-width: 1024px) {
+  .container-ReadyGo {
+    margin-bottom: 70%;
+  }
+}
+
+@media (max-width: 860px) {
+  .container-ReadyGo {
+    margin-bottom: 40%;
+  }
+}
