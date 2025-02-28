@@ -55,7 +55,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .ppp {
@@ -115,7 +115,7 @@
       font-size: 32px;
   }
   .h2a, .finish {
-      font-size: 28px;
+      font-size: 32px;
   }
   .ppp {
       font-size: 16px;
@@ -135,7 +135,7 @@
       font-size: 28px;
   }
   .h2a, .finish {
-      font-size: 24px;
+      font-size: 28px;
   }
   .ppp {
       font-size: 14px;
