@@ -18,15 +18,19 @@
   }
 }
 
-/* Cambiar la imagen para pantallas medianas (tablets) */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (min-width: 577px) {
   .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Imagen para tablets */
+    background-image: url("../../assets/img/back2.png"); /* Imagen para escritorios */
   }
 }
 
-/* Cambiar la imagen para pantallas grandes (escritorios) */
 @media (min-width: 993px) {
+  .section-1 {
+    background-image: url("../../assets/img/back2.png"); /* Imagen para escritorios */
+  }
+}
+
+@media (min-width: 1024px) {
   .section-1 {
     background-image: url("../../assets/img/back3.png"); /* Imagen para escritorios */
   }
