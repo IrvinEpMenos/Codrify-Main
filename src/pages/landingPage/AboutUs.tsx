@@ -26,8 +26,8 @@ export default function AboutUs() {
         <div className="about-banner">
           <h1>
           <GradientText colors={["#4AA0B3", "#017274", "#0A516D", "#1B75A1", "#A3D5FF"]}animationSpeed={3}showBorder={false}className="custom-class">
-            "<span>{t("Innovamos")}</span> {t("tú negocio")}<br />
-            <span>{t("Transformamos")}</span> {t("tú futuro")}"
+            "<span>{t("Innovamos")}</span> {t("tu negocio,")}<br />
+            <span>{t("transformamos")}</span> {t("tu futuro.")}"
             </GradientText>
           </h1>
         </div>

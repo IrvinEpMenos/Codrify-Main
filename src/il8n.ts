@@ -85,9 +85,9 @@ i18n.use(initReactI18next).init({
         "¿Quiénes Somos?": "¿Quiénes Somos?",
         "En Codrify Consulting, potenciamos a las pequeñas y medianas empresas (pymes) a través de la transformación tecnológica. Somos una firma de consultoría especializada en impulsar la eficiencia, el crecimiento y la competitividad mediante la implementación de inteligencia artificial, automatización y tecnologías digitales avanzadas. Nuestro enfoque estratégico y práctico ayuda a las empresas a optimizar sus procesos, mejorar la toma de decisiones y prepararse para el futuro digital." : "En Codrify Consulting, potenciamos a las pequeñas y medianas empresas (pymes) a través de la transformación tecnológica. Somos una firma de consultoría especializada en impulsar la eficiencia, el crecimiento y la competitividad mediante la implementación de inteligencia artificial, automatización y tecnologías digitales avanzadas. Nuestro enfoque estratégico y práctico ayuda a las empresas a optimizar sus procesos, mejorar la toma de decisiones y prepararse para el futuro digital.",
         "Innovamos": "Innovamos",
-        "tú negocio": "tú negocio",
-        "Transformamos": "Transformamos",
-        "tú futuro": "tú futuro",
+        "tu negocio,": "tu negocio,",
+        "transformamos": "transformamos",
+        "tu futuro.": "tu futuro.",
 
         // Agregamos las traducciones de Nuestros Servicios y Nuestros Clientes de la LandingPage
         "Nuestros Servicios": "Nuestros Servicios",
@@ -120,16 +120,20 @@ i18n.use(initReactI18next).init({
         "¿Por qué elegirnos?": "¿Por qué elegirnos?",
         "Únete al cambio": "Únete al cambio",
         "Soluciones a medida": "Soluciones a medida",
-        "Consultorias personalizadas": "Consultorias personalizadas",
+        "Consultorías personalizadas": "Consultorías personalizadas",
         "Cada empresa es única, y nuestras soluciones también. En Codrify, diseñamos estrategias a medida para potenciar tu negocio con tecnología, inteligencia artificial y automatización." : "Cada empresa es única, y nuestras soluciones también. En Codrify, diseñamos estrategias a medida para potenciar tu negocio con tecnología, inteligencia artificial y automatización.",
         "Innovamos para resolver tus desafíos. Desarrollamos herramientas y estrategias adaptadas a tus necesidades, garantizando resultados efectivos y escalables." : "Innovamos para resolver tus desafíos. Desarrollamos herramientas y estrategias adaptadas a tus necesidades, garantizando resultados efectivos y escalables.",
         "Experiencia y Conocimiento": "Experiencia y Conocimiento",
         "Somos expertos en transformación digital. Nuestra experiencia en el campo nos permite ofrecer soluciones eficientes, inteligentes y alineadas con las tendencias tecnológicas." : "Somos expertos en transformación digital. Nuestra experiencia en el campo nos permite ofrecer soluciones eficientes, inteligentes y alineadas con las tendencias tecnológicas.",
     
-        // Agregamos las traducciones de ReadyGo de la LandingPage
-        "Tu éxito comienza ": "Tu éxito comienza ",
+        // Agregamos las traducciones de ReadyGo y ChatBoT de la LandingPage
+        "Tu éxito comienza": "Tu éxito comienza",
+        "aquí": "aquí",
         "Lleva tu negocio al siguiente nivel con un solo clic": "Lleva tu negocio al siguiente nivel con un solo clic",
-         "Contáctanos": "Contáctanos",
+        "Contáctanos": "Contáctanos",
+        "Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?" : "Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?",
+        "Escribe tú pregunta...": "Escribe tú pregunta...",
+
       },
     },
     en: {
@@ -213,9 +217,9 @@ i18n.use(initReactI18next).init({
         "¿Quiénes Somos?": "Who Are We?",
         "En Codrify Consulting, potenciamos a las pequeñas y medianas empresas (pymes) a través de la transformación tecnológica. Somos una firma de consultoría especializada en impulsar la eficiencia, el crecimiento y la competitividad mediante la implementación de inteligencia artificial, automatización y tecnologías digitales avanzadas. Nuestro enfoque estratégico y práctico ayuda a las empresas a optimizar sus procesos, mejorar la toma de decisiones y prepararse para el futuro digital.": "At Codrify Consulting, we empower small and medium-sized enterprises (SMEs) through technological transformation. We are a consulting firm specialized in boosting efficiency, growth, and competitiveness through the implementation of artificial intelligence, automation, and advanced digital technologies. Our strategic and practical approach helps companies optimize their processes, improve decision-making, and prepare for the digital future.",
         "Innovamos": "Innovate",
-        "tú negocio": "your business",
-        "Transformamos": "Transform",
-        "tú futuro": "your future",
+        "tu negocio,": "your business,",
+        "transformamos": "transform",
+        "tu futuro.": "your future.",
 
         // Traducciones en inglés de Nuestros Servicios de la LandingPage
         "Nuestros Servicios": "Our Services",
@@ -243,17 +247,20 @@ i18n.use(initReactI18next).init({
         // Traducciones en inglés de WhyUs de la LandingPage
         "¿Por qué elegirnos?": "Why choose us?",
         "Únete al cambio": "Join the change",
-        "Consultorias personalizadas": "Customized consulting",
+        "Consultorías personalizadas": "Customized consulting",
         "Soluciones a medida": "Custom solutions",
         "Cada empresa es única, y nuestras soluciones también. En Codrify, diseñamos estrategias a medida para potenciar tu negocio con tecnología, inteligencia artificial y automatización." : "Every company is unique, and our solutions are too. At Codrify, we design customized strategies to enhance your business with technology, artificial intelligence, and automation.",
         "Innovamos para resolver tus desafíos. Desarrollamos herramientas y estrategias adaptadas a tus necesidades, garantizando resultados efectivos y escalables." : "We innovate to solve your challenges. We develop tools and strategies tailored to your needs, ensuring effective and scalable results.",
         "Experiencia y Conocimiento": "Experience and Knowledge",
         "Somos expertos en transformación digital. Nuestra experiencia en el campo nos permite ofrecer soluciones eficientes, inteligentes y alineadas con las tendencias tecnológicas." : "We are experts in digital transformation. Our experience in the field allows us to offer efficient, intelligent, and trend-aligned solutions.",
-        // Traducciones en inglés de ReadyGo de la LandingPage,
-        "Tu éxito comienza ": "Your success begins",
+        
+        // Traducciones en inglés de ReadyGo y Chatbot de la LandingPage,
+        "Tu éxito comienza": "Your success begins",
+        "aquí": "here",
         "Lleva tu negocio al siguiente nivel con un solo clic": "Take your business to the next level with just one click",
         "Contáctanos": "Contact Us",
-
+        "Mi nombre es Búhify, soy el asistente virtual de Codrify. ¿En qué puedo ayudarte?" : "My name is Búhify, I am Codrify's virtual assistant. How can I help you?",
+        "Escribe tú pregunta...": "Write your question...",
       },
     },
   },
