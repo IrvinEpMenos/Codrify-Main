@@ -6,8 +6,8 @@
 
 :root {
   --color-text: #ffffff;
-  --color-bg: #060606;
-  --color-bg-accent: #111111;
+  /* --color-bg: #060606; */
+  /* --color-bg-accent: #111111; */
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
   --duration: 60s;
@@ -22,7 +22,7 @@
   padding: 20px 10px;
 
   color: var(--color-text);
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
 }
 
 .wrapper--vertical {
@@ -113,7 +113,7 @@
 
 .marquee__group img {
   width: var(--size);
-  background: var(--color-bg-accent);
+  /* background: var(--color-bg-accent); */
   aspect-ratio: 16/9;
   padding: calc(var(--size) / 10);
   border-radius: 0.5rem;
