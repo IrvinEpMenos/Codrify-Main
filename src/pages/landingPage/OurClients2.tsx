@@ -33,8 +33,8 @@ const OurClients2 = () => {
       <div style={{ height: '600px', position: 'relative' }}>
         <Carousel
           baseWidth={400}
-          autoplay={false}
-          autoplayDelay={3000}
+          autoplay={true}
+          autoplayDelay={5000}
           pauseOnHover={true}
           loop={true}
           round={true}

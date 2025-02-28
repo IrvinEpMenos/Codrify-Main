@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import OpenAI from "openai";
 import "./ChatBot.css";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
-import iconChat from "../../src/assets/img/fondochat.png"
+// import iconChat from "../../src/assets/img/fondochat.png"
+import iconChat from "../../src/assets/img/buhify2.0.jpeg"
 
 const openai = new OpenAI({
   apiKey: "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",

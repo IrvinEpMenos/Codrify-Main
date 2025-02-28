@@ -1,3 +1,4 @@
+
 .chatbot-container {
   position: fixed;
   bottom: 20px;
@@ -6,8 +7,8 @@
 }
 
 .chatbot-toggle {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   overflow: hidden;
   padding: 0;
@@ -34,7 +35,10 @@
 .chatbot-box {
   width: 90%;
   max-width: 360px;
-  background: #0a0a2a;
+  background: linear-gradient(rgba(10, 10, 42, 0.8), rgba(10, 10, 42, 0.8)), 
+              url('../assets/img/buhify2.0.jpeg');
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   overflow: hidden;
@@ -45,6 +49,7 @@
   flex-direction: column;
   color: white;
 }
+
 
 .chatbot-header {
   background: #050520;
@@ -124,12 +129,21 @@
   background: #0056b3;
 }
 
-/* Responsivo para móviles */
+/* Responsivo */
+
+@media screen and (max-width: 1024px) {
+  .chatbot-box {
+    margin-bottom: 4%;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .chatbot-box {
     width: 95%;
     bottom: 70px;
     right: 2.5%;
+    margin-bottom: 4%;
   }
 
   .chatbot-messages {
