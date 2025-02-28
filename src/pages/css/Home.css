@@ -17,32 +17,14 @@
   background-image: url("../../assets/img/back1.png"); /* Default image for mobile */
 }
 
-@media only screen and (device-width: 430px) {
+/* Adjust background image for larger screens */
+@media (min-width: 768px) {
   .section-1 {
-    background-image: url("../../assets/img/back1.png"); /* Imagen para móviles */
+    background-image: url("../../assets/img/back2.png"); /* Image for tablets */
   }
 }
 
-@media (max-width: 390px) {
-  .section-1 {
-    background-image: url("../../assets/img/back1.png"); /* Imagen para móviles */
-  }
-}
-
-@media (min-width: 577px) {
-  .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Image for tablets and larger */
-  }
-}
-
-/* Large screens (desktops, etc.) */
-@media (min-width: 1000px) {
-  .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Image for desktops */
-  }
-}
-/* Large screens (desktops, etc.) */
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .section-1 {
     background-image: url("../../assets/img/back.png"); /* Image for desktops */
   }
