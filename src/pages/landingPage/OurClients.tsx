@@ -30,7 +30,7 @@ const OurClients = () => {
             </div>
 
             {/* Carrusel de imágenes con animación */}
-            <div style={{ height: '800px', width: '100%', position: 'relative' }}>
+            <div style={{ height: '300px', width: '100%', position: 'relative' }}>
                 <LogoWall
                     items={logoImgs}
                     direction='horizontal'
