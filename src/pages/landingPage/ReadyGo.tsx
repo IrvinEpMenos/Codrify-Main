@@ -15,8 +15,10 @@ export default function ReadyGo() {
                 </div>
             </div>
             <div className="readyGo">
-            <h1>{t("¿Estás listo para el éxito?")}</h1>
-            <p>{t("La mejor decisión para tu empresa solo dando clic.")}</p>
+            <h1 className="readyGo-text">{t("¿Estás listo para el ")}  <span className="title3-ready">{t(" Èxito?")}</span> </h1>
+            </div>
+            <div>
+            <p className="readyGo-text">{t("La mejor decisión para tu empresa solo dando clic.")}</p>
 
         </div>
         <Magnet padding={300} disabled={false} magnetStrength={1} className="" >

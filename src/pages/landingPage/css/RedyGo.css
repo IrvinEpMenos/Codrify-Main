@@ -10,7 +10,22 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  display: flex;
+  
 }
+.Exito-ready {
+  padding-left: 1rem;
+}
+.readyGo-text{
+  color: #fff;
+}
+.title3-ready {
+  background-image: linear-gradient(137deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 
 .logo-readyGo {
   width: 100px;
