@@ -21,17 +21,9 @@ const AniText = (): JSX.Element => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 4000);
+    }, 6000); // Increased interval duration to 6000ms (6 seconds)
     return () => clearInterval(interval);
   }, [texts.length]);
-
-  // Función para manejar el clic del botón
-  // const handleScrollClick = () => {
-  //   window.scrollTo({
-  //     top: window.innerHeight, 
-  //     behavior: "smooth", 
-  //   });
-  // };
 
   return (
     <div className="text-animation-container-home">
@@ -41,22 +33,26 @@ const AniText = (): JSX.Element => {
           initial={{ opacity: 0, x: -80, scale: 0.8 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0, x: 80, scale: 1.2 }}
-          transition={{ duration: 3, ease: "easeIn" }}
+          transition={{ duration: 1.2, ease: "easeInOut", delay: 0.5 }}          
           className="animated-text-home"
         >
           {texts[currentTextIndex]}
         </motion.div>
       </AnimatePresence>
       <p className="Text-Sub-Title">
-        {t("Nuestra visión es transformar negocios con tecnología,")} <br />{t("inteligencia artificial y automatización.")}
+        {t("Nuestra visión es transformar negocios con tecnología,")} <br />
+        {t("inteligencia artificial y automatización.")}
       </p>
-      <Link to="/contacto" style={{ color: 'inherit', textDecoration: 'none' }}>
-      <StarBorder as="button" className="custom-class" color="cyan" speed="1s" >
-        <ShinyText text={t("COMENZAR →")} disabled={false} speed={3} className="shinyButtom" />
-      </StarBorder>
+      <Link to="/contacto" style={{ color: "inherit", textDecoration: "none" }}>
+        <StarBorder as="button" className="custom-class" color="cyan" speed="1s">
+          <ShinyText
+            text={t("COMENZAR →")}
+            disabled={false}
+            speed={3}
+            className="shinyButtom"
+          />
+        </StarBorder>
       </Link>
-
-      
     </div>
   );
 };

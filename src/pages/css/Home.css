@@ -1,10 +1,39 @@
 /* Home.css */
+
 .section-1 {
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-background-image: url("../../assets/img/back.png");
+  background-image: url("../../assets/img/back.png"); /* Imagen por defecto */
+  background-size: cover; /* Cubre toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Cambiar la imagen para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .section-1 {
+    background-image: url("../../assets/img/back1.png"); /* Imagen para móviles */
+  }
+}
+
+@media (min-width: 577px) {
+  .section-1 {
+    background-image: url("../../assets/img/back2.png"); /* Imagen para escritorios */
+  }
+}
+
+@media (min-width: 993px) {
+  .section-1 {
+    background-image: url("../../assets/img/back2.png"); /* Imagen para escritorios */
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-1 {
+    background-image: url("../../assets/img/back3.png"); /* Imagen para escritorios */
+  }
 }
 /* Ensures sections take full viewport height for parallax effect */
 .Content-container {

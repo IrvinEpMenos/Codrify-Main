@@ -3,23 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: -20%;
-  margin-bottom: -10%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }  
 
-.readyGo {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  display: flex;
-  
-}
 .Exito-ready {
   padding-left: 1rem;
 }
 .readyGo-text{
   color: #fff;
+  text-align: center;
+
 }
 .title3-ready {
   background-image: linear-gradient(137deg, #71D6ED 20.69%, #6CCAE1 51.58%, #458391 98.48%);
@@ -32,24 +26,20 @@
 .logo-readyGo {
   width: 100px;
   height: 100px;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 
 }
 
 @media (max-width: 768px) {
-  .readyGo-text{
-      font-size: 3rem; /* Tamaño más pequeño en tablets y celulares */
-      text-align: center;
-  }
+.readyGo-text p{
+  font-size: 1rem; /* Tamaño aún más pequeño en celulares pequeños */
+}
   
 }
 
 @media (max-width: 480px) {
   .readyGo-text {
-      font-size: 2.5rem; /* Tamaño aún más pequeño en celulares pequeños */
+      font-size: 2rem; /* Tamaño aún más pequeño en celulares pequeños */
   }
-  p{
-    font-size: 1.5rem; /* Tamaño aún más pequeño en celulares pequeños */
-}
   
 }
