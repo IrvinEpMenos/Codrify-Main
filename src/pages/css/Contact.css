@@ -1,5 +1,6 @@
 /* Contact.css */
 .contact {
+  margin-top: 100px;
   background-color: #050520;
   color: #ffffff;
   text-align: center;
@@ -177,4 +178,35 @@ h2 {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* Contact.css */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3; /* Color del borde */
+  border-top: 3px solid #3498db; /* Color del spinner */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite; /* Animación */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
