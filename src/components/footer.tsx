@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <li><img src={tel} alt="telefono" />+52 755 111 80 92</li>
             <li><img src={ubi} alt="ubicacion" />Puebla</li>
             <li><img src={email} alt="email" />codrifyconsulting@outlook.com</li>
-            <li><img src={instagram} alt="insta" />cod.rify</li>
+            <li><img src={instagram} alt="insta" /><a href="https://www.instagram.com/cod.rify/" target="_blank" rel="noopener noreferrer">cod.rify</a></li>
           </ul>
         </div>
       </div>
