@@ -31,7 +31,7 @@ export default function WhyUs() {
                             <path d="M11.6329 26.8124H2.42077C1.77272 26.8124 1.17389 26.517 0.771938 26.0166C0.361781 25.4916 0.214125 24.7698 0.378188 24.0971C0.944203 21.8084 2.35514 19.9217 4.44694 18.6256C6.29264 17.4854 8.63873 16.8538 11.0505 16.8538C13.1176 16.8538 14.8813 17.1983 16.4399 17.912C17.0962 18.2155 17.3915 18.9948 17.088 19.651C16.7844 20.3073 16.0051 20.6026 15.3489 20.2991C14.143 19.7495 12.7403 19.4788 11.0587 19.4788C8.06452 19.4788 4.28288 20.7256 3.08522 24.1956H11.6329C12.3547 24.1956 12.9454 24.7862 12.9454 25.5081C12.9454 26.2299 12.3547 26.8124 11.6329 26.8124Z" fill="#4AA0B3" />
                         </svg>
                     </div>
-                    <h3>{t("Consultorias personalizadas")}</h3>
+                    <h3>{t("Consultorías personalizadas")}</h3>
                     <p>
                         {t("Cada empresa es única, y nuestras soluciones también. En Codrify, diseñamos estrategias a medida para potenciar tu negocio con tecnología, inteligencia artificial y automatización.")}
                     </p>
