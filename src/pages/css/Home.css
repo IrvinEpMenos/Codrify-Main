@@ -10,6 +10,7 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent image repetition */
   background-attachment: scroll; /* Optional: For parallax effect */
+  z-index: 1001; /* Ensure it stays behind content */
 }
 
 /* Mobile-first approach: Default image for small screens */
