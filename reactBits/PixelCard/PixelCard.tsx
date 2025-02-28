@@ -1,11 +1,6 @@
-/*
-	jsrepo 1.37.0
-	Installed from https://reactbits.dev/ts/default/
-	17-2-2025
-*/
 
 import { useEffect, useRef } from "react";
-import "./PixelCard.css";
+import "../../src/pages/landingPage/css/OurServices.css";
 
 class Pixel {
   width: number;

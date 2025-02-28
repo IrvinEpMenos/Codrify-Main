@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .animated-gradient-text {
   position: relative;
@@ -60,6 +60,7 @@
 }
 
 .text-content {
+  font-family: poppins;
   display: inline-block;
   position: relative;
   z-index: 2;

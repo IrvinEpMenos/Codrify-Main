@@ -197,18 +197,55 @@
   .navbar-links {
     gap: 0.8rem;
   }
-  .logo-image {
-    width: 100px;
-    height: 50px;
+  .navbar-logo{
+    width: 120px;
+    height: auto;
+  }
+  .navbar-logo img {
+    width: 200%;
+    height: auto;
+    margin-left: -20px;
   }
   .oval-container {
     margin-left: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0px 20px;
+  }
+  .navbar-links {
+    gap: 0.7rem;
+  }
+  .navbar-logo {
+    width: 100px;
+    height: 45px;
+    margin-top: -10px;
+  }
+  .navbar-logo img {
+    width: 250%;
+    height: auto;
+    margin-left: -20px;
+  }
+  .oval-container {
+    margin-left: auto;
+    margin-top: 5px;
+  }
+  .lenguage-select {
+    margin-top: 30px;
   }
 }
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
     position: relative;
+  }
+  .navbar-logo {
+    width: 100px;
+    margin-top: 20px;
+  }
+  .navbar-logo img {
+  margin-left: -20px;
   }
   .oval-container {
     display: none;
@@ -253,7 +290,44 @@
 
   }
 }
-
+@media (max-width: 540px) {
+  .navbar {
+    padding: 10px 10px;
+    height: 60px;
+    width: 100%;
+  }
+  .navbar-logo {
+    width: 120px;
+    margin-top: -5px;
+  }
+  .navbar-logo img {
+    width: 160%;
+    height: auto;
+    margin-left: -20px;
+  }
+  .hamburger-menu {
+    gap: 4px;
+  }
+  .bar {
+    padding-left: 10px;
+    height: 2.5px;
+  }
+  .navbar.active .navbar-links {
+    padding: 15px;
+  }
+  .li-text {
+    margin: 4px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .oval-container1 {
+    height: 30px;
+    width: 95px;
+    padding: 3px 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
 @media (max-width: 480px) {
   .navbar{
     padding: 10px 10px;
@@ -262,12 +336,13 @@
   }
   .navbar-logo {
   width: 120px;
-  margin-top: 40px;
+  margin-top: 28px;
   }
 
-  .logo-image {
-    width: 100px;
+  .navbar-logo img {
+    width: 120px;
     height: auto;
+    margin-left: -20px;
   }
 
   .hamburger-menu {
@@ -296,14 +371,132 @@
     text-align: center;
 }
 }
-@media (max-width: 360px) {
+@media (max-width: 416px) {
   .navbar {
+    padding: 10px 10px;
+    height: 60px;
     width: 100%;
-    padding-right: 0px;
   }
 
   .navbar-logo {
+    width: 120px;
+    margin-top: -5px;
+  }
+
+  .navbar-logo img {
+    width: 140%;
+    margin-left: -20px;
+  }
+
+  .hamburger-menu {
+    gap: 4px;
+  }
+
+  .bar {
+    padding-left: 10px;
+    height: 2.5px;
+  }
+
+  .navbar.active .navbar-links {
+    padding: 15px;
+  }
+
+  .li-text {
+    margin: 4px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .oval-container1 {
+    height: 30px;
+    width: 95px;
+    padding: 3px 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .navbar {
+    padding: 10px 10px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .navbar-logo {
+    width: 120px;
+    margin-top: 28px;
+  }
+
+  .navbar-logo img {
+    width: 140%;
+    margin-left: -20px;
+  }
+
+  .hamburger-menu {
+    gap: 4px;
+  }
+
+  .bar {
+    padding-left: 10px;
+    height: 2.5px;
+  }
+
+  .navbar.active .navbar-links {
+    padding: 15px;
+  }
+
+  .li-text {
+    margin: 4px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .oval-container1 {
+    height: 30px;
+    width: 95px;
+    padding: 3px 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .navbar-logo {
     width: 100px;
+    margin-top: 28px;
+    margin-left: 5px;
+  }
+  .navbar-logo img {
+    width: 170%;
+  }
+
+  .oval-container1 {
+    height: 26px;
+    width: 30%;
+    padding: 2px 6px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .navbar-links {
+    gap: 8px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 344px) {
+  .navbar {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .navbar-logo {
+    width: 100px;
+    margin-top: -6px;
+    margin-left: 5px;
+  }
+  .navbar-logo img {
+    width: 170%;
   }
 
   .oval-container1 {
