@@ -120,20 +120,7 @@
   padding-bottom: 30px;
 }
 
-@media(min-width: 2560px) {
-  .serv-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-}
-@media (min-width: 1920px ) {
-  .serv-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-}
+
 
 @media (max-width: 1440px ) {
   .serv-cards {
