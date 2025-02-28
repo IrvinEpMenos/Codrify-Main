@@ -19,13 +19,13 @@
 /* Adjust background image for larger screens */
 @media (min-width: 768px) {
   .section-1 {
-    background-image: url("../../assets/img/back1.png"); /* Image for tablets */
+    background-image: url("../../assets/img/back2.png"); /* Image for tablets */
   }
 }
 
 @media (min-width: 1200px) {
   .section-1 {
-    background-image: url("../../assets/img/back1.png"); /* Image for desktops */
+    background-image: url("../../assets/img/back3.png"); /* Image for desktops */
   }
 }
 
