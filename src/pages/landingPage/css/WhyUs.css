@@ -1,3 +1,4 @@
+/* Estilos base */
 .whyus-container {
     color: white;
     text-align: center;
@@ -66,4 +67,60 @@
 
 .whyus-btn:hover {
     background-color: #1da1f2;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .whyus-container {
+        padding: 40px 15px;
+    }
+    .whyus-cards {
+        gap: 15px;
+    }
+    .whyus-card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .whyus-container {
+        padding: 30px 10px;
+    }
+    .whyus-header h2 {
+        font-size: 24px;
+    }
+    .whyus-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .whyus-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whyus-container {
+        padding: 20px 5px;
+    }
+    .whyus-header h2 {
+        font-size: 28px;
+    }
+    .whyus-header p {
+        font-size: 18px;
+    }
+    .whyus-card {
+        width: 95%;
+        padding: 15px;
+    }
+    .whyus-card h3 {
+        font-size: 16px;
+    }
+    .whyus-card p {
+        font-size: 14px;
+    }
+    .whyus-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
 }
