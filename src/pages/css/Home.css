@@ -1,57 +1,35 @@
-/* Home.css */
-
-.section-1 {
-  position: relative; /* Ensure proper positioning */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  background-size: cover; /* Cover the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  background-attachment: scroll; /* Optional: For parallax effect */
-}
-
-/* Mobile-first approach: Default image for small screens */
-.section-1 {
-  background-image: url("../../assets/img/back1.png"); /* Default image for mobile */
-  min-height: 100vh; /* Full viewport height */
-}
-
-/* Medium screens (tablets, etc.) */
-@media (min-width: 577px) {
-  .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Image for tablets and larger */
-    min-height: 100vh; /* Full viewport height */
-  }
-}
-
-/* Large screens (desktops, etc.) */
-@media (min-width: 1000px) {
-  .section-1 {
-    background-image: url("../../assets/img/back2.png"); /* Image for desktops */
-    min-height: 100vh; /* Full viewport height */
-  }
-}
-/* Large screens (desktops, etc.) */
-@media (min-width: 1500px) {
-  .section-1 {
-    background-image: url("../../assets/img/back.png"); /* Image for desktops */
-    min-height: 100vh; /* Full viewport height */
-  }
-}
-
 /* Ensures sections take full viewport height for parallax effect */
 .Content-container {
   position: relative;
-  height: auto;
+  height: 100vh; /* Asegura que cada sección ocupe el 100% de la altura de la ventana */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-attachment: fixed; /* Optional: For parallax effect */
+  z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+}
+
+/* Estilo para el fondo */
+.home-back {
+  position: absolute; /* Fija el fondo en una capa inferior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Efecto de parallax */
+  z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+/* Estilo específico para la primera sección */
+.section-1 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /* Progress bar animation */
@@ -63,5 +41,5 @@
   background: linear-gradient(90deg, #4AA0B3, #007893);
   transform-origin: left;
   width: 100%;
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000; /* Asegura que la barra de progreso esté en la capa superior */
 }
