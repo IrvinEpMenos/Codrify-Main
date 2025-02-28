@@ -18,6 +18,18 @@
   }
 }
 
+@media (max-width: 2532px) {
+  .section-1 {
+    background-image: url("../../assets/img/back1.png"); /* Imagen para móviles */
+  }
+}
+
+@media (max-width: 1170px) {
+  .section-1 {
+    background-image: url("../../assets/img/back1.png"); /* Imagen para móviles */
+  }
+}
+
 @media (min-width: 577px) {
   .section-1 {
     background-image: url("../../assets/img/back2.png"); /* Imagen para escritorios */
