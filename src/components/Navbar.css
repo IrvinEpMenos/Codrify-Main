@@ -256,7 +256,7 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background: var(--color-blue-7, #06061400);
+    background: var(--color-blue-7, #060614c8);
     width: 100%;
     padding: 20px;
     border-radius: 0 0 10px 10px;
