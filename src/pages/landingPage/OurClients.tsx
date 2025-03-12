@@ -1,11 +1,11 @@
 import "./css/OurClients.css";
 import { useTranslation } from "react-i18next";
 import LogoWall from '../../../reactBits/LogoWall/LogoWall';
-import sea from '../../assets/img/logo1.png'
-import aim from '../../assets/img/logo2.png'
-// import penka from '../../assets/img/logo3.png'
-import gbm from '../../assets/img/logo4.png'
-import zt from '../../assets/img/logo5.png'
+import sea from '../../assets/img/logo1.webp'
+import aim from '../../assets/img/logo2.webp'
+// import penka from '../../assets/img/logo3.webp'
+import gbm from '../../assets/img/logo4.webp'
+import zt from '../../assets/img/logo5.webp'
 
 // Datos de clientes con imágenes y descripciones
 const logoImgs = [

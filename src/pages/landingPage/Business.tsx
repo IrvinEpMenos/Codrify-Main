@@ -1,6 +1,6 @@
 import "./css/Business.css";
 import { useTranslation } from "react-i18next";
-import motor from "../../assets/img/motornegocio.jpg"
+import motor from "../../assets/img/motornegocio.webp"
 import PixelTransition from "../../../reactBits/PixelTransition/PixelTransition"
 import { Link } from "react-router-dom";
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './css/Services.css';
 import { Link } from 'react-router-dom';
-import cebro from '../assets/img/cerebro.png';
+import cebro from '../assets/img/cerebro.webp';
 
 
 const ServicesPage: React.FC = () => {

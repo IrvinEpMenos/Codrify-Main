@@ -1,6 +1,6 @@
 import "./css/OurServices.css";
 import { useTranslation } from "react-i18next";
-import cerebro from "../../assets/img/cerebro.png";
+import cerebro from "../../assets/img/cerebro.webp";
 import UIUX from "../../assets/icon/UIUXICON.svg";
 import stats from "../../assets/icon/stats.svg";
 import PixelCard from '../../../reactBits/PixelCard/PixelCard';

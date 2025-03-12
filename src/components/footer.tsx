@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import "./Footer.css";
-import logo from "../assets/img/logoDeTecho.svg";
+import logo from "../assets/img/logoDeTecho.webp";
 import tel from "../assets/icon/Vector.svg";
 import ubi from "../assets/icon/location-marker.svg";
 import email from "../assets/icon/mail.svg";

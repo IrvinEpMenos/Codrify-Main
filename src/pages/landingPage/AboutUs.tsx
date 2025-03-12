@@ -1,7 +1,7 @@
 import "./css/AboutUSLanding.css";
 import { useTranslation } from "react-i18next";
 import Group from "../../assets/icon/Group.svg";
-import PuntosBlancos from "../../assets/img/PuntosBlancos.png";
+import PuntosBlancos from "../../assets/img/PuntosBlancos.webp";
 import GradientText from '../../../reactBits/GradientText/GradientText';
 
 

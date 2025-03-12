@@ -1,7 +1,7 @@
 import "./css/proyectos.css";
-import ex1 from "../../assets/img/proyecto1.jpeg";
-import ex2 from "../../assets/img/proyecto2.png";
-import ex3 from "../../assets/img/proyecto3.png";
+import ex1 from "../../assets/img/proyecto1.webp";
+import ex2 from "../../assets/img/proyecto2.webp";
+import ex3 from "../../assets/img/proyecto3.webp";
 import { useTranslation } from "react-i18next";
 import TiltedCard from "../../../reactBits/TiltedCard/TiltedCard";
 

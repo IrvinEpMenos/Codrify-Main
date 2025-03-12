@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"; // Importar traducción
 import "./Navbar.css";
-import logo from "../assets/img/logoBlanco.svg";
+import logo from "../assets/img/logoBlanco.webp";
 import mexicoFlag from "../assets/icon/mexico.svg";
 import usaFlag from "../assets/icon/USA.svg";
 import "../il8n";
